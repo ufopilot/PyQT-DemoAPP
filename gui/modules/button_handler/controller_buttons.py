@@ -3,9 +3,9 @@ from gui.functions.ui_functions import UIFunctions
 from gui.modules.panel_settings.panel_settings import PanelSettings
 from qt_core import *
 
-PANELS_CLOSED = []
 
 class SetControllerButtons(QWidget):
+	_panels_closed = []
 	def __init__(self, parent=None):
 		super(self.__class__, self).__init__(parent)
 		#self.setupUi(self)
@@ -46,7 +46,7 @@ class SetControllerButtons(QWidget):
 		togglebuttons = (self.ui.togglePanel1, self.ui.togglePanel2, self.ui.togglePanel4, self.ui.togglePanel5)
 		for i, button in enumerate(togglebuttons):
 			panel_name = button.objectName().replace('toggle', '').lower()
-			if panel_name not in PANELS_CLOSED:
+			if panel_name not in self._panels_closed:
 				self.toggle_panel(button, 0)	
 				#QTimer.singleShot(self.settings['time_animation'], lambda: self.toggle_panel(button))
 		
@@ -107,13 +107,13 @@ class SetControllerButtons(QWidget):
 			panel_title = panel.findChild(QLabel, f"headerPanel{panel_index}")
 			
 			if startValue == minimum:
-				PANELS_CLOSED.remove(panel_name)
+				self._panels_closed.remove(panel_name)
 				endValue = maximum
 				panel_title_style = ""
 				#panel_title.setStyleSheet("")
 				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_close, "gray")))
 			else:
-				PANELS_CLOSED.append(panel_name)
+				self._panels_closed.append(panel_name)
 				endValue = minimum
 				panel_title_style = "color: #333"	
 				#panel_title.setStyleSheet("color: #333")

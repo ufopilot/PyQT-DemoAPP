@@ -17,8 +17,7 @@ from qt_core import *
 if platform.system() == "Windows":
 	Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/main.ui"))
 
-PANELS_CLOSED = []
-LASTCONTENT = ""
+
 
 class MainWidget(Base_Class, Gen_Class):
 	_gripSize = 8

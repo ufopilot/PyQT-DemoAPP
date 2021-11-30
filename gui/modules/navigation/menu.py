@@ -5,10 +5,8 @@ from gui.content import *
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 
-
-LASTCONTENT = ""
-
 class SetMenu(QWidget):
+	_lastcontent = None
 	def __init__(self, parent=None):
 		super(self.__class__, self).__init__(parent)
 		#self.setupUi(self)
@@ -58,9 +56,8 @@ class SetMenu(QWidget):
 
 			#self.contentLayout.takeAt(0).widget().hide()
 			
-			global LASTCONTENT
-			if LASTCONTENT != "":
-				self.ui.panel3.findChild(QWidget, LASTCONTENT).hide()
+			if self._lastcontent != None:
+				self.ui.panel3.findChild(QWidget, self._lastcontent).hide()
 			
 			cachedWidget = self.ui.panel3.findChild(QWidget, targetPageClass)
 			if cachedWidget:
@@ -75,7 +72,7 @@ class SetMenu(QWidget):
 				self.ui.contentWidget .setSizePolicy(sizePolicy)
 				self.ui.contentWidget .setLayoutDirection(Qt.LeftToRight)
 				self.ui.contentLayout.addWidget(self.ui.contentWidget )
-			LASTCONTENT = targetPageClass
+			self._lastcontent = targetPageClass
 		else:
 			# collapse/expand
 			if item.isExpanded():
