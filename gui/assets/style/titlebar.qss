@@ -1,0 +1,17 @@
+QWidget{
+	background:  #0b0f13;
+	border-bottom: 0px solid #13161f;
+}
+
+#windowicons{ border: none}
+#windowicons QPushButton:hover{ 
+	border: none;
+	background: #1b202c;
+}
+#windowicons QPushButton#closewindow:hover{ 
+	background: red;
+}
+
+#logo QLabel{
+	background:  #1b202c;
+}

@@ -1,0 +1,74 @@
+{
+    "app_name": "DemoApp",
+    "version" : "1.0.0",
+    "autor" : "by UFOPILOT",
+    "year" : 2021,
+    "theme_name": "dark",
+    "custom_title_bar": true,
+    "icon": {
+        "png":"gui/resources/imgs/appicon.png",
+        "ico": "gui/resources/imgs/appicon.ico"
+    },
+    "startup_size": [
+        1400,
+        720
+    ],
+    "minimum_size": [
+        960,
+        540
+    ],
+    "font" : {
+        "family" : "Segoe UI",
+        "title_size" : 10,
+        "text_size" : 9
+    },
+    "panel1" : {
+        "minimum" : 30,
+        "maximum" : 300, 
+        "toggle": true,
+        "content_margins" : 3,
+        "direction": "rtl"
+    },
+    "panel2" : {
+        "minimum" : 30,
+        "maximum" : 300, 
+        "toggle": true,
+        "content_margins" : 3,
+        "direction": "rtl"
+    },
+    "panel3" : {
+        "minimum" : 30,
+        "maximum" : 432, 
+        "toggle": false,
+        "content_margins" : 3,
+        "direction": "rtl"
+    },
+    "panel4" : {
+        "minimum" : 30,
+        "maximum" : 300, 
+        "toggle": true,
+        "content_margins" : 3,
+        "direction": "ltr"
+    },
+    "panel5" : {
+        "minimum" : 30,
+        "maximum" : 200, 
+        "toggle": true,
+        "content_margins" : 3,
+        "direction": "ttb"
+    },
+    "menu_panel" : {
+        "minimum" : 0,
+        "maximum" : 240, 
+        "toggle": true,
+        "content_margins" : 3
+    },
+    "settings_panel" : {
+        "minimum" : 0,
+        "maximum" : 240,
+        "toggle": true,
+        "content_margins" : 3
+    },
+    "time_animation" : 300,
+    "tabs_position": "top"
+}

@@ -1,0 +1,183 @@
+/**
+* Base Style without any color
+* Colors aare in theme-style
+**/
+
+/* GLABAL */
+*{ 
+    font-family: "Segoe UI"; 
+    font-size: 14px 
+}
+
+#frame{
+    border: 0px solid;
+    border-right: 1px solid;
+}
+
+/* MENU WIDGET */
+QWidget#menu{
+    border-right: 1px solid;
+    }
+
+QWidget#menu QPushButton{
+    padding: 20px;
+}
+
+#logo_text_pre, #logo_text_post{
+		font-size: 36px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+#logowidget{
+	    font-size: 20px;
+}
+
+#logowidget #logo{
+	    font-size: 20px;
+    }
+
+/* Settings Widget */
+
+#settingscontent QWidget QLabel{
+        font-weight: bold;
+}
+/* WRAPPER WIDGET */
+
+/* HEDAER WIDGET */
+QWidget#header{
+    border-bottom: 1px solid;
+    }
+
+#header QPushButton{
+        border: none;
+    padding:10px;
+}
+
+
+/* FOOTER WIDGET */
+QWidget#footer{
+    border-top: 1px solid;
+    }
+
+
+/* CONTENT WIDGET */
+/* content Header */
+#headertitle{
+	font-size: 20px;
+	}
+/* Content */
+/* Tabs */
+/*
+#tabscontent{
+    }
+*/
+QTabWidget::pane {
+  border: 1px solid;
+  top:-1px;
+  }
+
+QTabBar::tab {
+    border: 1px solid;
+  padding: 10px;
+  }
+
+QTabBar::tab:selected {
+  
+    border-bottom: 1px solid;
+}
+
+QScrollArea, #scrollAreaWidgetContents{
+        border: 1px solid;
+}
+
+#scrollAreaWidgetContents{
+    margin-left: 0;
+}
+
+QScrollArea {
+    border: none;
+}
+
+QScrollBar {
+        border-radius: 5px;
+}
+
+QScrollBar:horizontal {
+    height: 13px;
+}
+
+QScrollBar:vertical {
+    width: 13px;
+}
+
+QScrollBar::handle {
+        border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    height: 25px;
+    min-width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    width: 25px;
+    min-height: 10px;
+}
+
+QScrollBar::add-line {
+    border: none;
+    }
+
+QScrollBar::sub-line {
+    border: none;
+    }
+
+
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+        border:                 2px solid;
+}
+
+QRadioButton::indicator:unchecked {
+        border:                 2px solid;
+}
+
+/* Table */
+QTableView{
+        border: 1px solid;
+    }
+
+
+QHeaderView::section, QTableCornerButton::section{
+        padding: 4px;
+    border-style: none;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    }
+
+QHeaderView::section:horizontal{
+    border-top: 1px solid;
+}
+
+QHeaderView::section:vertical{
+    border-left: 1px solid;
+    }
+/* MODULES */
+/* Football */
+#row{
+    border: 1px solid;
+    border-radius: 3px;
+        }
+
+#row QPushButton{
+        font-weight: bold;
+}
+
+

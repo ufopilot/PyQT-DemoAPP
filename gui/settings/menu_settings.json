@@ -1,0 +1,83 @@
+[
+    {   
+        "name": "Home",
+        "icon": "home.svg",
+        "widget": "HomeWidget",
+        "start": true
+    },
+    {   
+        "name": "Dashboard",
+        "icon": "activity.svg",
+        "children":[{
+            "name":"Modern",
+            "icon": {
+                "expanded": "chevron-down.svg",
+                "collapsed": "chevron-right.svg"
+            },
+            "children":[{
+                "name":"Modern3",
+                "icon": "circle.svg",
+                "widget":"TemplatePage"
+            },
+            {
+                "name":"Modern4",
+                "icon": "circle.svg",
+                "widget":"TemplatePage"
+            }]
+        },
+        {
+            "name":"Modern2",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        }]
+    },
+    {   
+        "name": "Dashboard",
+        "icon": "activity.svg",
+        "children":[{
+            "name":"Modern",
+            "icon": {
+                "expanded": "chevron-down.svg",
+                "collapsed": "chevron-right.svg"
+            },
+            "children":[{
+                "name":"Modern3",
+                "icon": "circle.svg",
+                "widget":"TemplatePage"
+            },
+            {
+                "name":"Modern4",
+                "icon": "circle.svg",
+                "widget":"TemplatePage"
+            }]
+        },
+        {
+            "name":"Modern2",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        }]
+    },
+    {   
+        "name": "Streams",
+        "icon": "folder.svg",
+        "children":[{
+            "name":"Football",
+            "icon": "globe.svg",
+            "widget":"FootballWidget"
+        },
+        {
+            "name":"Netflix",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        }]
+    },
+    {   
+        "name": "Tables",
+        "icon": "database.svg",
+        "children":[{
+            "name":"FileSystem View",
+            "icon": "file.svg",
+            "widget":"FileSystemView"
+        }]
+    }
+]
