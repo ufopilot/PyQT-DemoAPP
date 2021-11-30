@@ -8,6 +8,8 @@ from gui.modules.navigation.menu import SetMenu as SetLeftMenu
 from gui.modules.resizer.sidegrip import SideGrip
 from gui.modules.style.style import SetStyle
 from gui.modules.panel_settings.panel_settings import PanelSettings
+from gui.modules.theming.theming import Theming
+from gui.modules.title_bar.titlebar import TitleBar
 
 from gui.widgets.label_vertical.label_vertical import LabelVertical
 
@@ -39,6 +41,7 @@ class MainWidget(Base_Class, Gen_Class):
 		##########################################################################################
 		if self.settings['custom_title_bar']:
 			self.setWindowFlag(Qt.FramelessWindowHint)
+			TitleBar(self)
 		##########################################################################################
 		# App-Icon
 		##########################################################################################
@@ -77,7 +80,11 @@ class MainWidget(Base_Class, Gen_Class):
 		self.cornerGrips = [QSizeGrip(self) for i in range(4)]
 		for i in range(4):
 			self.cornerGrips[i].setStyleSheet("background: transparent;")
-	
+		#####################################################################################
+		# Theming
+		#####################################################################################
+		Theming(self)
+
 	def mousePressEvent(self, event):
 		if event.buttons() == Qt.RightButton:
 			self.pressing = False

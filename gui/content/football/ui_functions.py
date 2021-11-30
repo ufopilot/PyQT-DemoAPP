@@ -14,7 +14,7 @@ def resource_path(relative_path):
         return os.path.join(os.path.abspath("."), relative_path)
 
 def read_config():
-	with open(resource_path('gui/settings/app_settings.json')) as f:
+	with open(resource_path('gui/settings/ui_settings.json')) as f:
 		return json.load(f)
 
 def clear_game_layout(self):

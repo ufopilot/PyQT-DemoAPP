@@ -42,6 +42,28 @@ class UIFunctions():
 		qp.end()
 		return QIcon(img)
 
+	def getAppTheme(self, theme_settings):
+		with open(UIFunctions().resource_path(f'./gui/assets/style/base.qss'), "r", encoding='utf-8') as reader:
+			base_stylesheet = reader.read()
+			colors = theme_settings['colors']
+			formated_stylesheet = base_stylesheet.format(
+				main_bg = colors['main_bg'],
+				header_bg = colors['header_bg'],
+				footer_bg = colors['footer_bg'],
+				controller_bg = colors['controller_bg'],
+				scrollbar_bg = colors['scrollbar_bg'],
+				scrollbar_handle_bg = colors['scrollbar_handle_bg'],
+				scrollbar_hover_bg = colors['scrollbar_hover_bg'],
+				table_alternate = colors['table_alternate'],
+				lineedit_bg = colors['lineedit_bg'],
+				tab_pane_bg = colors['tab_pane_bg'],
+				page_header_bg = colors['page_header_bg'],
+				table_header_bg = colors['table_header_bg']
+			)
+
+			return formated_stylesheet
+			
+
 	def setGuiStyle(self, base_style, theme, target):
 		template_stylesheet = ""
 		with open(UIFunctions().resource_path(f'./gui/assets/style/{base_style}.qss')) as f:

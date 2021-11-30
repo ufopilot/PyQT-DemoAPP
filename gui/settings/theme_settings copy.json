@@ -1,0 +1,28 @@
+{   
+    "colors":{
+        "main_bg": "#1b202c",
+        "header_bg": "#0b0f13",
+        "footer_bg": "#0b0f13",
+        "controller_bg": "#13161f",
+        "scrollbar_bg": "#1e2229",
+        "scrollbar_handle_bg": "#303647",
+        "scrollbar_hover_bg": "#37c886",
+        "table_alternate": "#191e29",
+        "lineedit_bg": "#2c313c",
+        "tab_pane_bg": "#391e29",
+        "text1": "#fff"
+    },
+    "_colors":{
+        "main_bg": "#1b202c",
+        "header_bg": "#0b0f13",
+        "footer_bg": "#0b0f13",
+        "controller_bg": "#13161f",
+        "scrollbar_bg": "#1e2229",
+        "scrollbar_handle_bg": "#303647",
+        "scrollbar_hover_bg": "#37c886",
+        "table_alternate": "#191e29",
+        "lineedit_bg": "#2c313c",
+        "tab_pane_bg": "#391e29",
+        "text1": "#fff"
+    }
+}

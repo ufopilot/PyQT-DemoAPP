@@ -10,8 +10,10 @@ class SetStyle(QWidget):
 		self.ui = parent
 		settings = Settings('ui')
 		self.settings = settings.items
-
-		self.setTheme(self.settings['theme_name'])
+		settings = Settings('theme')
+		self.theme_settings = settings.items
+		stylesheet = UIFunctions().getAppTheme(self.theme_settings)
+		self.ui.centralwidget.setStyleSheet(stylesheet)
 		effect = QGraphicsDropShadowEffect(self.ui.mainFrame, enabled=False, blurRadius=5)
 		self.ui.mainFrame.setGraphicsEffect(effect)
 		self.shadow = QGraphicsDropShadowEffect(self)
@@ -23,20 +25,4 @@ class SetStyle(QWidget):
 		self.ui.mainFrame.raise_()
 		self.ui.mainFrame.setGraphicsEffect(self.shadow)
 
-	def setTheme(self, theme):
-		template_stylesheet = ""
-		with open(UIFunctions().resource_path(f'./gui/assets/style/base2.qss')) as f:
-				base_stylesheet = f.read()  
-		if theme == "fusion":
-			print("set theme", theme)
-			self.centralwidget.setStyleSheet(f"{base_stylesheet}")
-		else:
-			print("set theme", theme)
-			with open(UIFunctions().resource_path(f'./gui/assets/style/colors.qss')) as f:
-				template_stylesheet = f.read()
-			with open(UIFunctions().resource_path(f'./gui/assets/themes/{theme}.json')) as f:
-				theme_stylesheet = json.load(f)
-				for key, value in theme_stylesheet.items():
-					template_stylesheet = template_stylesheet.replace(key, value)
-			#\n{template_stylesheet}
-			self.ui.centralwidget.setStyleSheet(f"{base_stylesheet}")
+	

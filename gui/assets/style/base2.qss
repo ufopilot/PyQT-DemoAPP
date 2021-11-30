@@ -74,7 +74,7 @@ LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
 }
 
 QPushButton{
- 	background: #1b202c;
+ 	background: {background1};
 }
 
 QPushButton:hover{
@@ -83,7 +83,7 @@ QPushButton:hover{
 
 
 #panel1, #panel2, #panel3, #panel4, #panel5, #panel6{
- 	background: #1b202c;
+ 	background: {background1};
 	color: #fff;
 }
 
@@ -109,7 +109,7 @@ QPushButton:hover{
 #controllerPanel4 QPushButton:hover,
 #controllerPanel5 QPushButton:hover{
 	border: none;
-	background: #1b202c;
+	background: {background1};
 }
 
 
@@ -176,7 +176,7 @@ QLineEdit{
 QTabWidget::pane {
 	border: 1px solid #391e29;
 	top:-1px;
-	background: #1b202c;
+	background: {background1};
 }
   
 
@@ -191,7 +191,7 @@ QTabBar::tab {
 QTabBar::scroller {width: 0px;}
 
 QTabBar::tab:selected {
-	background: #1b202c;
+	background: {background1};
 	margin-bottom: -1px;
 	color: #dce1ec;
 	border-bottom: 2px solid #37c886;;
@@ -225,6 +225,9 @@ QTabBar::tab:selected {
     background: #13161f;
 }
 
+#contentMenu QTreeWidget::branch::vertical{
+	background: {background1};
+}
 /*
 QTreeView::item:selected:active{
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6ea1f1, stop: 1 #567dbc);
@@ -242,7 +245,7 @@ QTreeView::item:selected:!active {
 */
 #contentMenu QTreeWidget::Item:!has-children:selected{
 	/*padding-left: 20px;*/
-	border-bottom:1px solid #0b0f13;
+	border-left:3px solid #37c886;
 	/*
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
@@ -254,7 +257,7 @@ QTreeView::item:selected:!active {
 #contentMenu QTreeWidget::branch  {
     border-image: none;
     image: none;
-	background: #1b202c;
+	background: {background1};
     }
 
 /*
@@ -342,5 +345,60 @@ CONTENT
   }
 */
 
+
+
+
+/* Theming */
+#appTheming QFrame{ border: 0px solid;}
+
+#panelsBackground QPushButton,	
+#panelsBackground_2 QPushButton{
+	border: 2px solid #fff;
+	border-radius: 12px;
+}
+
+#bgColor_1{
+	background: #f44336;
+}
+
+#bgColor_2{
+	background: #9c27b0 ;
+}
+
+#bgColor_3{
+	background: #e91e63 ;
+}
+
+#bgColor_3{
+	background: #e91e63 ;
+}
+
+#bgColor_4{
+	background: #673ab7  ;
+}
+
+#bgColor_5{
+	background: #00bcd4  ;
+}
+
+#bgColor_6{
+	background: #009688  ;
+}
+
+#bgColor_7{
+	background: #03a9f4  ;
+}
+
+#bgColor_8{
+	background: #ff8f00  ;
+}
+
+#bgColor_9{
+	background: #5d4037  ;
+}
+
+#bgColor_10{
+	background: #1b202c  ;
+}
 
 

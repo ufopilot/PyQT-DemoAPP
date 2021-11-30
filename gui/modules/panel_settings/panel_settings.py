@@ -12,6 +12,8 @@ class PanelSettings(Base_Class, Gen_Class):
 		##########################################################################################
 		super(self.__class__, self).__init__(parent)
 		self.setupUi(self)
+
+		#self.ui = parent
 		
 		# LOAD SETTINGS
 		# ///////////////////////////////////////////////////////////////
@@ -37,6 +39,7 @@ class PanelSettings(Base_Class, Gen_Class):
 
 	def ok_callback(self):
 		print("OK")
+	
 		self.close()
 
 	def cancel_callback(self):

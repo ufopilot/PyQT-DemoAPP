@@ -5,7 +5,7 @@ from gui.functions.ui_functions import UIFunctions
 # APP SETTINGS
 # ///////////////////////////////////////////////////////////////
 class Settings(object):
-	def __init__(self, type="ui"):
+	def __init__(self, type=None):
 		super(Settings, self).__init__()
 		self.json_file = f"gui/settings/{type}_settings.json"
 		self.settings_path = UIFunctions().resource_path(self.json_file)
