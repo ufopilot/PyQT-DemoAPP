@@ -1,4 +1,3 @@
-#from main import UIFunctions
 from qt_core import *
 from gui.content.content_functions import *
 	

@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 #https://github.com/sciter-sdk/pysciter#getting-started
 
-from gui.functions.app_settings import Settings
-from gui.functions.menu_settings import MenuSettings
+from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 from gui.modules.button_handler.controller_buttons import SetControllerButtons
 from gui.modules.navigation.menu import SetMenu as SetLeftMenu
@@ -31,9 +30,9 @@ class MainWidget(Base_Class, Gen_Class):
 		self.setupUi(self)
 		# LOAD SETTINGS
 		# ///////////////////////////////////////////////////////////////
-		settings = Settings()
+		settings = Settings("ui")
 		self.settings = settings.items
-		menu_settings = MenuSettings()
+		menu_settings = Settings("menu")
 		self.menu_data = menu_settings.items
 		
 		##########################################################################################

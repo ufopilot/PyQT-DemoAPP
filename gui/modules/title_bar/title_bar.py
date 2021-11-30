@@ -1,6 +1,6 @@
 from qt_core import *
 from gui.functions.ui_functions import UIFunctions
-from gui.functions.app_settings import Settings
+from gui.functions.settings import Settings
 
 
 Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/title_bar.ui"))
@@ -14,7 +14,7 @@ class TitleBar(Base_Class, Gen_Class):
 		self.setupUi(self)
 		# LOAD SETTINGS
 		# ///////////////////////////////////////////////////////////////
-		settings = Settings()
+		settings = Settings('ui')
 		self.settings = settings.items
 
 		if not self.settings['custom_title_bar']:

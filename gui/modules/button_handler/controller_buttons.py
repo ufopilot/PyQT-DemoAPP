@@ -1,4 +1,5 @@
-from gui.functions.ui_functions import *
+from gui.functions.settings import Settings
+from gui.functions.ui_functions import UIFunctions
 from gui.modules.panel_settings.panel_settings import PanelSettings
 from qt_core import *
 
@@ -9,7 +10,7 @@ class SetControllerButtons(QWidget):
 		super(self.__class__, self).__init__(parent)
 		#self.setupUi(self)
 		self.ui = parent
-		settings = Settings()
+		settings = Settings('ui')
 		self.settings = settings.items
 		self.handle_ui_btns()
 		self.toggle_all()

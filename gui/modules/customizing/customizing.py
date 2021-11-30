@@ -1,6 +1,6 @@
 from qt_core import *
 from gui.functions.ui_functions import UIFunctions
-from gui.functions.app_settings import Settings
+from gui.functions.settings import Settings
 
 
 Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/customizing.ui"))
@@ -14,7 +14,7 @@ class Customizing(Base_Class, Gen_Class):
 		self.setupUi(self)
 		# LOAD SETTINGS
 		# ///////////////////////////////////////////////////////////////
-		settings = Settings()
+		settings = Settings('ui')
 		self.settings = settings.items
 	
 		#self.frame.setStyleSheet("border:none")

@@ -1,4 +1,5 @@
-from gui.functions.ui_functions import *
+from gui.functions.settings import Settings
+from gui.functions.ui_functions import UIFunctions
 from qt_core import *
 
 
@@ -7,7 +8,7 @@ class SetStyle(QWidget):
 		super(self.__class__, self).__init__(parent)
 		#self.setupUi(self)
 		self.ui = parent
-		settings = Settings()
+		settings = Settings('ui')
 		self.settings = settings.items
 
 		self.setTheme(self.settings['theme_name'])

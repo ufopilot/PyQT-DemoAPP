@@ -2,6 +2,7 @@ import platform
 import json
 import os
 import sys
+from functools import partial
 
 if platform.system() == "Windows":
 	#try:
@@ -63,5 +64,3 @@ else:
 #from PySide6.QtSvg import QSvgWidget
 
 
-
-from functools import partial

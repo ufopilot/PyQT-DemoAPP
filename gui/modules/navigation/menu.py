@@ -1,9 +1,10 @@
-from gui.functions.menu_settings import MenuSettings
-from gui.functions.ui_functions import *
-
 
 from qt_core import *
 from gui.content import *
+
+from gui.functions.settings import Settings
+from gui.functions.ui_functions import UIFunctions
+
 
 LASTCONTENT = ""
 
@@ -12,9 +13,9 @@ class SetMenu(QWidget):
 		super(self.__class__, self).__init__(parent)
 		#self.setupUi(self)
 		self.ui = parent
-		settings = Settings()
+		settings = Settings('ui')
 		self.settings = settings.items
-		menu_settings = MenuSettings()
+		menu_settings = Settings('menu')
 		self.menu_data = menu_settings.items
 		self.setupMenu()
 		
