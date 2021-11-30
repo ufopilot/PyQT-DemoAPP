@@ -16,6 +16,7 @@ class TitleBar(QWidget):
 			self.windowicons.hide()
 			
 		self.ui.restorewindow.hide()
+		
 		self.ui.restorewindow.clicked.connect(self.ui.maximizewindow.show)
 		self.ui.restorewindow.clicked.connect(self.ui.restorewindow.hide)
 		self.ui.restorewindow.clicked.connect(self.ui.window().showNormal)
@@ -26,11 +27,11 @@ class TitleBar(QWidget):
 		
 		self.ui.minimizewindow.clicked.connect(self.ui.window().showMinimized)
 		self.ui.closewindow.clicked.connect(self.ui.window().close)
+		self.ui.appDescription.mouseDoubleClickEvent = self.maximize_restore
 
-	def mouseDoubleClickEvent(self, event):
+	def maximize_restore(self, event=None):
 		if self.settings['custom_title_bar']:
-			if self.ui.appDescription.underMouse():
-				if self.ui.window().isMaximized():
-					QTimer.singleShot(0, self.ui.restorewindow.clicked.emit)
-				else:
-					QTimer.singleShot(0, self.ui.maximizewindow.clicked.emit)
+			if self.ui.window().isMaximized():
+				QTimer.singleShot(0, self.ui.restorewindow.clicked.emit)
+			else:
+				QTimer.singleShot(0, self.ui.maximizewindow.clicked.emit)

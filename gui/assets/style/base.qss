@@ -132,13 +132,17 @@ LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{{
 }}
 */
 #controllerPanel5{{
-    border-top: 1px solid {header_bg};
+    border-bottom: 1px solid {header_bg};
 }}
 #controllerPanel1, #controllerPanel2{{
     border-left: 1px solid {header_bg};
 }}
 
 #controllerPanel3, #controllerPanel4, #controllerPanel5, #controllerPanel6{{
+    border-right: 1px solid {header_bg};
+}}
+
+#panel6{{
     border-right: 1px solid {header_bg};
 }}
 
