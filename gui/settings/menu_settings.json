@@ -32,32 +32,6 @@
         }]
     },
     {   
-        "name": "Dashboard",
-        "icon": "activity.svg",
-        "children":[{
-            "name":"Modern",
-            "icon": {
-                "expanded": "chevron-down.svg",
-                "collapsed": "chevron-right.svg"
-            },
-            "children":[{
-                "name":"Modern3",
-                "icon": "circle.svg",
-                "widget":"TemplatePage"
-            },
-            {
-                "name":"Modern4",
-                "icon": "circle.svg",
-                "widget":"TemplatePage"
-            }]
-        },
-        {
-            "name":"Modern2",
-            "icon": "circle.svg",
-            "widget":"TemplatePage"
-        }]
-    },
-    {   
         "name": "Streams",
         "icon": "folder.svg",
         "children":[{
