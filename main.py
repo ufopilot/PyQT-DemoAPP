@@ -50,8 +50,8 @@ class MainWidget(Base_Class, Gen_Class):
 		##########################################################################################
 		# MAIN-UI BTNS
 		##########################################################################################
-		self.reloadStylesheet.clicked.connect(lambda: SetStyle(self).setTheme(self.settings['theme_name']))
-		self.reloadApp.clicked.connect(self.restart)
+		#self.reloadStylesheet.clicked.connect(lambda: SetStyle(self).setTheme(self.settings['theme_name']))
+		#self.reloadApp.clicked.connect(self.restart)
 		SetControllerButtons(self)
 		####################################################################################
 		# SET STYLE AND THEME
