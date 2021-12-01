@@ -1,9 +1,9 @@
 {
     "colors": {
-        "main_bg": "#0b0f13",
-        "header_bg": "#03a9f4",
-        "footer_bg": "#1b202c",
-        "controller_bg": "#1b202c",
+        "main_bg": "#1b202c",
+        "header_bg": "#0b0f13",
+        "footer_bg": "#0b0f13",
+        "controller_bg": "#13161f",
         "scrollbar_bg": "#1e2229",
         "scrollbar_handle_bg": "#303647",
         "scrollbar_hover_bg": "#37c886",

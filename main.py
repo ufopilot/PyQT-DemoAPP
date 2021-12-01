@@ -182,13 +182,9 @@ class MainWidget(Base_Class, Gen_Class):
 if __name__ == '__main__':
 	import sys
 	app = QApplication(sys.argv)
-	app.setStyle("fusion")
 	window = MainWidget()
-	#window.setWindowFlags(Qt.FramelessWindowHint)
-	#window.setAttribute(Qt.WA_NoSystemBackground, True)
-	#window.setAttribute(Qt.WA_TranslucentBackground, True)
 	window.show()
 
 	#window.showMaximized()
 	sys.exit(app.exec_())
-# https://www.pythonguis.com/tutorials/pyqt-basic-widgets/
+

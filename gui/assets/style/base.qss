@@ -99,8 +99,9 @@ FooterBar{{
 #controllerPanel5, 
 #controllerPanel6{{
  	background: {controller_bg};
-	border-top: 1px solid {main_bg};
+	/*border-top: 1px solid {main_bg};
 	border-bottom: 1px solid {controller_bg};
+	*/
     border-right: 1px solid {main_bg};
 	
 }}
@@ -210,20 +211,23 @@ QScrollBar::handle:hover:horizontal {{
 /*******************************************/
 /* TREEVIEW                                */
 /*******************************************/
-QTreeView{{
+QTreeView, QTreeWidget{{
     alternate-background-color: {table_alternate};
 	background:  {main_bg};
+	border: none;
 }}
 
 QTreeView::Item{{
     height:20px;
 }}
 
-QHeaderView::section {{
+QHeaderView::section, QHeaderWidget::section {{
     color: #37c886;
 	font-weight: bold;
-    background: {controller_bg};
-	padding: 5px;	
+    background: {main_bg};
+	padding: 2px;	
+	border: none;
+	border-bottom: 1px solid {header_bg};
 }}
 /*******************************************/
 /* TOOLTIP                            */
@@ -276,7 +280,7 @@ QTabBar::tab:selected {{
 #panel4 QTabWidget::pane {{
 	border: 1px solid {tab_pane_bg};
 	top:-1px;
-	background: #ddd;
+	background: transparent;
 }}
 
 #panel4 QTabWidget::pane QLabel {{
@@ -363,8 +367,16 @@ QProgressBar{{
 /*******************************************/
 /* SCROLLAREA                            */
 /*******************************************/
-QScrollArea, #scrollAreaWidgetContents{{
-    background: #191e29;
+QScrollArea, #scrollArea2, #scrollArea1, #scrollArea2 QFrame, #scrollArea1 QFrame{{
+	border: none
+}}
+
+#scrollAreaWidgetContents{{
+    background: {main_bg};
+    border: 1px solid {main_bg};
+}}
+#scrollAreaWidgetContents2{{
+    background: {main_bg};
     border: 1px solid {main_bg};
 }}
 /*******************************************/
@@ -402,14 +414,14 @@ CONTENT
 
 #pageHeader QLabel{{
 	border-top: 1px solid #383a42;
-	border-bottom: 1px solid #0e1016;
+	border-bottom: 1px solid {header_bg};
 	/*color: #37c886;*/
 	font-weight: bold;
-    background: {page_header_bg};
+    background: {main_bg};
 	padding-right: 30px;	
 	font-style: italic;
 	color: #8a95aa;
-	margin-left: 1px;
+	
 }}
 
 /*

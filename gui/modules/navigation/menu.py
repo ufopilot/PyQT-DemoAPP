@@ -27,12 +27,13 @@ class SetMenu(QWidget):
 		sizePolicy.setVerticalStretch(0)
 		sizePolicy.setHeightForWidth(self.ui.menuTree.sizePolicy().hasHeightForWidth())
 		self.ui.menuTree.setSizePolicy(sizePolicy)
-		self.ui.menuTree.setHeaderLabels(['Navigation2', 'target'])
+		self.ui.menuTree.setHeaderLabels(['Navigation', 'target'])
+		self.ui.menuTree.setHeaderHidden(True);
 		self.ui.menuTree.setAnimated(True)
 		self.ui.menuTree.setColumnHidden(1, True)
 		
 		#self.tree.setColumnWidth(0,400)
-		#self.tree.header().setDefaultSectionSize(180)
+		#self.ui.menuTree.header().setDefaultSectionSize(0)
 	  	#self.tree.expandAll()
 		self.build_menu(data=self.menu_data, parent=self.ui.menuTree)
 		self.ui.menuTree.itemClicked.connect(self.onItemClicked)
