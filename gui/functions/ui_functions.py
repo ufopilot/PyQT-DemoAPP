@@ -47,18 +47,47 @@ class UIFunctions():
 			base_stylesheet = reader.read()
 			colors = theme_settings['colors']
 			formated_stylesheet = base_stylesheet.format(
-				main_bg = colors['main_bg'],
+				panel_bg = colors['panel_bg'],
+				panel_darker_bg = colors['panel_darker_bg'],
+				panel_lighter_bg = colors['panel_lighter_bg'],
+				panel_text = colors['panel_text'],
+				panel_darker_text = colors['panel_darker_text'],
+				panel_lighter_text = colors['panel_lighter_text'],
 				header_bg = colors['header_bg'],
+				header_darker_bg = colors['header_darker_bg'],
+				header_lighter_bg = colors['header_lighter_bg'],
+				header_text = colors['header_text'],
+				header_darker_text = colors['header_darker_text'],
+				header_lighter_text = colors['header_lighter_text'],
+				
 				footer_bg = colors['footer_bg'],
+				footer_darker_bg = colors['footer_darker_bg'],
+				footer_lighter_bg = colors['footer_lighter_bg'],
+				footer_text = colors['footer_text'],
+				footer_darker_text = colors['footer_darker_text'],
+				footer_lighter_text = colors['footer_lighter_text'],
+				
 				controller_bg = colors['controller_bg'],
+				controller_darker_bg = colors['controller_darker_bg'],
+				controller_lighter_bg = colors['controller_lighter_bg'],
+				controller_text = colors['controller_text'],
+				controller_darker_text = colors['controller_darker_text'],
+				controller_lighter_text = colors['controller_lighter_text'],
+				
 				scrollbar_bg = colors['scrollbar_bg'],
 				scrollbar_handle_bg = colors['scrollbar_handle_bg'],
 				scrollbar_hover_bg = colors['scrollbar_hover_bg'],
 				table_alternate = colors['table_alternate'],
-				lineedit_bg = colors['lineedit_bg'],
 				tab_pane_bg = colors['tab_pane_bg'],
 				page_header_bg = colors['page_header_bg'],
-				table_header_bg = colors['table_header_bg']
+				table_header_bg = colors['table_header_bg'],
+				lineedit_radius = colors['lineedit_radius'],
+        		lineedit_border_size = colors['lineedit_border_size'],
+        		lineedit_color = colors['lineedit_color'],
+        		lineedit_selection_color = colors['lineedit_selection_color'],
+        		lineedit_bg_color = colors['lineedit_bg_color'],
+        		lineedit_bg_color_active = colors['lineedit_bg_color_active'],
+        		lineedit_context_color = colors['lineedit_context_color']
 			)
 
 			return formated_stylesheet

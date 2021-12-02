@@ -5,3 +5,4 @@ pyperclip==1.8.2
 PyQt5==5.15.4
 pyqt5-tools==5.15.4.3.2
 requests==2.26.0
+webcolors==1.3

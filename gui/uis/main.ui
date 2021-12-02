@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1855</width>
-    <height>716</height>
+    <height>838</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1378,6 +1378,9 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">border: 0px solid;</string>
+            </property>
             <layout class="QVBoxLayout" name="verticalLayout_9">
              <property name="spacing">
               <number>0</number>
@@ -1395,12 +1398,132 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QTabWidget" name="tabWidget">
+              <widget class="QTabWidget" name="themingsTabs">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+*{
+	background: #1b202c;
+	color: #fff;
+}
+
+
+QTabWidget::pane {
+    border: 0px solid #1b202c;
+	top:-1px;
+}
+
+/*
+QTabWidget::tab-bar {
+    background: #1b202c;
+	border: 1px solid #1b202c;
+	padding: 8px;
+	color: #37c886;
+	font-weight: bold;
+	width: 117px;
+}
+*/
+
+QTabBar::tab {
+	background: #1b202c;
+	border: 1px solid #13161f;
+	padding: 8px;
+	color: #37c886;
+	font-weight: bold;
+	width: 117px;
+  }
+
+QTabBar::scroller {width: 0px;}
+
+QTabBar::tab:selected {
+	background: #1b202c;
+	margin-bottom: -1px;
+	color: #dce1ec;
+	border-bottom: 2px solid #37c886;;
+}
+
+
+
+
+QTabBar::tab {
+	background: #1b202c;
+	border: 1px solid #1b202c;
+	padding: 8px;
+	color: #37c886;
+	font-weight: bold;
+	width: 117px;
+}
+
+
+QFrame{ 
+    border: 0px solid;
+}
+
+
+QPushButton{
+	border: 2px solid teal;
+	border-radius: 12px;
+}
+
+QPushButton:hover{
+	border: 3px solid cyan;
+}
+
+QPushButton:checked{
+	border: 4px solid cyan;
+}
+
+#headerBgColor1,#footerBgColor1,#controllerBgColor1,#panelBgColor1{background: #0b0f13;}
+#headerBgColor2,#footerBgColor2,#controllerBgColor2,#panelBgColor2{background: #1b202c;}
+#headerBgColor3,#footerBgColor3,#controllerBgColor3,#panelBgColor3{background: #13161f;}
+#headerBgColor4,#footerBgColor4,#controllerBgColor4,#panelBgColor4{background: #343a40;}
+#headerBgColor5,#footerBgColor5,#controllerBgColor5,#panelBgColor5{background: #6c757d;}
+#headerBgColor6,#footerBgColor6,#controllerBgColor6,#panelBgColor6{background: #007bff;}
+#headerBgColor7,#footerBgColor7,#controllerBgColor7,#panelBgColor7{background: #20c997;}
+#headerBgColor8,#footerBgColor8,#controllerBgColor8,#panelBgColor8{background: #ff8f00;}
+#headerBgColor9,#footerBgColor9,#controllerBgColor9,#panelBgColor9{background: #f8f9fa;}
+#headerBgColor10,#footerBgColor10,#controllerBgColor10,#panelBgColor10{background: #6f42c1;}
+
+#iconBgColor1{ background: aqua; }
+#iconBgColor2{ background: black; }
+#iconBgColor3{ background: blue; }
+#iconBgColor4{ background: yellow; }
+#iconBgColor5{ background: gray; }
+#iconBgColor6{ background: green; }
+#iconBgColor7{ background: magenta; }
+#iconBgColor8{ background: white; }
+#iconBgColor9{ background: purple; }
+#iconBgColor10{ background: red; }
+
+/*
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #ffffff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+*/
+</string>
                </property>
                <property name="tabShape">
                 <enum>QTabWidget::Rounded</enum>
@@ -1456,8 +1579,8 @@
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>245</width>
-                         <height>749</height>
+                         <width>270</width>
+                         <height>736</height>
                         </rect>
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_19">
@@ -1544,6 +1667,9 @@
                                    </property>
                                    <property name="text">
                                     <string/>
+                                   </property>
+                                   <property name="checkable">
+                                    <bool>true</bool>
                                    </property>
                                   </widget>
                                  </item>
@@ -1998,6 +2124,9 @@
                                      <width>24</width>
                                      <height>24</height>
                                     </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
                                    </property>
                                    <property name="text">
                                     <string/>
@@ -2629,7 +2758,7 @@
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor1_2">
+                                  <widget class="QPushButton" name="iconBgColor1">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2648,7 +2777,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor2_2">
+                                  <widget class="QPushButton" name="iconBgColor2">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2667,7 +2796,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor3_2">
+                                  <widget class="QPushButton" name="iconBgColor3">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2686,7 +2815,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor4_2">
+                                  <widget class="QPushButton" name="iconBgColor4">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2705,7 +2834,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor5_2">
+                                  <widget class="QPushButton" name="iconBgColor5">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2754,7 +2883,7 @@
                                   <number>0</number>
                                  </property>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor6_2">
+                                  <widget class="QPushButton" name="iconBgColor6">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2773,7 +2902,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor7_2">
+                                  <widget class="QPushButton" name="iconBgColor7">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2792,7 +2921,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor8_2">
+                                  <widget class="QPushButton" name="iconBgColor8">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2811,7 +2940,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor9_2">
+                                  <widget class="QPushButton" name="iconBgColor9">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2830,7 +2959,7 @@
                                   </widget>
                                  </item>
                                  <item>
-                                  <widget class="QPushButton" name="controllerBgColor10_2">
+                                  <widget class="QPushButton" name="iconBgColor10">
                                    <property name="minimumSize">
                                     <size>
                                      <width>24</width>
@@ -2988,8 +3117,8 @@
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>262</width>
-                         <height>616</height>
+                         <width>270</width>
+                         <height>736</height>
                         </rect>
                        </property>
                        <property name="styleSheet">
@@ -3409,14 +3538,160 @@
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QFrame" name="footerframe3">
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="footerActions">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/github-inverted.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/github-inverted.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/settings-gear.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/settings-gear.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/code.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/code.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/clear-all.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/clear-all.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/account.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/account.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_6">
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources.qrc">
+                 <normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/bell.svg</normaloff>:/vscode-icons-dark/gui/resources/vscode-icons/icons/dark/bell.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
          </layout>

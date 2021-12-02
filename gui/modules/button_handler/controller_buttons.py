@@ -12,6 +12,8 @@ class SetControllerButtons(QWidget):
 		self.ui = parent
 		settings = Settings('ui')
 		self.settings = settings.items
+		theme_settings = Settings('theme')
+		self.theme_settings = theme_settings.items
 		self.handle_ui_btns()
 		self.toggle_all()
 		
@@ -111,13 +113,13 @@ class SetControllerButtons(QWidget):
 				endValue = maximum
 				panel_title_style = ""
 				#panel_title.setStyleSheet("")
-				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_close, "gray")))
+				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_close, self.theme_settings['colors']['icon_bg'])))
 			else:
 				self._panels_closed.append(panel_name)
 				endValue = minimum
 				panel_title_style = "color: #333"	
 				#panel_title.setStyleSheet("color: #333")
-				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_expand, "gray")))
+				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_expand, self.theme_settings['colors']['icon_bg'])))
 			button.setIcon(icon)
 			
 			self.animation = QPropertyAnimation(panel, bytes(size_option, encoding='utf-8'))

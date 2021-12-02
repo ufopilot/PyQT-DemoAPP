@@ -1,9 +1,29 @@
 {
     "colors": {
-        "main_bg": "#1b202c",
-        "header_bg": "#0b0f13",
-        "footer_bg": "#0b0f13",
-        "controller_bg": "#13161f",
+        "panel_bg": "#f8f9fa",
+        "panel_darker_bg": "#d8d9d9",
+        "panel_lighter_bg": "#ffffff",
+        "panel_text": "#f8f9fa",
+        "panel_darker_text": "#2c2c2c",
+        "panel_lighter_text": "#3b3b3b",
+        "header_bg": "#20c997",
+        "header_darker_bg": "#1caf83",
+        "header_lighter_bg": "#25e7ae",
+        "header_text": "#20c997",
+        "header_darker_text": "#cfcfcf",
+        "header_lighter_text": "#ffffff",
+        "footer_bg": "#007bff",
+        "footer_darker_bg": "#006bde",
+        "footer_lighter_bg": "#268fff",
+        "footer_text": "#007bff",
+        "footer_darker_text": "#cfcfcf",
+        "footer_lighter_text": "#ffffff",
+        "controller_bg": "#007bff",
+        "controller_darker_bg": "#006bde",
+        "controller_lighter_bg": "#268fff",
+        "controller_text": "#007bff",
+        "controller_darker_text": "#cfcfcf",
+        "controller_lighter_text": "#ffffff",
         "scrollbar_bg": "#1e2229",
         "scrollbar_handle_bg": "#303647",
         "scrollbar_hover_bg": "#37c886",
@@ -12,7 +32,15 @@
         "table_alternate": "#191e29",
         "lineedit_bg": "#2c313c",
         "tab_pane_bg": "#391e29",
-        "text1": "#fff"
+        "icon_bg": "blue",
+        "text1": "#fff",
+        "lineedit_radius": 8,
+        "lineedit_border_size": 2,
+        "lineedit_color": "#FFF",
+        "lineedit_selection_color": "#FFF",
+        "lineedit_bg_color": "#333",
+        "lineedit_bg_color_active": "#fff",
+        "lineedit_context_color": "#00ABE8"
     },
     "_colors": {
         "main_bg": "#1b202c",
@@ -27,6 +55,7 @@
         "table_alternate": "#191e29",
         "lineedit_bg": "#2c313c",
         "tab_pane_bg": "#391e29",
+        "icon_bg": "",
         "text1": "#fff"
     }
 }
