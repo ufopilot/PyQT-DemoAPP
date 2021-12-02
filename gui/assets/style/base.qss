@@ -287,6 +287,7 @@ QTabBar::tab {{
 	border: 1px solid {panel_lighter_bg};
 	padding: 8px;
 	font-weight: bold;
+	min-width: 100px;
   }}
 
 #panel3 QTabBar::scroller {{width: 0px;}}
