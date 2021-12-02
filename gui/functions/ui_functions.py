@@ -1,5 +1,6 @@
 
 from qt_core import *
+import re
 
 class UIFunctions():
 	def __init__(self):
@@ -43,8 +44,10 @@ class UIFunctions():
 		return QIcon(img)
 
 	def getAppTheme(self, theme_settings):
+		regex = r"\w+\((\w+)\)"
 		with open(UIFunctions().resource_path(f'./gui/assets/style/base.qss'), "r", encoding='utf-8') as reader:
-			base_stylesheet = reader.read()
+			base_stylesheet = reader.read().replace("{","{{").replace("}","}}")
+			base_stylesheet = re.sub(regex, '{\\1}', base_stylesheet)
 			colors = theme_settings['colors']
 			formated_stylesheet = base_stylesheet.format(
 				panel_bg = colors['panel_bg'],

@@ -1,3 +1,4 @@
+from PyQt5.QtWidgets import QGroupBox
 from qt_core import *
 from gui.content import *
 
@@ -13,9 +14,9 @@ color_names = {
 	'#ff0000': 'red',
 	'#800000': 'red',
 	'#00ff00': 'green',
-	'#008000': 'green',
+	'#008000': 'dark green',
 	'#0000ff': 'blue',
-	'#000080': 'blue',
+	'#000080': 'dark blue',
 	'#ffff00': 'yellow',
 	'#808000': 'olive',
 	'#00ffff': 'cyan',
@@ -31,7 +32,13 @@ class Theming(QWidget):
 		#settings = Settings('ui')
 		#self.settings = settings.items
 		self.theme_settings = Settings('theme')
+
 		#self.theme_settings = settings.items 
+		#for c, n in color_names.items():
+		#	#self.ui.themeColors.addItem(c)
+		#	self.ui.themeColors.addItem(QIcon(UIFunctions().set_svg_icon("circle.svg", n)), n)
+		
+		#self.ui.themeColors.addItem(color_names)
 
 		for button in self.ui.findChildren(QAbstractButton):
 			if "BgColor" in button.objectName():
@@ -49,12 +56,13 @@ class Theming(QWidget):
 
 		color = button.palette().color(QPalette.Background).name()
 		qcolor = QColor(color)
-		darker = qcolor.darker(115).name()
-		lighter = qcolor.lighter(115).name()
-		print(darker, color, lighter)
-
+		middle = qcolor.darker(300).name()
+		darker = qcolor.darker(150).name()
+		lighter = qcolor.lighter(50).name()
+		
 		typos = re.sub('BgColor.*', '', button.objectName())
-		print(typos)
+		print("{}: darker {}, middle {}, color {}, lighter {}".format(typos, darker, middle, color, lighter))
+
 		if typos in ("header", "panel", "footer", "controller"):
 			self.theme_settings.items['colors'][typos+'_bg'] = color
 			self.theme_settings.items['colors'][typos+'_darker_bg'] = darker
@@ -65,9 +73,10 @@ class Theming(QWidget):
 			else:
 				text_color = "#eee"
 			qcolor = QColor(text_color)
-			darker = qcolor.darker(115).name()
-			lighter = qcolor.lighter(115).name()
-			self.theme_settings.items['colors'][typos+'_text'] = color
+			middle = qcolor.darker(300).name()
+			darker = qcolor.darker(150).name()
+			lighter = qcolor.lighter(50).name()
+			self.theme_settings.items['colors'][typos+'_text'] = text_color
 			self.theme_settings.items['colors'][typos+'_darker_text'] = darker
 			self.theme_settings.items['colors'][typos+'_lighter_text'] = lighter
 		
