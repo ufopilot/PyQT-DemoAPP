@@ -94,6 +94,8 @@ QLabel#appLogo{
 #windowicons QPushButton#closewindow:hover{ 
 	background: red;
 }
+
+*/
 /*******************************************/
 /* PANELS                                  */
 /*******************************************/
@@ -378,7 +380,7 @@ QTableCornerButton::section{
 	border-bottom: 1px solid var(content[border]);
 	/*color: #37c886;*/
 	font-weight: bold;
-    background: var(content[header]);
+    background: var(content[background]);
 	padding-right: 30px;	
 	font-style: italic;
 	color: var(content[first_text]);

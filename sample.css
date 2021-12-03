@@ -1,5 +1,6 @@
+Windows pyqt5
 * { 
-	color: var(content[first_text]); 
+	color: #aaa; 
 	font-size: 14px;
 }
 
@@ -8,23 +9,23 @@
 *******************************************/
 #mainFrame{
 	border: 1px solid #000;
-	background:  var(content[background]);
+	background:  #000;
 }
 
 /* HEADER                                  */
 /*-----------------------------------------*/
 #logo{
-	background:  var(header[background]);
+	background:  #444;
 	
 }
 
 #mainHeader{
-	background:  var(header[background]);
-	color: var(header[second_text])
+	background:  #444;
+	color: #bbb
 }
 
 #mainHeader QLabel{
-	background:  var(header[background]);
+	background:  #444;
 }
 
 #appTitle{
@@ -32,11 +33,11 @@
 }
 
 #appDescription, #appTitle{
-	color: var(header[second_text]);
+	color: #bbb;
 }
 
 #windowicons QLabel{
-	background:  var(header[background]); 
+	background:  #444; 
 }
 
 #windowiconsvar{
@@ -50,7 +51,7 @@
 #windowicons QPushButton#maximizewindow:hover,
 #windowicons QPushButton#minimizewindow:hover{ 
 	border: none;
-	background: var(header[hover]);
+	background: #888;
 }
 
 #windowicons QPushButton#closewindow:hover{ 
@@ -58,7 +59,7 @@
 }
 
 QLabel#appLogo{
-	background:  var(header[background]);
+	background:  #444;
 }
 /*******************************************/
 /* FOOTER                                  */
@@ -68,16 +69,16 @@ QLabel#appLogo{
 }
 
 #mainFooter{
-	background:  var(footer[background]);
+	background:  #111;
 }
 
 #footerActions QPushButton{ 
 	border: none;
-	background: var(footer[background]);
+	background: #111;
 }
 
 #footerActions QPushButton:hover{
-    background: var(footer[hover]);
+    background: #000;
 }
 
 
@@ -89,7 +90,7 @@ QLabel#appLogo{
 }
 #windowicons QPushButton:hover{ 
 	border: none;
-	background: var(content[background]);
+	background: #000;
 }
 #windowicons QPushButton#closewindow:hover{ 
 	background: red;
@@ -104,8 +105,8 @@ QLabel#appLogo{
 #controllerPanel4, 
 #controllerPanel5, 
 #controllerPanel6{
- 	background: var(controller[background]);
-    border-right: 1px solid var(controller[border]);
+ 	background: blue;
+    border-right: 1px solid #999;
 	
 }
 
@@ -125,7 +126,7 @@ QLabel#appLogo{
 #controllerPanel4 QPushButton:hover, 
 #controllerPanel5 QPushButton:hover, 
 #controllerPanel6 QPushButton:hover{
-	background: var(controller[hover]);
+	background: #000;
 }
 
 LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
@@ -136,23 +137,23 @@ LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
 }
 
 #panel1, #panel2, #panel3, #panel5, #panel6{
- 	background: var(content[background]);
+ 	background: #000;
 	color: #fff;
 }
 
 #controllerPanel5{
-    border-bottom: 1px solid var(controller[border]);
+    border-bottom: 1px solid #999;
 }
 #controllerPanel1, #controllerPanel2{
-    border-left: 1px solid var(controller[border]);
+    border-left: 1px solid #999;
 }
 
 #controllerPanel3, #controllerPanel4, #controllerPanel5, #controllerPanel6{
-    border-right: 1px solid var(controller[border]);
+    border-right: 1px solid #999;
 }
 
 #panel6{
-    border-right: 1px solid var(controller[border]);
+    border-right: 1px solid #999;
 }
 
 #controllerPanel1 QFrame,
@@ -168,15 +169,15 @@ LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
 /*******************************************/
 QPushButton{
 	padding: 5px;
-    background: var(content[header]);
-	border: 1px solid var(content[border]);
-	color: var(content[second_text]);
+    background: #666;
+	border: 1px solid #999;
+	color: #bbb;
 }
 
  QPushButton:hover{
-    background: var(content[hover]);
-	border: 1px solid var(content[border]);
-	color: var(content[first_text]);
+    background: #000;
+	border: 1px solid #999;
+	color: #aaa;
 }
 
 
@@ -184,12 +185,12 @@ QPushButton{
 /* SCROLLBAR                               */
 /*******************************************/
 QScrollBar {
-    background: var(content[border]);
+    background: #999;
     width: 8px;   
 }
 
 QScrollBar::handle {
-    background:  var(content[header]);
+    background:  #666;
 }
 
 QScrollBar::add-line:vertical, 
@@ -206,15 +207,15 @@ QScrollBar::sub-line:horizontal  {
 
 QScrollBar::handle:hover:vertical, 
 QScrollBar::handle:hover:horizontal {
-    /*background: var(content[background]);*/
+    /*background: #000;*/
     border-radius: 3px;
 }
 /*******************************************/
 /* TREEVIEW                                */
 /*******************************************/
 QTreeView, QTreeWidget{
-    alternate-background-color: var(content[background_alternate]);
-	background:  var(content[background]);
+    alternate-background-color: #333;
+	background:  #000;
 	border: none;
 }
 
@@ -225,10 +226,10 @@ QTreeView::Item{
 QHeaderView::section, QHeaderWidget::section {
     color: #37c886;
 	font-weight: bold;
-    background: var(content[background]);
+    background: #000;
 	padding: 2px;	
 	border: none;
-	border-bottom: 1px solid var(content[border]);
+	border-bottom: 1px solid #999;
 }
 /*******************************************/
 /* TOOLBOX                            */
@@ -239,7 +240,7 @@ QHeaderView::section, QHeaderWidget::section {
 /* TOOLTIP                            */
 /*******************************************/
 QToolTip { 
-	background-color: var(content[header]); 
+	background-color: #666; 
 	color: #fff; 
 	border: 1px solid #37c886; 
 	border-radius: 3px;
@@ -250,23 +251,23 @@ QToolTip {
 /*******************************************/
 /*
 QLineEdit{
-    background-color: var(content[background]);
+    background-color: #000;
     color: #dce1ec;
 }
 */
 /*
 QLineEdit {
-	background-color: var(content[background_alternate]);
+	background-color: #333;
 	border: 1px solid transparent;
 	padding-left: 10px;
     padding-right: 10px;
-	selection-background-color: var(content[hover]);
-    color: var(content[third_text]);
+	selection-background-color: #000;
+    color: #ccc;
 }
 QLineEdit:focus {
-	border: 1px solid var(content[border]);
-    background-color: var(content[background_alternate]);
-	color: var(content[second_text]);
+	border: 1px solid #999;
+    background-color: #333;
+	color: #bbb;
 }
 */
 /*******************************************/
@@ -277,8 +278,8 @@ QLineEdit:focus {
 /* TABS                                    */
 /*******************************************/
 QTabBar::tab {
-	background: var(content[header]);
-	border: 1px solid var(content[border]);
+	background: #666;
+	border: 1px solid #999;
 	padding: 8px;
 	font-weight: bold;
 	min-width: 100px;
@@ -289,17 +290,17 @@ QTabBar::tab {
 }
 
 QTabBar::tab:selected {
-	background: var(content[hover]);
+	background: #000;
 	margin-bottom: -1px;
 	color: #dce1ec;
-	border-bottom: 2px solid var(content[border]);
+	border-bottom: 2px solid #999;
 }
 
 QTabWidget::pane {
-	/*border: 1px solid var(content[background]);*/
+	/*border: 1px solid #000;*/
 	top:0px;
 	background: transparent;
-	border-top: 1px solid var(content[border]);
+	border-top: 1px solid #999;
 }
 /*******************************************/
 /* NAVIGATION MENU                         */
@@ -323,11 +324,11 @@ QTabWidget::pane {
 }
 
 #contentMenu QTreeWidget::item:hover {
-    background: var(content[hover]);
+    background: #000;
 }
 
 #contentMenu QTreeWidget::branch::vertical{
-	background: var(content[background]);
+	background: #000;
 }
 
 #contentMenu QTreeWidget::Item:!has-children:selected{
@@ -339,7 +340,7 @@ QTabWidget::pane {
 #contentMenu QTreeWidget::branch  {
     border-image: none;
     image: none;
-	background: var(content[background]);
+	background: #000;
     }
 
 /*******************************************/
@@ -350,38 +351,38 @@ QScrollArea, #scrollArea2, #scrollArea1, #scrollArea2 QFrame, #scrollArea1 QFram
 }
 
 #scrollAreaWidgetContents{
-    background: var(content[background]);
-    border: 1px solid var(content[background]);
+    background: #000;
+    border: 1px solid #000;
 }
 #scrollAreaWidgetContents2{
-    background: var(content[background]);
-    border: 1px solid var(content[background]);
+    background: #000;
+    border: 1px solid #000;
 }
 /*******************************************/
 /* TABLE                            */
 /*******************************************/
 QTableView, QTableWidget{
-	alternate-background-color: var(content[background_alternate]);
+	alternate-background-color: #333;
     border: 1px solid #222;
     color: #dce1ec;
-	background:  var(content[background]);
+	background:  #000;
 }
 
 QTableCornerButton::section{
-    background-color: var(content[header]);
+    background-color: #666;
     border-bottom: 1px solid #222;
     border-right: 1px solid #222;
     color: #8a95aa;
 }
 
 #pageHeader QLabel{
-	border-bottom: 1px solid var(content[border]);
+	border-bottom: 1px solid #999;
 	/*color: #37c886;*/
 	font-weight: bold;
-    background: var(content[header]);
+    background: #000;
 	padding-right: 30px;	
 	font-style: italic;
-	color: var(content[first_text]);
+	color: #aaa;
 	
 }
 
@@ -393,3 +394,6 @@ QTableCornerButton::section{
 	color: #fff;
 }
 
+
+content
+content

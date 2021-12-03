@@ -1,5 +1,4 @@
-import time
-from threading import Timer
+from PyQt5.QtWidgets import QGroupBox
 from qt_core import *
 from gui.content import *
 
@@ -30,12 +29,13 @@ class Theming(QWidget):
 		super(self.__class__, self).__init__(parent)
 		self.ui = parent
 		self.theme_settings = Settings('theme')
-		self.selectColors()
+		#self.selectColors()
 		for button in self.ui.findChildren(QAbstractButton):
 			if "MainColor" in button.objectName():
+				print(button.objectName())
 				button.setCursor(QCursor(Qt.PointingHandCursor))
 				button.setCheckable(True)
-				button.clicked.connect(self.getColorPalette)
+				button.clicked.connect(lambda: self.getColorPalette(button))
 		
 		List = ("HeaderColor", "FooterColor", "BorderColor", "HoverColor")
 		for button in self.ui.findChildren(QAbstractButton):
@@ -45,48 +45,16 @@ class Theming(QWidget):
 				button.clicked.connect(self.changeColor)
 				
 	def selectColors(self):
-		T = 0
-		D=1000
-		for comp in ("header", "footer", "controller", "content"):	
-			compString = comp+"MainColor"
-			color = self.theme_settings.items['theme'][comp]['background']
-			
-			for button in self.ui.findChildren(QAbstractButton):
-				if compString in button.objectName():
-					if color == button.palette().color(QPalette.Background).name():	
-						QTimer.singleShot(T, button.clicked.emit)
-						QTimer.singleShot(T, button.toggle)
-						QTimer.singleShot(D, partial(self.selectSubColors, comp))
-						
-						T += 100
-						D += 100
-
-	def selectSubColors(self, comp):
-		T = 0
-		if comp == "content":
-			subcomps = ("Header", "Footer", "Hover", "Border")
-		else:
-			subcomps = ("Hover", "Border")
-
-		for subcomp in subcomps:
-			color = self.theme_settings.items['theme'][comp][subcomp.lower()]
-			for i in range(1,5):
-				#item = comp+subcomp+"Color"+str(i)
-				#btn = eval(self.ui.comp+subcomp+"Color"+str(i))
-				btn = self.ui.findChild(QPushButton, f"{comp}{subcomp}Color{i}")
-				if color == btn.palette().color(QPalette.Background).name():
-					QTimer.singleShot(T, btn.clicked.emit)
-					QTimer.singleShot(T, btn.toggle)
-			T += 100		
-
-	#def setSelected(self, item):
+		self.setSelected(self.ui.headerMainColor1)	
+	
+	def setSelected(self, item):
 		#QTimer.singleShot(3000, lambda: item.toggle())
-		#self.getColorPaletteinit = True, button = item)
+		#self.getColorPalette(item, init = True)
 		#QTimer.singleShot(5000, item.clicked.emit)
-	#	print(item.objectName())
+		print(item.objectName())
 
-	def getColorPalette(self):
-		button = self.sender()
+	def getColorPalette(self, button, init = False):
+		#button = self.sender()
 		name = button.objectName()
 		parentFrame = button.parent().parent()
 		for btn in parentFrame.findChildren(QAbstractButton):
@@ -124,6 +92,13 @@ class Theming(QWidget):
 				except:
 					pass	
 				i += 1
+		
+		if init:
+			print("init")
+			return
+			
+		print(name)
+		return
 		self.theme_settings.items['theme'][self.typos(name)]['background'] = color
 		self.theme_settings.items['theme'][self.typos(name)]['background_alternate'] = colorList[2]
 		self.theme_settings.serialize()
@@ -139,7 +114,7 @@ class Theming(QWidget):
 				btn.toggle()
 		color = button.palette().color(QPalette.Background).name()
 		self.theme_settings.items['theme'][self.typos(name)][self.component(name)] = color
-		
+		print(self.typos(name), self.component(name), color)
 		self.theme_settings.serialize()
 		self.reloadStyle()
 

@@ -1,46 +1,4 @@
 {
-    "theme": {
-        "header": {
-            "background": "#007bff",
-            "hover": "#0052aa",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "background_alternate": "#0052aa",
-            "border": "#003d7f"
-        },
-        "footer": {
-            "background": "#5d5e67",
-            "hover": "#3e3f45",
-            "first_text": "#111",
-            "second_text": "#222",
-            "third_text": "#444",
-            "background_alternate": "#3e3f45",
-            "border": "#3e3f45"
-        },
-        "content": {
-            "background": "#1b202c",
-            "background_alternate": "#12151d",
-            "header": "#0e1016",
-            "footer": "#24272a",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "border": "#090b0f",
-            "hover": "#363a3e"
-        },
-        "controller": {
-            "background": "#dc3545",
-            "background_alternate": "#93232e",
-            "header": "#666",
-            "footer": "#888",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "border": "#dc3545",
-            "hover": "#090b0f"
-        }
-    },
     "colors": {
         "panel_bg": "#13161f",
         "panel_darker_bg": "#0d0f15",

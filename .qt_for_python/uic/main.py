@@ -31,7 +31,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1855, 838)
+        MainWindow.resize(1201, 838)
         MainWindow.setStyleSheet(u"")
         self.actionvvv = QAction(MainWindow)
         self.actionvvv.setObjectName(u"actionvvv")
@@ -673,6 +673,28 @@ class Ui_MainWindow(object):
 "#iconBgColor9{ background: purple; }\n"
 "#iconBgColor10{ background: red; }\n"
 "\n"
+"#contentMainColor1{ background:  #007bff;}\n"
+"#contentMainColor2{ background:  #6610f2;}\n"
+"#contentMainColor3{ background:  #6f42c1;}\n"
+"#contentMainColor4{ background:  #e83e8c;}\n"
+"#contentMainColor5{ background:  #dc3545;}\n"
+"#contentMainColor6{ background:  #fd7e14;}\n"
+"#contentMainColor7{ background:  #ffc107;}\n"
+"#contentMainColor8{ background:  #28a745;}\n"
+"#contentMainColor9{ background:  #20c997;}\n"
+"#contentMainColor10{ background: #17a2b8;}\n"
+"#contentMainColor11{ background: #ffffff;}\n"
+"#contentMainColor12{ background: #6c757"
+                        "d;}\n"
+"#contentMainColor13{ background: #343a40;}\n"
+"#contentMainColor14{ background: #5d5e67;}\n"
+"#contentMainColor15{ background: #0b0f13;}\n"
+"#contentMainColor16{ background: #1b202c;}\n"
+"#contentMainColor17{ background: #13161f;}\n"
+"#contentMainColor18{ background: #343a40;}\n"
+"#contentMainColor19{ background: #121212;}\n"
+"#contentMainColor20{ background: #313648;}\n"
+"#contentMainColor21{ background: #cccccc;}\n"
 "/*\n"
 "--blue: #007bff;\n"
 "--indigo: #6610f2;\n"
@@ -687,6 +709,8 @@ class Ui_MainWindow(object):
 "--white: #ffffff;\n"
 "--gray: #6c757d;\n"
 "--gray-dark: #343a40;\n"
+"--light: #f8f9fa;\n"
+"\n"
 "--primary: #007bff;\n"
 "--secondary: #6c757d;\n"
 "--success: #28a745;\n"
@@ -701,9 +725,9 @@ class Ui_MainWindow(object):
 "/*\n"
 "#11131b #13161f #161924\n"
 "panel\n"
-"#171c26 #1b202c"
-                        " #1f2533\n"
-"*/\n"
+"#171c26 #1b202c #1f2533\n"
+""
+                        "*/\n"
 "\n"
 "QToolBox::tab {\n"
 "    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
@@ -736,7 +760,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 253, 765))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 214, 765))
         self.verticalLayout_19 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.widget_4 = QWidget(self.scrollAreaWidgetContents)
@@ -1384,14 +1408,18 @@ class Ui_MainWindow(object):
         self.toolBox.setObjectName(u"toolBox")
         self.page = QWidget()
         self.page.setObjectName(u"page")
-        self.page.setGeometry(QRect(0, 0, 252, 610))
+        self.page.setGeometry(QRect(0, 0, 100, 30))
         self.frame_7 = QFrame(self.page)
         self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setGeometry(QRect(10, 10, 235, 123))
+        self.frame_7.setGeometry(QRect(0, 0, 251, 120))
+        self.frame_7.setMinimumSize(QSize(0, 120))
+        self.frame_7.setMaximumSize(QSize(16777215, 120))
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.verticalLayout_23 = QVBoxLayout(self.frame_7)
+        self.verticalLayout_23.setSpacing(0)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(0, 9, 0, 9)
         self.label_17 = QLabel(self.frame_7)
         self.label_17.setObjectName(u"label_17")
         self.label_17.setMaximumSize(QSize(16777215, 40))
@@ -1495,204 +1523,1288 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.panelsBackground_12)
 
-        self.frame_8 = QFrame(self.page)
+        self.frame_15 = QFrame(self.page)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setGeometry(QRect(0, 140, 252, 48))
+        self.frame_15.setMaximumSize(QSize(16777213, 48))
+        self.frame_15.setFrameShape(QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_31 = QHBoxLayout(self.frame_15)
+        self.horizontalLayout_31.setSpacing(0)
+        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
+        self.horizontalLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_19 = QFrame(self.frame_15)
+        self.panelsBackground_19.setObjectName(u"panelsBackground_19")
+        self.panelsBackground_19.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_19.setStyleSheet(u"")
+        self.panelsBackground_19.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_32 = QHBoxLayout(self.panelsBackground_19)
+        self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
+        self.label_25 = QLabel(self.panelsBackground_19)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_32.addWidget(self.label_25)
+
+
+        self.horizontalLayout_31.addWidget(self.panelsBackground_19)
+
+        self.panelsBackground_20 = QFrame(self.frame_15)
+        self.panelsBackground_20.setObjectName(u"panelsBackground_20")
+        self.panelsBackground_20.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_20.setStyleSheet(u"")
+        self.panelsBackground_20.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_20.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_33 = QHBoxLayout(self.panelsBackground_20)
+        self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
+        self.headerBgColor4_11 = QPushButton(self.panelsBackground_20)
+        self.headerBgColor4_11.setObjectName(u"headerBgColor4_11")
+        self.headerBgColor4_11.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_11.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_33.addWidget(self.headerBgColor4_11)
+
+        self.headerBgColor5_10 = QPushButton(self.panelsBackground_20)
+        self.headerBgColor5_10.setObjectName(u"headerBgColor5_10")
+        self.headerBgColor5_10.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_10.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_33.addWidget(self.headerBgColor5_10)
+
+        self.headerBgColor4_12 = QPushButton(self.panelsBackground_20)
+        self.headerBgColor4_12.setObjectName(u"headerBgColor4_12")
+        self.headerBgColor4_12.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_12.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_33.addWidget(self.headerBgColor4_12)
+
+        self.headerBgColor3_11 = QPushButton(self.panelsBackground_20)
+        self.headerBgColor3_11.setObjectName(u"headerBgColor3_11")
+        self.headerBgColor3_11.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_11.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_33.addWidget(self.headerBgColor3_11)
+
+
+        self.horizontalLayout_31.addWidget(self.panelsBackground_20)
+
+        self.frame_16 = QFrame(self.page)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setGeometry(QRect(0, 200, 252, 48))
+        self.frame_16.setMaximumSize(QSize(16777213, 48))
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_34 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_34.setSpacing(0)
+        self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
+        self.horizontalLayout_34.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_21 = QFrame(self.frame_16)
+        self.panelsBackground_21.setObjectName(u"panelsBackground_21")
+        self.panelsBackground_21.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_21.setStyleSheet(u"")
+        self.panelsBackground_21.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_21.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_35 = QHBoxLayout(self.panelsBackground_21)
+        self.horizontalLayout_35.setObjectName(u"horizontalLayout_35")
+        self.label_26 = QLabel(self.panelsBackground_21)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_35.addWidget(self.label_26)
+
+
+        self.horizontalLayout_34.addWidget(self.panelsBackground_21)
+
+        self.panelsBackground_22 = QFrame(self.frame_16)
+        self.panelsBackground_22.setObjectName(u"panelsBackground_22")
+        self.panelsBackground_22.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_22.setStyleSheet(u"")
+        self.panelsBackground_22.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_22.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_36 = QHBoxLayout(self.panelsBackground_22)
+        self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
+        self.headerBgColor4_13 = QPushButton(self.panelsBackground_22)
+        self.headerBgColor4_13.setObjectName(u"headerBgColor4_13")
+        self.headerBgColor4_13.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_13.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_36.addWidget(self.headerBgColor4_13)
+
+        self.headerBgColor5_11 = QPushButton(self.panelsBackground_22)
+        self.headerBgColor5_11.setObjectName(u"headerBgColor5_11")
+        self.headerBgColor5_11.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_11.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_36.addWidget(self.headerBgColor5_11)
+
+        self.headerBgColor4_14 = QPushButton(self.panelsBackground_22)
+        self.headerBgColor4_14.setObjectName(u"headerBgColor4_14")
+        self.headerBgColor4_14.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_14.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_36.addWidget(self.headerBgColor4_14)
+
+        self.headerBgColor3_12 = QPushButton(self.panelsBackground_22)
+        self.headerBgColor3_12.setObjectName(u"headerBgColor3_12")
+        self.headerBgColor3_12.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_12.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_36.addWidget(self.headerBgColor3_12)
+
+
+        self.horizontalLayout_34.addWidget(self.panelsBackground_22)
+
+        self.frame_18 = QFrame(self.page)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setGeometry(QRect(0, 260, 252, 48))
+        self.frame_18.setMaximumSize(QSize(16777213, 48))
+        self.frame_18.setFrameShape(QFrame.StyledPanel)
+        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_37 = QHBoxLayout(self.frame_18)
+        self.horizontalLayout_37.setSpacing(0)
+        self.horizontalLayout_37.setObjectName(u"horizontalLayout_37")
+        self.horizontalLayout_37.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_23 = QFrame(self.frame_18)
+        self.panelsBackground_23.setObjectName(u"panelsBackground_23")
+        self.panelsBackground_23.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_23.setStyleSheet(u"")
+        self.panelsBackground_23.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_23.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_38 = QHBoxLayout(self.panelsBackground_23)
+        self.horizontalLayout_38.setObjectName(u"horizontalLayout_38")
+        self.label_34 = QLabel(self.panelsBackground_23)
+        self.label_34.setObjectName(u"label_34")
+        self.label_34.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_38.addWidget(self.label_34)
+
+
+        self.horizontalLayout_37.addWidget(self.panelsBackground_23)
+
+        self.panelsBackground_24 = QFrame(self.frame_18)
+        self.panelsBackground_24.setObjectName(u"panelsBackground_24")
+        self.panelsBackground_24.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_24.setStyleSheet(u"")
+        self.panelsBackground_24.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_24.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_39 = QHBoxLayout(self.panelsBackground_24)
+        self.horizontalLayout_39.setObjectName(u"horizontalLayout_39")
+        self.headerBgColor4_15 = QPushButton(self.panelsBackground_24)
+        self.headerBgColor4_15.setObjectName(u"headerBgColor4_15")
+        self.headerBgColor4_15.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_15.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_39.addWidget(self.headerBgColor4_15)
+
+        self.headerBgColor5_12 = QPushButton(self.panelsBackground_24)
+        self.headerBgColor5_12.setObjectName(u"headerBgColor5_12")
+        self.headerBgColor5_12.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_12.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_39.addWidget(self.headerBgColor5_12)
+
+        self.headerBgColor4_16 = QPushButton(self.panelsBackground_24)
+        self.headerBgColor4_16.setObjectName(u"headerBgColor4_16")
+        self.headerBgColor4_16.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_16.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_39.addWidget(self.headerBgColor4_16)
+
+        self.headerBgColor3_13 = QPushButton(self.panelsBackground_24)
+        self.headerBgColor3_13.setObjectName(u"headerBgColor3_13")
+        self.headerBgColor3_13.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_13.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_39.addWidget(self.headerBgColor3_13)
+
+
+        self.horizontalLayout_37.addWidget(self.panelsBackground_24)
+
+        self.frame_19 = QFrame(self.page)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setGeometry(QRect(0, 320, 252, 48))
+        self.frame_19.setMaximumSize(QSize(16777213, 48))
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_40 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_40.setSpacing(0)
+        self.horizontalLayout_40.setObjectName(u"horizontalLayout_40")
+        self.horizontalLayout_40.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_25 = QFrame(self.frame_19)
+        self.panelsBackground_25.setObjectName(u"panelsBackground_25")
+        self.panelsBackground_25.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_25.setStyleSheet(u"")
+        self.panelsBackground_25.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_25.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_41 = QHBoxLayout(self.panelsBackground_25)
+        self.horizontalLayout_41.setObjectName(u"horizontalLayout_41")
+        self.label_35 = QLabel(self.panelsBackground_25)
+        self.label_35.setObjectName(u"label_35")
+        self.label_35.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_41.addWidget(self.label_35)
+
+
+        self.horizontalLayout_40.addWidget(self.panelsBackground_25)
+
+        self.panelsBackground_26 = QFrame(self.frame_19)
+        self.panelsBackground_26.setObjectName(u"panelsBackground_26")
+        self.panelsBackground_26.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_26.setStyleSheet(u"")
+        self.panelsBackground_26.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_26.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_42 = QHBoxLayout(self.panelsBackground_26)
+        self.horizontalLayout_42.setObjectName(u"horizontalLayout_42")
+        self.headerBgColor4_17 = QPushButton(self.panelsBackground_26)
+        self.headerBgColor4_17.setObjectName(u"headerBgColor4_17")
+        self.headerBgColor4_17.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_17.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_42.addWidget(self.headerBgColor4_17)
+
+        self.headerBgColor5_13 = QPushButton(self.panelsBackground_26)
+        self.headerBgColor5_13.setObjectName(u"headerBgColor5_13")
+        self.headerBgColor5_13.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_13.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_42.addWidget(self.headerBgColor5_13)
+
+        self.headerBgColor4_18 = QPushButton(self.panelsBackground_26)
+        self.headerBgColor4_18.setObjectName(u"headerBgColor4_18")
+        self.headerBgColor4_18.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_18.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_42.addWidget(self.headerBgColor4_18)
+
+        self.headerBgColor3_14 = QPushButton(self.panelsBackground_26)
+        self.headerBgColor3_14.setObjectName(u"headerBgColor3_14")
+        self.headerBgColor3_14.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_14.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_42.addWidget(self.headerBgColor3_14)
+
+
+        self.horizontalLayout_40.addWidget(self.panelsBackground_26)
+
+        self.frame_20 = QFrame(self.page)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setGeometry(QRect(0, 380, 252, 48))
+        self.frame_20.setMaximumSize(QSize(16777213, 48))
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_43 = QHBoxLayout(self.frame_20)
+        self.horizontalLayout_43.setSpacing(0)
+        self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
+        self.horizontalLayout_43.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_27 = QFrame(self.frame_20)
+        self.panelsBackground_27.setObjectName(u"panelsBackground_27")
+        self.panelsBackground_27.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_27.setStyleSheet(u"")
+        self.panelsBackground_27.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_27.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_44 = QHBoxLayout(self.panelsBackground_27)
+        self.horizontalLayout_44.setObjectName(u"horizontalLayout_44")
+        self.label_36 = QLabel(self.panelsBackground_27)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_44.addWidget(self.label_36)
+
+
+        self.horizontalLayout_43.addWidget(self.panelsBackground_27)
+
+        self.panelsBackground_28 = QFrame(self.frame_20)
+        self.panelsBackground_28.setObjectName(u"panelsBackground_28")
+        self.panelsBackground_28.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_28.setStyleSheet(u"")
+        self.panelsBackground_28.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_28.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_45 = QHBoxLayout(self.panelsBackground_28)
+        self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
+        self.headerBgColor4_19 = QPushButton(self.panelsBackground_28)
+        self.headerBgColor4_19.setObjectName(u"headerBgColor4_19")
+        self.headerBgColor4_19.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_19.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_45.addWidget(self.headerBgColor4_19)
+
+        self.headerBgColor5_14 = QPushButton(self.panelsBackground_28)
+        self.headerBgColor5_14.setObjectName(u"headerBgColor5_14")
+        self.headerBgColor5_14.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_14.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_45.addWidget(self.headerBgColor5_14)
+
+        self.headerBgColor4_20 = QPushButton(self.panelsBackground_28)
+        self.headerBgColor4_20.setObjectName(u"headerBgColor4_20")
+        self.headerBgColor4_20.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_20.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_45.addWidget(self.headerBgColor4_20)
+
+        self.headerBgColor3_15 = QPushButton(self.panelsBackground_28)
+        self.headerBgColor3_15.setObjectName(u"headerBgColor3_15")
+        self.headerBgColor3_15.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_15.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_45.addWidget(self.headerBgColor3_15)
+
+
+        self.horizontalLayout_43.addWidget(self.panelsBackground_28)
+
+        self.frame_21 = QFrame(self.page)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setGeometry(QRect(0, 440, 252, 48))
+        self.frame_21.setMaximumSize(QSize(16777213, 48))
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_46 = QHBoxLayout(self.frame_21)
+        self.horizontalLayout_46.setSpacing(0)
+        self.horizontalLayout_46.setObjectName(u"horizontalLayout_46")
+        self.horizontalLayout_46.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_29 = QFrame(self.frame_21)
+        self.panelsBackground_29.setObjectName(u"panelsBackground_29")
+        self.panelsBackground_29.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_29.setStyleSheet(u"")
+        self.panelsBackground_29.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_29.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_47 = QHBoxLayout(self.panelsBackground_29)
+        self.horizontalLayout_47.setObjectName(u"horizontalLayout_47")
+        self.label_37 = QLabel(self.panelsBackground_29)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_47.addWidget(self.label_37)
+
+
+        self.horizontalLayout_46.addWidget(self.panelsBackground_29)
+
+        self.panelsBackground_30 = QFrame(self.frame_21)
+        self.panelsBackground_30.setObjectName(u"panelsBackground_30")
+        self.panelsBackground_30.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_30.setStyleSheet(u"")
+        self.panelsBackground_30.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_30.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_48 = QHBoxLayout(self.panelsBackground_30)
+        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.headerBgColor4_21 = QPushButton(self.panelsBackground_30)
+        self.headerBgColor4_21.setObjectName(u"headerBgColor4_21")
+        self.headerBgColor4_21.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_21.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_48.addWidget(self.headerBgColor4_21)
+
+        self.headerBgColor5_15 = QPushButton(self.panelsBackground_30)
+        self.headerBgColor5_15.setObjectName(u"headerBgColor5_15")
+        self.headerBgColor5_15.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_15.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_48.addWidget(self.headerBgColor5_15)
+
+        self.headerBgColor4_22 = QPushButton(self.panelsBackground_30)
+        self.headerBgColor4_22.setObjectName(u"headerBgColor4_22")
+        self.headerBgColor4_22.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_22.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_48.addWidget(self.headerBgColor4_22)
+
+        self.headerBgColor3_16 = QPushButton(self.panelsBackground_30)
+        self.headerBgColor3_16.setObjectName(u"headerBgColor3_16")
+        self.headerBgColor3_16.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_16.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_48.addWidget(self.headerBgColor3_16)
+
+
+        self.horizontalLayout_46.addWidget(self.panelsBackground_30)
+
+        self.frame_22 = QFrame(self.page)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setGeometry(QRect(0, 500, 252, 48))
+        self.frame_22.setMaximumSize(QSize(16777213, 48))
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_49 = QHBoxLayout(self.frame_22)
+        self.horizontalLayout_49.setSpacing(0)
+        self.horizontalLayout_49.setObjectName(u"horizontalLayout_49")
+        self.horizontalLayout_49.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_31 = QFrame(self.frame_22)
+        self.panelsBackground_31.setObjectName(u"panelsBackground_31")
+        self.panelsBackground_31.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_31.setStyleSheet(u"")
+        self.panelsBackground_31.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_31.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_50 = QHBoxLayout(self.panelsBackground_31)
+        self.horizontalLayout_50.setObjectName(u"horizontalLayout_50")
+        self.label_38 = QLabel(self.panelsBackground_31)
+        self.label_38.setObjectName(u"label_38")
+        self.label_38.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_50.addWidget(self.label_38)
+
+
+        self.horizontalLayout_49.addWidget(self.panelsBackground_31)
+
+        self.panelsBackground_32 = QFrame(self.frame_22)
+        self.panelsBackground_32.setObjectName(u"panelsBackground_32")
+        self.panelsBackground_32.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_32.setStyleSheet(u"")
+        self.panelsBackground_32.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_32.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_51 = QHBoxLayout(self.panelsBackground_32)
+        self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
+        self.headerBgColor4_23 = QPushButton(self.panelsBackground_32)
+        self.headerBgColor4_23.setObjectName(u"headerBgColor4_23")
+        self.headerBgColor4_23.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_23.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_51.addWidget(self.headerBgColor4_23)
+
+        self.headerBgColor5_16 = QPushButton(self.panelsBackground_32)
+        self.headerBgColor5_16.setObjectName(u"headerBgColor5_16")
+        self.headerBgColor5_16.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_16.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_51.addWidget(self.headerBgColor5_16)
+
+        self.headerBgColor4_24 = QPushButton(self.panelsBackground_32)
+        self.headerBgColor4_24.setObjectName(u"headerBgColor4_24")
+        self.headerBgColor4_24.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_24.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_51.addWidget(self.headerBgColor4_24)
+
+        self.headerBgColor3_17 = QPushButton(self.panelsBackground_32)
+        self.headerBgColor3_17.setObjectName(u"headerBgColor3_17")
+        self.headerBgColor3_17.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_17.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_51.addWidget(self.headerBgColor3_17)
+
+
+        self.horizontalLayout_49.addWidget(self.panelsBackground_32)
+
+        self.frame_14 = QFrame(self.page)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setGeometry(QRect(0, 560, 252, 48))
+        self.frame_14.setMaximumSize(QSize(16777213, 48))
+        self.frame_14.setFrameShape(QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_28 = QHBoxLayout(self.frame_14)
+        self.horizontalLayout_28.setSpacing(0)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
+        self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.panelsBackground_17 = QFrame(self.frame_14)
+        self.panelsBackground_17.setObjectName(u"panelsBackground_17")
+        self.panelsBackground_17.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_17.setStyleSheet(u"")
+        self.panelsBackground_17.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_17.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_30 = QHBoxLayout(self.panelsBackground_17)
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.label_24 = QLabel(self.panelsBackground_17)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_30.addWidget(self.label_24)
+
+
+        self.horizontalLayout_28.addWidget(self.panelsBackground_17)
+
+        self.panelsBackground_18 = QFrame(self.frame_14)
+        self.panelsBackground_18.setObjectName(u"panelsBackground_18")
+        self.panelsBackground_18.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_18.setStyleSheet(u"")
+        self.panelsBackground_18.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_18.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_29 = QHBoxLayout(self.panelsBackground_18)
+        self.horizontalLayout_29.setObjectName(u"horizontalLayout_29")
+        self.headerBgColor4_9 = QPushButton(self.panelsBackground_18)
+        self.headerBgColor4_9.setObjectName(u"headerBgColor4_9")
+        self.headerBgColor4_9.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_9.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_29.addWidget(self.headerBgColor4_9)
+
+        self.headerBgColor5_9 = QPushButton(self.panelsBackground_18)
+        self.headerBgColor5_9.setObjectName(u"headerBgColor5_9")
+        self.headerBgColor5_9.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_9.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_29.addWidget(self.headerBgColor5_9)
+
+        self.headerBgColor4_10 = QPushButton(self.panelsBackground_18)
+        self.headerBgColor4_10.setObjectName(u"headerBgColor4_10")
+        self.headerBgColor4_10.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_10.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_29.addWidget(self.headerBgColor4_10)
+
+        self.headerBgColor3_10 = QPushButton(self.panelsBackground_18)
+        self.headerBgColor3_10.setObjectName(u"headerBgColor3_10")
+        self.headerBgColor3_10.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_10.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_29.addWidget(self.headerBgColor3_10)
+
+
+        self.horizontalLayout_28.addWidget(self.panelsBackground_18)
+
+        self.toolBox.addItem(self.page, u"Header")
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.page_2.setGeometry(QRect(0, 0, 252, 610))
+        self.scrollArea_2 = QScrollArea(self.page_2)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setGeometry(QRect(0, 0, 251, 601))
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 251, 601))
+        self.widget_6 = QWidget(self.scrollAreaWidgetContents_2)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setGeometry(QRect(9, 9, 241, 591))
+        self.frame_8 = QFrame(self.widget_6)
         self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setGeometry(QRect(10, 150, 235, 51))
+        self.frame_8.setGeometry(QRect(0, -10, 240, 170))
+        self.frame_8.setMinimumSize(QSize(0, 170))
+        self.frame_8.setMaximumSize(QSize(16777215, 120))
         self.frame_8.setFrameShape(QFrame.StyledPanel)
         self.frame_8.setFrameShadow(QFrame.Raised)
         self.verticalLayout_24 = QVBoxLayout(self.frame_8)
+        self.verticalLayout_24.setSpacing(0)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
-        self.panelsBackground_13 = QFrame(self.frame_8)
-        self.panelsBackground_13.setObjectName(u"panelsBackground_13")
-        self.panelsBackground_13.setMaximumSize(QSize(16777215, 40))
-        self.panelsBackground_13.setStyleSheet(u"")
-        self.panelsBackground_13.setFrameShape(QFrame.StyledPanel)
-        self.panelsBackground_13.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_25 = QHBoxLayout(self.panelsBackground_13)
-        self.horizontalLayout_25.setSpacing(6)
-        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
-        self.horizontalLayout_25.setContentsMargins(0, -1, 0, -1)
-        self.label_18 = QLabel(self.panelsBackground_13)
+        self.verticalLayout_24.setContentsMargins(0, 0, -1, 0)
+        self.label_18 = QLabel(self.frame_8)
         self.label_18.setObjectName(u"label_18")
         self.label_18.setMaximumSize(QSize(16777215, 40))
 
-        self.horizontalLayout_25.addWidget(self.label_18)
+        self.verticalLayout_24.addWidget(self.label_18)
 
-        self.headerBgColor3_3 = QPushButton(self.panelsBackground_13)
-        self.headerBgColor3_3.setObjectName(u"headerBgColor3_3")
-        self.headerBgColor3_3.setMinimumSize(QSize(24, 24))
-        self.headerBgColor3_3.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_25.addWidget(self.headerBgColor3_3)
-
-        self.headerBgColor4_3 = QPushButton(self.panelsBackground_13)
-        self.headerBgColor4_3.setObjectName(u"headerBgColor4_3")
-        self.headerBgColor4_3.setMinimumSize(QSize(24, 24))
-        self.headerBgColor4_3.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_25.addWidget(self.headerBgColor4_3)
-
-        self.headerBgColor5_3 = QPushButton(self.panelsBackground_13)
-        self.headerBgColor5_3.setObjectName(u"headerBgColor5_3")
-        self.headerBgColor5_3.setMinimumSize(QSize(24, 24))
-        self.headerBgColor5_3.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_25.addWidget(self.headerBgColor5_3)
-
-
-        self.verticalLayout_24.addWidget(self.panelsBackground_13)
-
-        self.frame_11 = QFrame(self.page)
-        self.frame_11.setObjectName(u"frame_11")
-        self.frame_11.setGeometry(QRect(10, 220, 235, 51))
-        self.frame_11.setFrameShape(QFrame.StyledPanel)
-        self.frame_11.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_27 = QVBoxLayout(self.frame_11)
-        self.verticalLayout_27.setObjectName(u"verticalLayout_27")
-        self.panelsBackground_14 = QFrame(self.frame_11)
-        self.panelsBackground_14.setObjectName(u"panelsBackground_14")
-        self.panelsBackground_14.setMaximumSize(QSize(16777215, 40))
-        self.panelsBackground_14.setStyleSheet(u"")
-        self.panelsBackground_14.setFrameShape(QFrame.StyledPanel)
-        self.panelsBackground_14.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_26 = QHBoxLayout(self.panelsBackground_14)
-        self.horizontalLayout_26.setSpacing(6)
-        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
-        self.horizontalLayout_26.setContentsMargins(0, -1, 0, -1)
-        self.label_21 = QLabel(self.panelsBackground_14)
-        self.label_21.setObjectName(u"label_21")
-        self.label_21.setMaximumSize(QSize(16777215, 40))
-
-        self.horizontalLayout_26.addWidget(self.label_21)
-
-        self.headerBgColor3_6 = QPushButton(self.panelsBackground_14)
-        self.headerBgColor3_6.setObjectName(u"headerBgColor3_6")
-        self.headerBgColor3_6.setMinimumSize(QSize(24, 24))
-        self.headerBgColor3_6.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_26.addWidget(self.headerBgColor3_6)
-
-        self.headerBgColor4_6 = QPushButton(self.panelsBackground_14)
-        self.headerBgColor4_6.setObjectName(u"headerBgColor4_6")
-        self.headerBgColor4_6.setMinimumSize(QSize(24, 24))
-        self.headerBgColor4_6.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_26.addWidget(self.headerBgColor4_6)
-
-        self.headerBgColor5_6 = QPushButton(self.panelsBackground_14)
-        self.headerBgColor5_6.setObjectName(u"headerBgColor5_6")
-        self.headerBgColor5_6.setMinimumSize(QSize(24, 24))
-        self.headerBgColor5_6.setMaximumSize(QSize(24, 24))
-
-        self.horizontalLayout_26.addWidget(self.headerBgColor5_6)
-
-
-        self.verticalLayout_27.addWidget(self.panelsBackground_14)
-
-        self.frame_12 = QFrame(self.page)
-        self.frame_12.setObjectName(u"frame_12")
-        self.frame_12.setGeometry(QRect(10, 290, 235, 51))
-        self.frame_12.setFrameShape(QFrame.StyledPanel)
-        self.frame_12.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_28 = QVBoxLayout(self.frame_12)
-        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
-        self.panelsBackground_15 = QFrame(self.frame_12)
+        self.panelsBackground_15 = QFrame(self.frame_8)
         self.panelsBackground_15.setObjectName(u"panelsBackground_15")
         self.panelsBackground_15.setMaximumSize(QSize(16777215, 40))
         self.panelsBackground_15.setStyleSheet(u"")
         self.panelsBackground_15.setFrameShape(QFrame.StyledPanel)
         self.panelsBackground_15.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_27 = QHBoxLayout(self.panelsBackground_15)
-        self.horizontalLayout_27.setSpacing(6)
+        self.horizontalLayout_27.setSpacing(14)
         self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
-        self.horizontalLayout_27.setContentsMargins(0, -1, 0, -1)
-        self.label_22 = QLabel(self.panelsBackground_15)
-        self.label_22.setObjectName(u"label_22")
-        self.label_22.setMaximumSize(QSize(16777215, 40))
+        self.horizontalLayout_27.setContentsMargins(0, 0, -1, 0)
+        self.contentMainColor1 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor1.setObjectName(u"contentMainColor1")
+        self.contentMainColor1.setMinimumSize(QSize(24, 24))
+        self.contentMainColor1.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_27.addWidget(self.label_22)
+        self.horizontalLayout_27.addWidget(self.contentMainColor1)
 
-        self.headerBgColor3_7 = QPushButton(self.panelsBackground_15)
-        self.headerBgColor3_7.setObjectName(u"headerBgColor3_7")
-        self.headerBgColor3_7.setMinimumSize(QSize(24, 24))
-        self.headerBgColor3_7.setMaximumSize(QSize(24, 24))
+        self.contentMainColor2 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor2.setObjectName(u"contentMainColor2")
+        self.contentMainColor2.setMinimumSize(QSize(24, 24))
+        self.contentMainColor2.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_27.addWidget(self.headerBgColor3_7)
+        self.horizontalLayout_27.addWidget(self.contentMainColor2)
 
-        self.headerBgColor4_7 = QPushButton(self.panelsBackground_15)
-        self.headerBgColor4_7.setObjectName(u"headerBgColor4_7")
-        self.headerBgColor4_7.setMinimumSize(QSize(24, 24))
-        self.headerBgColor4_7.setMaximumSize(QSize(24, 24))
+        self.contentMainColor3 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor3.setObjectName(u"contentMainColor3")
+        self.contentMainColor3.setMinimumSize(QSize(24, 24))
+        self.contentMainColor3.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_27.addWidget(self.headerBgColor4_7)
+        self.horizontalLayout_27.addWidget(self.contentMainColor3)
 
-        self.headerBgColor5_7 = QPushButton(self.panelsBackground_15)
-        self.headerBgColor5_7.setObjectName(u"headerBgColor5_7")
-        self.headerBgColor5_7.setMinimumSize(QSize(24, 24))
-        self.headerBgColor5_7.setMaximumSize(QSize(24, 24))
+        self.contentMainColor4 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor4.setObjectName(u"contentMainColor4")
+        self.contentMainColor4.setMinimumSize(QSize(24, 24))
+        self.contentMainColor4.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_27.addWidget(self.headerBgColor5_7)
+        self.horizontalLayout_27.addWidget(self.contentMainColor4)
+
+        self.contentMainColor5 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor5.setObjectName(u"contentMainColor5")
+        self.contentMainColor5.setMinimumSize(QSize(24, 24))
+        self.contentMainColor5.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_27.addWidget(self.contentMainColor5)
+
+        self.contentMainColor6 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor6.setObjectName(u"contentMainColor6")
+        self.contentMainColor6.setMinimumSize(QSize(24, 24))
+        self.contentMainColor6.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_27.addWidget(self.contentMainColor6)
+
+        self.contentMainColor7 = QPushButton(self.panelsBackground_15)
+        self.contentMainColor7.setObjectName(u"contentMainColor7")
+        self.contentMainColor7.setMinimumSize(QSize(24, 24))
+        self.contentMainColor7.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_27.addWidget(self.contentMainColor7)
 
 
-        self.verticalLayout_28.addWidget(self.panelsBackground_15)
+        self.verticalLayout_24.addWidget(self.panelsBackground_15)
 
-        self.frame_13 = QFrame(self.page)
-        self.frame_13.setObjectName(u"frame_13")
-        self.frame_13.setGeometry(QRect(10, 360, 235, 51))
-        self.frame_13.setFrameShape(QFrame.StyledPanel)
-        self.frame_13.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_29 = QVBoxLayout(self.frame_13)
-        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
-        self.panelsBackground_16 = QFrame(self.frame_13)
+        self.panelsBackground_14 = QFrame(self.frame_8)
+        self.panelsBackground_14.setObjectName(u"panelsBackground_14")
+        self.panelsBackground_14.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_14.setStyleSheet(u"")
+        self.panelsBackground_14.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_14.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_26 = QHBoxLayout(self.panelsBackground_14)
+        self.horizontalLayout_26.setSpacing(14)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_26.setContentsMargins(0, 0, -1, 0)
+        self.contentMainColor8 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor8.setObjectName(u"contentMainColor8")
+        self.contentMainColor8.setMinimumSize(QSize(24, 24))
+        self.contentMainColor8.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor8)
+
+        self.contentMainColor9 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor9.setObjectName(u"contentMainColor9")
+        self.contentMainColor9.setMinimumSize(QSize(24, 24))
+        self.contentMainColor9.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor9)
+
+        self.contentMainColor10 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor10.setObjectName(u"contentMainColor10")
+        self.contentMainColor10.setMinimumSize(QSize(24, 24))
+        self.contentMainColor10.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor10)
+
+        self.contentMainColor11 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor11.setObjectName(u"contentMainColor11")
+        self.contentMainColor11.setMinimumSize(QSize(24, 24))
+        self.contentMainColor11.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor11)
+
+        self.contentMainColor12 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor12.setObjectName(u"contentMainColor12")
+        self.contentMainColor12.setMinimumSize(QSize(24, 24))
+        self.contentMainColor12.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor12)
+
+        self.contentMainColor13 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor13.setObjectName(u"contentMainColor13")
+        self.contentMainColor13.setMinimumSize(QSize(24, 24))
+        self.contentMainColor13.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor13)
+
+        self.contentMainColor14 = QPushButton(self.panelsBackground_14)
+        self.contentMainColor14.setObjectName(u"contentMainColor14")
+        self.contentMainColor14.setMinimumSize(QSize(24, 24))
+        self.contentMainColor14.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_26.addWidget(self.contentMainColor14)
+
+
+        self.verticalLayout_24.addWidget(self.panelsBackground_14)
+
+        self.panelsBackground_16 = QFrame(self.frame_8)
         self.panelsBackground_16.setObjectName(u"panelsBackground_16")
         self.panelsBackground_16.setMaximumSize(QSize(16777215, 40))
         self.panelsBackground_16.setStyleSheet(u"")
         self.panelsBackground_16.setFrameShape(QFrame.StyledPanel)
         self.panelsBackground_16.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_28 = QHBoxLayout(self.panelsBackground_16)
-        self.horizontalLayout_28.setSpacing(6)
-        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
-        self.horizontalLayout_28.setContentsMargins(0, -1, 0, -1)
-        self.label_23 = QLabel(self.panelsBackground_16)
-        self.label_23.setObjectName(u"label_23")
-        self.label_23.setMaximumSize(QSize(16777215, 40))
+        self.horizontalLayout_79 = QHBoxLayout(self.panelsBackground_16)
+        self.horizontalLayout_79.setSpacing(14)
+        self.horizontalLayout_79.setObjectName(u"horizontalLayout_79")
+        self.horizontalLayout_79.setContentsMargins(0, 0, -1, 0)
+        self.contentMainColor15 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor15.setObjectName(u"contentMainColor15")
+        self.contentMainColor15.setMinimumSize(QSize(24, 24))
+        self.contentMainColor15.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_28.addWidget(self.label_23)
+        self.horizontalLayout_79.addWidget(self.contentMainColor15)
 
-        self.headerBgColor3_8 = QPushButton(self.panelsBackground_16)
-        self.headerBgColor3_8.setObjectName(u"headerBgColor3_8")
-        self.headerBgColor3_8.setMinimumSize(QSize(24, 24))
-        self.headerBgColor3_8.setMaximumSize(QSize(24, 24))
+        self.contentMainColor16 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor16.setObjectName(u"contentMainColor16")
+        self.contentMainColor16.setMinimumSize(QSize(24, 24))
+        self.contentMainColor16.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_28.addWidget(self.headerBgColor3_8)
+        self.horizontalLayout_79.addWidget(self.contentMainColor16)
 
-        self.headerBgColor4_8 = QPushButton(self.panelsBackground_16)
-        self.headerBgColor4_8.setObjectName(u"headerBgColor4_8")
-        self.headerBgColor4_8.setMinimumSize(QSize(24, 24))
-        self.headerBgColor4_8.setMaximumSize(QSize(24, 24))
+        self.contentMainColor17 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor17.setObjectName(u"contentMainColor17")
+        self.contentMainColor17.setMinimumSize(QSize(24, 24))
+        self.contentMainColor17.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_28.addWidget(self.headerBgColor4_8)
+        self.horizontalLayout_79.addWidget(self.contentMainColor17)
 
-        self.headerBgColor5_8 = QPushButton(self.panelsBackground_16)
-        self.headerBgColor5_8.setObjectName(u"headerBgColor5_8")
-        self.headerBgColor5_8.setMinimumSize(QSize(24, 24))
-        self.headerBgColor5_8.setMaximumSize(QSize(24, 24))
+        self.contentMainColor18 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor18.setObjectName(u"contentMainColor18")
+        self.contentMainColor18.setMinimumSize(QSize(24, 24))
+        self.contentMainColor18.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_28.addWidget(self.headerBgColor5_8)
+        self.horizontalLayout_79.addWidget(self.contentMainColor18)
+
+        self.contentMainColor19 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor19.setObjectName(u"contentMainColor19")
+        self.contentMainColor19.setMinimumSize(QSize(24, 24))
+        self.contentMainColor19.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_79.addWidget(self.contentMainColor19)
+
+        self.contentMainColor20 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor20.setObjectName(u"contentMainColor20")
+        self.contentMainColor20.setMinimumSize(QSize(24, 24))
+        self.contentMainColor20.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_79.addWidget(self.contentMainColor20)
+
+        self.contentMainColor21 = QPushButton(self.panelsBackground_16)
+        self.contentMainColor21.setObjectName(u"contentMainColor21")
+        self.contentMainColor21.setMinimumSize(QSize(24, 24))
+        self.contentMainColor21.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_79.addWidget(self.contentMainColor21)
 
 
-        self.verticalLayout_29.addWidget(self.panelsBackground_16)
+        self.verticalLayout_24.addWidget(self.panelsBackground_16)
 
-        self.toolBox.addItem(self.page, u"Header")
-        self.page_2 = QWidget()
-        self.page_2.setObjectName(u"page_2")
-        self.page_2.setGeometry(QRect(0, 0, 252, 637))
+        self.frame_24 = QFrame(self.widget_6)
+        self.frame_24.setObjectName(u"frame_24")
+        self.frame_24.setGeometry(QRect(-10, 160, 252, 48))
+        self.frame_24.setMaximumSize(QSize(16777213, 48))
+        self.frame_24.setFrameShape(QFrame.StyledPanel)
+        self.frame_24.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_55 = QHBoxLayout(self.frame_24)
+        self.horizontalLayout_55.setSpacing(0)
+        self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
+        self.horizontalLayout_55.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_35 = QFrame(self.frame_24)
+        self.panelsBackground_35.setObjectName(u"panelsBackground_35")
+        self.panelsBackground_35.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_35.setStyleSheet(u"")
+        self.panelsBackground_35.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_35.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_56 = QHBoxLayout(self.panelsBackground_35)
+        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
+        self.label_40 = QLabel(self.panelsBackground_35)
+        self.label_40.setObjectName(u"label_40")
+        self.label_40.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_56.addWidget(self.label_40)
+
+
+        self.horizontalLayout_55.addWidget(self.panelsBackground_35)
+
+        self.frame_9 = QFrame(self.frame_24)
+        self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setMaximumSize(QSize(16777215, 40))
+        self.frame_9.setStyleSheet(u"")
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_57 = QHBoxLayout(self.frame_9)
+        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
+        self.contentHeaderColor1 = QPushButton(self.frame_9)
+        self.contentHeaderColor1.setObjectName(u"contentHeaderColor1")
+        self.contentHeaderColor1.setMinimumSize(QSize(24, 24))
+        self.contentHeaderColor1.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_57.addWidget(self.contentHeaderColor1)
+
+        self.contentHeaderColor2 = QPushButton(self.frame_9)
+        self.contentHeaderColor2.setObjectName(u"contentHeaderColor2")
+        self.contentHeaderColor2.setMinimumSize(QSize(24, 24))
+        self.contentHeaderColor2.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_57.addWidget(self.contentHeaderColor2)
+
+        self.contentHeaderColor3 = QPushButton(self.frame_9)
+        self.contentHeaderColor3.setObjectName(u"contentHeaderColor3")
+        self.contentHeaderColor3.setMinimumSize(QSize(24, 24))
+        self.contentHeaderColor3.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_57.addWidget(self.contentHeaderColor3)
+
+        self.contentHeaderColor4 = QPushButton(self.frame_9)
+        self.contentHeaderColor4.setObjectName(u"contentHeaderColor4")
+        self.contentHeaderColor4.setMinimumSize(QSize(24, 24))
+        self.contentHeaderColor4.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_57.addWidget(self.contentHeaderColor4)
+
+
+        self.horizontalLayout_55.addWidget(self.frame_9)
+
+        self.frame_25 = QFrame(self.widget_6)
+        self.frame_25.setObjectName(u"frame_25")
+        self.frame_25.setGeometry(QRect(-10, 210, 252, 48))
+        self.frame_25.setMaximumSize(QSize(16777213, 48))
+        self.frame_25.setFrameShape(QFrame.StyledPanel)
+        self.frame_25.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_58 = QHBoxLayout(self.frame_25)
+        self.horizontalLayout_58.setSpacing(0)
+        self.horizontalLayout_58.setObjectName(u"horizontalLayout_58")
+        self.horizontalLayout_58.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_37 = QFrame(self.frame_25)
+        self.panelsBackground_37.setObjectName(u"panelsBackground_37")
+        self.panelsBackground_37.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_37.setStyleSheet(u"")
+        self.panelsBackground_37.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_37.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_59 = QHBoxLayout(self.panelsBackground_37)
+        self.horizontalLayout_59.setObjectName(u"horizontalLayout_59")
+        self.label_41 = QLabel(self.panelsBackground_37)
+        self.label_41.setObjectName(u"label_41")
+        self.label_41.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_59.addWidget(self.label_41)
+
+
+        self.horizontalLayout_58.addWidget(self.panelsBackground_37)
+
+        self.panelsBackground_38 = QFrame(self.frame_25)
+        self.panelsBackground_38.setObjectName(u"panelsBackground_38")
+        self.panelsBackground_38.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_38.setStyleSheet(u"")
+        self.panelsBackground_38.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_38.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_60 = QHBoxLayout(self.panelsBackground_38)
+        self.horizontalLayout_60.setObjectName(u"horizontalLayout_60")
+        self.contentFooterColor1 = QPushButton(self.panelsBackground_38)
+        self.contentFooterColor1.setObjectName(u"contentFooterColor1")
+        self.contentFooterColor1.setMinimumSize(QSize(24, 24))
+        self.contentFooterColor1.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_60.addWidget(self.contentFooterColor1)
+
+        self.contentFooterColor2 = QPushButton(self.panelsBackground_38)
+        self.contentFooterColor2.setObjectName(u"contentFooterColor2")
+        self.contentFooterColor2.setMinimumSize(QSize(24, 24))
+        self.contentFooterColor2.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_60.addWidget(self.contentFooterColor2)
+
+        self.contentFooterColor3 = QPushButton(self.panelsBackground_38)
+        self.contentFooterColor3.setObjectName(u"contentFooterColor3")
+        self.contentFooterColor3.setMinimumSize(QSize(24, 24))
+        self.contentFooterColor3.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_60.addWidget(self.contentFooterColor3)
+
+        self.contentFooterColor4 = QPushButton(self.panelsBackground_38)
+        self.contentFooterColor4.setObjectName(u"contentFooterColor4")
+        self.contentFooterColor4.setMinimumSize(QSize(24, 24))
+        self.contentFooterColor4.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_60.addWidget(self.contentFooterColor4)
+
+
+        self.horizontalLayout_58.addWidget(self.panelsBackground_38)
+
+        self.frame_26 = QFrame(self.widget_6)
+        self.frame_26.setObjectName(u"frame_26")
+        self.frame_26.setGeometry(QRect(-10, 260, 252, 48))
+        self.frame_26.setMaximumSize(QSize(16777213, 48))
+        self.frame_26.setFrameShape(QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_61 = QHBoxLayout(self.frame_26)
+        self.horizontalLayout_61.setSpacing(0)
+        self.horizontalLayout_61.setObjectName(u"horizontalLayout_61")
+        self.horizontalLayout_61.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_39 = QFrame(self.frame_26)
+        self.panelsBackground_39.setObjectName(u"panelsBackground_39")
+        self.panelsBackground_39.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_39.setStyleSheet(u"")
+        self.panelsBackground_39.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_39.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_62 = QHBoxLayout(self.panelsBackground_39)
+        self.horizontalLayout_62.setObjectName(u"horizontalLayout_62")
+        self.label_42 = QLabel(self.panelsBackground_39)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_62.addWidget(self.label_42)
+
+
+        self.horizontalLayout_61.addWidget(self.panelsBackground_39)
+
+        self.panelsBackground_40 = QFrame(self.frame_26)
+        self.panelsBackground_40.setObjectName(u"panelsBackground_40")
+        self.panelsBackground_40.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_40.setStyleSheet(u"")
+        self.panelsBackground_40.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_40.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_63 = QHBoxLayout(self.panelsBackground_40)
+        self.horizontalLayout_63.setObjectName(u"horizontalLayout_63")
+        self.contentBorderColor1 = QPushButton(self.panelsBackground_40)
+        self.contentBorderColor1.setObjectName(u"contentBorderColor1")
+        self.contentBorderColor1.setMinimumSize(QSize(24, 24))
+        self.contentBorderColor1.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_63.addWidget(self.contentBorderColor1)
+
+        self.contentBorderColor2 = QPushButton(self.panelsBackground_40)
+        self.contentBorderColor2.setObjectName(u"contentBorderColor2")
+        self.contentBorderColor2.setMinimumSize(QSize(24, 24))
+        self.contentBorderColor2.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_63.addWidget(self.contentBorderColor2)
+
+        self.contentBorderColor3 = QPushButton(self.panelsBackground_40)
+        self.contentBorderColor3.setObjectName(u"contentBorderColor3")
+        self.contentBorderColor3.setMinimumSize(QSize(24, 24))
+        self.contentBorderColor3.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_63.addWidget(self.contentBorderColor3)
+
+        self.contentBorderColor4 = QPushButton(self.panelsBackground_40)
+        self.contentBorderColor4.setObjectName(u"contentBorderColor4")
+        self.contentBorderColor4.setMinimumSize(QSize(24, 24))
+        self.contentBorderColor4.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_63.addWidget(self.contentBorderColor4)
+
+
+        self.horizontalLayout_61.addWidget(self.panelsBackground_40)
+
+        self.frame_27 = QFrame(self.widget_6)
+        self.frame_27.setObjectName(u"frame_27")
+        self.frame_27.setGeometry(QRect(-10, 310, 252, 48))
+        self.frame_27.setMaximumSize(QSize(16777213, 48))
+        self.frame_27.setFrameShape(QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_64 = QHBoxLayout(self.frame_27)
+        self.horizontalLayout_64.setSpacing(0)
+        self.horizontalLayout_64.setObjectName(u"horizontalLayout_64")
+        self.horizontalLayout_64.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_41 = QFrame(self.frame_27)
+        self.panelsBackground_41.setObjectName(u"panelsBackground_41")
+        self.panelsBackground_41.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_41.setStyleSheet(u"")
+        self.panelsBackground_41.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_41.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_65 = QHBoxLayout(self.panelsBackground_41)
+        self.horizontalLayout_65.setObjectName(u"horizontalLayout_65")
+        self.label_43 = QLabel(self.panelsBackground_41)
+        self.label_43.setObjectName(u"label_43")
+        self.label_43.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_65.addWidget(self.label_43)
+
+
+        self.horizontalLayout_64.addWidget(self.panelsBackground_41)
+
+        self.panelsBackground_42 = QFrame(self.frame_27)
+        self.panelsBackground_42.setObjectName(u"panelsBackground_42")
+        self.panelsBackground_42.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_42.setStyleSheet(u"")
+        self.panelsBackground_42.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_42.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_66 = QHBoxLayout(self.panelsBackground_42)
+        self.horizontalLayout_66.setObjectName(u"horizontalLayout_66")
+        self.headerBgColor4_33 = QPushButton(self.panelsBackground_42)
+        self.headerBgColor4_33.setObjectName(u"headerBgColor4_33")
+        self.headerBgColor4_33.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_33.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_66.addWidget(self.headerBgColor4_33)
+
+        self.headerBgColor5_21 = QPushButton(self.panelsBackground_42)
+        self.headerBgColor5_21.setObjectName(u"headerBgColor5_21")
+        self.headerBgColor5_21.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_21.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_66.addWidget(self.headerBgColor5_21)
+
+        self.headerBgColor4_34 = QPushButton(self.panelsBackground_42)
+        self.headerBgColor4_34.setObjectName(u"headerBgColor4_34")
+        self.headerBgColor4_34.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_34.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_66.addWidget(self.headerBgColor4_34)
+
+        self.headerBgColor3_22 = QPushButton(self.panelsBackground_42)
+        self.headerBgColor3_22.setObjectName(u"headerBgColor3_22")
+        self.headerBgColor3_22.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_22.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_66.addWidget(self.headerBgColor3_22)
+
+
+        self.horizontalLayout_64.addWidget(self.panelsBackground_42)
+
+        self.frame_28 = QFrame(self.widget_6)
+        self.frame_28.setObjectName(u"frame_28")
+        self.frame_28.setGeometry(QRect(-10, 360, 252, 48))
+        self.frame_28.setMaximumSize(QSize(16777213, 48))
+        self.frame_28.setFrameShape(QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_67 = QHBoxLayout(self.frame_28)
+        self.horizontalLayout_67.setSpacing(0)
+        self.horizontalLayout_67.setObjectName(u"horizontalLayout_67")
+        self.horizontalLayout_67.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_43 = QFrame(self.frame_28)
+        self.panelsBackground_43.setObjectName(u"panelsBackground_43")
+        self.panelsBackground_43.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_43.setStyleSheet(u"")
+        self.panelsBackground_43.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_43.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_68 = QHBoxLayout(self.panelsBackground_43)
+        self.horizontalLayout_68.setObjectName(u"horizontalLayout_68")
+        self.label_44 = QLabel(self.panelsBackground_43)
+        self.label_44.setObjectName(u"label_44")
+        self.label_44.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_68.addWidget(self.label_44)
+
+
+        self.horizontalLayout_67.addWidget(self.panelsBackground_43)
+
+        self.panelsBackground_44 = QFrame(self.frame_28)
+        self.panelsBackground_44.setObjectName(u"panelsBackground_44")
+        self.panelsBackground_44.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_44.setStyleSheet(u"")
+        self.panelsBackground_44.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_44.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_69 = QHBoxLayout(self.panelsBackground_44)
+        self.horizontalLayout_69.setObjectName(u"horizontalLayout_69")
+        self.headerBgColor4_35 = QPushButton(self.panelsBackground_44)
+        self.headerBgColor4_35.setObjectName(u"headerBgColor4_35")
+        self.headerBgColor4_35.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_35.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_69.addWidget(self.headerBgColor4_35)
+
+        self.headerBgColor5_22 = QPushButton(self.panelsBackground_44)
+        self.headerBgColor5_22.setObjectName(u"headerBgColor5_22")
+        self.headerBgColor5_22.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_22.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_69.addWidget(self.headerBgColor5_22)
+
+        self.headerBgColor4_36 = QPushButton(self.panelsBackground_44)
+        self.headerBgColor4_36.setObjectName(u"headerBgColor4_36")
+        self.headerBgColor4_36.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_36.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_69.addWidget(self.headerBgColor4_36)
+
+        self.headerBgColor3_23 = QPushButton(self.panelsBackground_44)
+        self.headerBgColor3_23.setObjectName(u"headerBgColor3_23")
+        self.headerBgColor3_23.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_23.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_69.addWidget(self.headerBgColor3_23)
+
+
+        self.horizontalLayout_67.addWidget(self.panelsBackground_44)
+
+        self.frame_29 = QFrame(self.widget_6)
+        self.frame_29.setObjectName(u"frame_29")
+        self.frame_29.setGeometry(QRect(-10, 410, 252, 48))
+        self.frame_29.setMaximumSize(QSize(16777213, 48))
+        self.frame_29.setFrameShape(QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_70 = QHBoxLayout(self.frame_29)
+        self.horizontalLayout_70.setSpacing(0)
+        self.horizontalLayout_70.setObjectName(u"horizontalLayout_70")
+        self.horizontalLayout_70.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_45 = QFrame(self.frame_29)
+        self.panelsBackground_45.setObjectName(u"panelsBackground_45")
+        self.panelsBackground_45.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_45.setStyleSheet(u"")
+        self.panelsBackground_45.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_45.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_71 = QHBoxLayout(self.panelsBackground_45)
+        self.horizontalLayout_71.setObjectName(u"horizontalLayout_71")
+        self.label_45 = QLabel(self.panelsBackground_45)
+        self.label_45.setObjectName(u"label_45")
+        self.label_45.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_71.addWidget(self.label_45)
+
+
+        self.horizontalLayout_70.addWidget(self.panelsBackground_45)
+
+        self.panelsBackground_46 = QFrame(self.frame_29)
+        self.panelsBackground_46.setObjectName(u"panelsBackground_46")
+        self.panelsBackground_46.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_46.setStyleSheet(u"")
+        self.panelsBackground_46.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_46.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_72 = QHBoxLayout(self.panelsBackground_46)
+        self.horizontalLayout_72.setObjectName(u"horizontalLayout_72")
+        self.headerBgColor4_37 = QPushButton(self.panelsBackground_46)
+        self.headerBgColor4_37.setObjectName(u"headerBgColor4_37")
+        self.headerBgColor4_37.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_37.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_72.addWidget(self.headerBgColor4_37)
+
+        self.headerBgColor5_23 = QPushButton(self.panelsBackground_46)
+        self.headerBgColor5_23.setObjectName(u"headerBgColor5_23")
+        self.headerBgColor5_23.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_23.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_72.addWidget(self.headerBgColor5_23)
+
+        self.headerBgColor4_38 = QPushButton(self.panelsBackground_46)
+        self.headerBgColor4_38.setObjectName(u"headerBgColor4_38")
+        self.headerBgColor4_38.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_38.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_72.addWidget(self.headerBgColor4_38)
+
+        self.headerBgColor3_24 = QPushButton(self.panelsBackground_46)
+        self.headerBgColor3_24.setObjectName(u"headerBgColor3_24")
+        self.headerBgColor3_24.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_24.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_72.addWidget(self.headerBgColor3_24)
+
+
+        self.horizontalLayout_70.addWidget(self.panelsBackground_46)
+
+        self.frame_30 = QFrame(self.widget_6)
+        self.frame_30.setObjectName(u"frame_30")
+        self.frame_30.setGeometry(QRect(-10, 460, 252, 48))
+        self.frame_30.setMaximumSize(QSize(16777213, 48))
+        self.frame_30.setFrameShape(QFrame.StyledPanel)
+        self.frame_30.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_73 = QHBoxLayout(self.frame_30)
+        self.horizontalLayout_73.setSpacing(0)
+        self.horizontalLayout_73.setObjectName(u"horizontalLayout_73")
+        self.horizontalLayout_73.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_47 = QFrame(self.frame_30)
+        self.panelsBackground_47.setObjectName(u"panelsBackground_47")
+        self.panelsBackground_47.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_47.setStyleSheet(u"")
+        self.panelsBackground_47.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_47.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_74 = QHBoxLayout(self.panelsBackground_47)
+        self.horizontalLayout_74.setObjectName(u"horizontalLayout_74")
+        self.label_46 = QLabel(self.panelsBackground_47)
+        self.label_46.setObjectName(u"label_46")
+        self.label_46.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_74.addWidget(self.label_46)
+
+
+        self.horizontalLayout_73.addWidget(self.panelsBackground_47)
+
+        self.panelsBackground_48 = QFrame(self.frame_30)
+        self.panelsBackground_48.setObjectName(u"panelsBackground_48")
+        self.panelsBackground_48.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_48.setStyleSheet(u"")
+        self.panelsBackground_48.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_48.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_75 = QHBoxLayout(self.panelsBackground_48)
+        self.horizontalLayout_75.setObjectName(u"horizontalLayout_75")
+        self.headerBgColor4_39 = QPushButton(self.panelsBackground_48)
+        self.headerBgColor4_39.setObjectName(u"headerBgColor4_39")
+        self.headerBgColor4_39.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_39.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_75.addWidget(self.headerBgColor4_39)
+
+        self.headerBgColor5_24 = QPushButton(self.panelsBackground_48)
+        self.headerBgColor5_24.setObjectName(u"headerBgColor5_24")
+        self.headerBgColor5_24.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_24.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_75.addWidget(self.headerBgColor5_24)
+
+        self.headerBgColor4_40 = QPushButton(self.panelsBackground_48)
+        self.headerBgColor4_40.setObjectName(u"headerBgColor4_40")
+        self.headerBgColor4_40.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_40.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_75.addWidget(self.headerBgColor4_40)
+
+        self.headerBgColor3_25 = QPushButton(self.panelsBackground_48)
+        self.headerBgColor3_25.setObjectName(u"headerBgColor3_25")
+        self.headerBgColor3_25.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_25.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_75.addWidget(self.headerBgColor3_25)
+
+
+        self.horizontalLayout_73.addWidget(self.panelsBackground_48)
+
+        self.frame_31 = QFrame(self.widget_6)
+        self.frame_31.setObjectName(u"frame_31")
+        self.frame_31.setGeometry(QRect(-10, 510, 252, 48))
+        self.frame_31.setMaximumSize(QSize(16777213, 48))
+        self.frame_31.setFrameShape(QFrame.StyledPanel)
+        self.frame_31.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_76 = QHBoxLayout(self.frame_31)
+        self.horizontalLayout_76.setSpacing(0)
+        self.horizontalLayout_76.setObjectName(u"horizontalLayout_76")
+        self.horizontalLayout_76.setContentsMargins(3, 0, 0, 0)
+        self.panelsBackground_49 = QFrame(self.frame_31)
+        self.panelsBackground_49.setObjectName(u"panelsBackground_49")
+        self.panelsBackground_49.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_49.setStyleSheet(u"")
+        self.panelsBackground_49.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_49.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_77 = QHBoxLayout(self.panelsBackground_49)
+        self.horizontalLayout_77.setObjectName(u"horizontalLayout_77")
+        self.label_47 = QLabel(self.panelsBackground_49)
+        self.label_47.setObjectName(u"label_47")
+        self.label_47.setMaximumSize(QSize(16777215, 40))
+
+        self.horizontalLayout_77.addWidget(self.label_47)
+
+
+        self.horizontalLayout_76.addWidget(self.panelsBackground_49)
+
+        self.panelsBackground_50 = QFrame(self.frame_31)
+        self.panelsBackground_50.setObjectName(u"panelsBackground_50")
+        self.panelsBackground_50.setMaximumSize(QSize(16777215, 40))
+        self.panelsBackground_50.setStyleSheet(u"")
+        self.panelsBackground_50.setFrameShape(QFrame.StyledPanel)
+        self.panelsBackground_50.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_78 = QHBoxLayout(self.panelsBackground_50)
+        self.horizontalLayout_78.setObjectName(u"horizontalLayout_78")
+        self.headerBgColor4_41 = QPushButton(self.panelsBackground_50)
+        self.headerBgColor4_41.setObjectName(u"headerBgColor4_41")
+        self.headerBgColor4_41.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_41.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_78.addWidget(self.headerBgColor4_41)
+
+        self.headerBgColor5_25 = QPushButton(self.panelsBackground_50)
+        self.headerBgColor5_25.setObjectName(u"headerBgColor5_25")
+        self.headerBgColor5_25.setMinimumSize(QSize(24, 24))
+        self.headerBgColor5_25.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_78.addWidget(self.headerBgColor5_25)
+
+        self.headerBgColor4_42 = QPushButton(self.panelsBackground_50)
+        self.headerBgColor4_42.setObjectName(u"headerBgColor4_42")
+        self.headerBgColor4_42.setMinimumSize(QSize(24, 24))
+        self.headerBgColor4_42.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_78.addWidget(self.headerBgColor4_42)
+
+        self.headerBgColor3_26 = QPushButton(self.panelsBackground_50)
+        self.headerBgColor3_26.setObjectName(u"headerBgColor3_26")
+        self.headerBgColor3_26.setMinimumSize(QSize(24, 24))
+        self.headerBgColor3_26.setMaximumSize(QSize(24, 24))
+
+        self.horizontalLayout_78.addWidget(self.headerBgColor3_26)
+
+
+        self.horizontalLayout_76.addWidget(self.panelsBackground_50)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
         self.toolBox.addItem(self.page_2, u"Content")
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
+        self.page_3.setGeometry(QRect(0, 0, 100, 30))
         self.toolBox.addItem(self.page_3, u"Footer")
         self.page_4 = QWidget()
         self.page_4.setObjectName(u"page_4")
+        self.page_4.setGeometry(QRect(0, 0, 100, 30))
         self.toolBox.addItem(self.page_4, u"Controllers")
 
         self.verticalLayout_22.addWidget(self.toolBox)
@@ -1716,7 +2828,7 @@ class Ui_MainWindow(object):
         self.scrollArea2.setWidgetResizable(True)
         self.scrollAreaWidgetContents2 = QWidget()
         self.scrollAreaWidgetContents2.setObjectName(u"scrollAreaWidgetContents2")
-        self.scrollAreaWidgetContents2.setGeometry(QRect(0, 0, 270, 736))
+        self.scrollAreaWidgetContents2.setGeometry(QRect(0, 0, 206, 201))
         self.scrollAreaWidgetContents2.setStyleSheet(u"")
         self.verticalLayout_20 = QVBoxLayout(self.scrollAreaWidgetContents2)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
@@ -2009,7 +3121,7 @@ class Ui_MainWindow(object):
         self.panelSettings3.setDefault(False)
         self.panelSettings5.setDefault(False)
         self.themingsTabs.setCurrentIndex(1)
-        self.toolBox.setCurrentIndex(0)
+        self.toolBox.setCurrentIndex(1)
         self.panelSettings4.setDefault(False)
 
 
@@ -2119,23 +3231,109 @@ class Ui_MainWindow(object):
         self.headerBgColor8_2.setText("")
         self.headerBgColor9_2.setText("")
         self.headerBgColor10_2.setText("")
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"textColors", None))
-        self.headerBgColor3_3.setText("")
-        self.headerBgColor4_3.setText("")
-        self.headerBgColor5_3.setText("")
-        self.label_21.setText(QCoreApplication.translate("MainWindow", u"bgColors", None))
-        self.headerBgColor3_6.setText("")
-        self.headerBgColor4_6.setText("")
-        self.headerBgColor5_6.setText("")
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"bgColors", None))
-        self.headerBgColor3_7.setText("")
-        self.headerBgColor4_7.setText("")
-        self.headerBgColor5_7.setText("")
-        self.label_23.setText(QCoreApplication.translate("MainWindow", u"bgColors", None))
-        self.headerBgColor3_8.setText("")
-        self.headerBgColor4_8.setText("")
-        self.headerBgColor5_8.setText("")
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_11.setText("")
+        self.headerBgColor5_10.setText("")
+        self.headerBgColor4_12.setText("")
+        self.headerBgColor3_11.setText("")
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Footer", None))
+        self.headerBgColor4_13.setText("")
+        self.headerBgColor5_11.setText("")
+        self.headerBgColor4_14.setText("")
+        self.headerBgColor3_12.setText("")
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Panels", None))
+        self.headerBgColor4_15.setText("")
+        self.headerBgColor5_12.setText("")
+        self.headerBgColor4_16.setText("")
+        self.headerBgColor3_13.setText("")
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Controls", None))
+        self.headerBgColor4_17.setText("")
+        self.headerBgColor5_13.setText("")
+        self.headerBgColor4_18.setText("")
+        self.headerBgColor3_14.setText("")
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Border", None))
+        self.headerBgColor4_19.setText("")
+        self.headerBgColor5_14.setText("")
+        self.headerBgColor4_20.setText("")
+        self.headerBgColor3_15.setText("")
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"ViewHeader", None))
+        self.headerBgColor4_21.setText("")
+        self.headerBgColor5_15.setText("")
+        self.headerBgColor4_22.setText("")
+        self.headerBgColor3_16.setText("")
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Text", None))
+        self.headerBgColor4_23.setText("")
+        self.headerBgColor5_16.setText("")
+        self.headerBgColor4_24.setText("")
+        self.headerBgColor3_17.setText("")
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Icons", None))
+        self.headerBgColor4_9.setText("")
+        self.headerBgColor5_9.setText("")
+        self.headerBgColor4_10.setText("")
+        self.headerBgColor3_10.setText("")
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("MainWindow", u"Header", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"bgColors", None))
+        self.contentMainColor1.setText("")
+        self.contentMainColor2.setText("")
+        self.contentMainColor3.setText("")
+        self.contentMainColor4.setText("")
+        self.contentMainColor5.setText("")
+        self.contentMainColor6.setText("")
+        self.contentMainColor7.setText("")
+        self.contentMainColor8.setText("")
+        self.contentMainColor9.setText("")
+        self.contentMainColor10.setText("")
+        self.contentMainColor11.setText("")
+        self.contentMainColor12.setText("")
+        self.contentMainColor13.setText("")
+        self.contentMainColor14.setText("")
+        self.contentMainColor15.setText("")
+        self.contentMainColor16.setText("")
+        self.contentMainColor17.setText("")
+        self.contentMainColor18.setText("")
+        self.contentMainColor19.setText("")
+        self.contentMainColor20.setText("")
+        self.contentMainColor21.setText("")
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.contentHeaderColor1.setText("")
+        self.contentHeaderColor2.setText("")
+        self.contentHeaderColor3.setText("")
+        self.contentHeaderColor4.setText("")
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Footer", None))
+        self.contentFooterColor1.setText("")
+        self.contentFooterColor2.setText("")
+        self.contentFooterColor3.setText("")
+        self.contentFooterColor4.setText("")
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Border", None))
+        self.contentBorderColor1.setText("")
+        self.contentBorderColor2.setText("")
+        self.contentBorderColor3.setText("")
+        self.contentBorderColor4.setText("")
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_33.setText("")
+        self.headerBgColor5_21.setText("")
+        self.headerBgColor4_34.setText("")
+        self.headerBgColor3_22.setText("")
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_35.setText("")
+        self.headerBgColor5_22.setText("")
+        self.headerBgColor4_36.setText("")
+        self.headerBgColor3_23.setText("")
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_37.setText("")
+        self.headerBgColor5_23.setText("")
+        self.headerBgColor4_38.setText("")
+        self.headerBgColor3_24.setText("")
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_39.setText("")
+        self.headerBgColor5_24.setText("")
+        self.headerBgColor4_40.setText("")
+        self.headerBgColor3_25.setText("")
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Header", None))
+        self.headerBgColor4_41.setText("")
+        self.headerBgColor5_25.setText("")
+        self.headerBgColor4_42.setText("")
+        self.headerBgColor3_26.setText("")
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("MainWindow", u"Content", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_3), QCoreApplication.translate("MainWindow", u"Footer", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_4), QCoreApplication.translate("MainWindow", u"Controllers", None))

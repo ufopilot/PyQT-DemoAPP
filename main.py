@@ -37,6 +37,16 @@ class MainWidget(Base_Class, Gen_Class):
 		self.menu_data = menu_settings.items
 		
 		##########################################################################################
+		# Set Settings
+		##########################################################################################
+		self.resize(self.settings['startup_size'][0], self.settings['startup_size'][1])
+		self.setMinimumSize(QSize(self.settings['minimum_size'][0], self.settings['minimum_size'][1]))
+		self.appTitle.setText(self.settings['app_name'])
+		self.appDescription.setText(self.settings['description'])
+		#self.autor.setText(self.settings['autor'])
+		self.autor.setText(f"{self.settings['version']} | {self.settings['year']} | {self.settings['autor']}")
+		self.appLogo.setPixmap(QPixmap(UIFunctions().resource_path(self.settings['icon']['png'])))
+		##########################################################################################
 		# custom_title_bar 
 		##########################################################################################
 		if self.settings['custom_title_bar']:
