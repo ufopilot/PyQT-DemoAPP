@@ -1,13 +1,13 @@
 {
     "theme": {
         "header": {
-            "background": "#007bff",
-            "hover": "#0052aa",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "background_alternate": "#0052aa",
-            "border": "#003d7f"
+            "background": "#6c757d",
+            "hover": "#6c757d",
+            "first_text": "#1b202c",
+            "second_text": "#dddddd",
+            "third_text": "#1b202c",
+            "background_alternate": "#484e53",
+            "border": "#6c757d"
         },
         "footer": {
             "background": "#5d5e67",
@@ -19,26 +19,26 @@
             "border": "#3e3f45"
         },
         "content": {
-            "background": "#1b202c",
-            "background_alternate": "#12151d",
-            "header": "#0e1016",
-            "footer": "#24272a",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "border": "#090b0f",
-            "hover": "#363a3e"
+            "background": "#6610f2",
+            "background_alternate": "#440ba1",
+            "header": "#6610f2",
+            "footer": "#6610f2",
+            "first_text": "#ffffff",
+            "second_text": "#ffffff",
+            "third_text": "#ffffff",
+            "border": "#6610f2",
+            "hover": "#6610f2"
         },
         "controller": {
-            "background": "#dc3545",
-            "background_alternate": "#93232e",
+            "background": "#6c757d",
+            "background_alternate": "#484e53",
             "header": "#666",
             "footer": "#888",
-            "first_text": "#aaa",
-            "second_text": "#bbb",
-            "third_text": "#ccc",
-            "border": "#dc3545",
-            "hover": "#090b0f"
+            "first_text": "#1b202c",
+            "second_text": "#1b202c",
+            "third_text": "#1b202c",
+            "border": "#484e53",
+            "hover": "#6c757d"
         }
     },
     "colors": {

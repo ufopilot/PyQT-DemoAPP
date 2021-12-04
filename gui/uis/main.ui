@@ -91,7 +91,7 @@
            <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="appLogo">
@@ -1505,6 +1505,22 @@ QPushButton:checked{
 #contentMainColor19, #headerMainColor19, #footerMainColor19, #controllerMainColor19{ background: #121212;}
 #contentMainColor20, #headerMainColor20, #footerMainColor20, #controllerMainColor20{ background: #313648;}
 #contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #cccccc;}
+
+#contentFirst_textColor1, #headerFirst_textColor1, #footerFirst_textColor1, #controllerFirst_textColor1{ background:  	#ffffff;}
+#contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;}
+#contentFirst_textColor3, #headerFirst_textColor3, #footerFirst_textColor3, #controllerFirst_textColor3{ background:  	#111111;}
+#contentFirst_textColor4, #headerFirst_textColor4, #footerFirst_textColor4, #controllerFirst_textColor4{ background:  	#333333;}
+
+#contentSecond_textColor1, #headerSecond_textColor1, #footerSecond_textColor1, #controllerSecond_textColor1{ background:  #ffffff;}
+#contentSecond_textColor2, #headerSecond_textColor2, #footerSecond_textColor2, #controllerSecond_textColor2{ background:  #dddddd;}
+#contentSecond_textColor3, #headerSecond_textColor3, #footerSecond_textColor3, #controllerSecond_textColor3{ background:  #111111;}
+#contentSecond_textColor4, #headerSecond_textColor4, #footerSecond_textColor4, #controllerSecond_textColor4{ background:  #333333;}
+
+#contentThird_textColor1, #headerThird_textColor1, #footerThird_textColor1, #controllerThird_textColor1{ background:  #ffffff;}
+#contentThird_textColor2, #headerThird_textColor2, #footerThird_textColor2, #controllerThird_textColor2{ background:  #dddddd;}
+#contentThird_textColor3, #headerThird_textColor3, #footerThird_textColor3, #controllerThird_textColor3{ background:  #111111;}
+#contentThird_textColor4, #headerThird_textColor4, #footerThird_textColor4, #controllerThird_textColor4{ background:  #333333;}
+
 /*
 --blue: #007bff;
 --indigo: #6610f2;
@@ -1566,7 +1582,7 @@ QToolBox::tab:selected {
                  <item>
                   <widget class="QToolBox" name="toolBox">
                    <property name="currentIndex">
-                    <number>1</number>
+                    <number>3</number>
                    </property>
                    <widget class="QWidget" name="page">
                     <property name="geometry">
@@ -2572,7 +2588,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_89">
                           <item>
-                           <widget class="QPushButton" name="headerFist_textColor1">
+                           <widget class="QPushButton" name="headerFirst_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -2591,7 +2607,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerFist_textColor2">
+                           <widget class="QPushButton" name="headerFirst_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -2610,7 +2626,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerFist_textColor3">
+                           <widget class="QPushButton" name="headerFirst_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -2629,7 +2645,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerFist_textColor3_2">
+                           <widget class="QPushButton" name="headerFirst_textColor3_2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -4359,7 +4375,7 @@ QToolBox::tab:selected {
                            </property>
                            <layout class="QHBoxLayout" name="horizontalLayout_69">
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_35">
+                             <widget class="QPushButton" name="contentFirst_textColor1">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4378,7 +4394,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor5_22">
+                             <widget class="QPushButton" name="contentFirst_textColor2">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4397,7 +4413,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_36">
+                             <widget class="QPushButton" name="contentFirst_textColor3">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4416,7 +4432,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor3_23">
+                             <widget class="QPushButton" name="contentFirst_textColor4">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4529,7 +4545,7 @@ QToolBox::tab:selected {
                            </property>
                            <layout class="QHBoxLayout" name="horizontalLayout_72">
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_37">
+                             <widget class="QPushButton" name="contentSecond_textColor1">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4548,7 +4564,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor5_23">
+                             <widget class="QPushButton" name="contentSecond_textColor2">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4567,7 +4583,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_38">
+                             <widget class="QPushButton" name="contentSecond_textColor3">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4586,7 +4602,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor3_24">
+                             <widget class="QPushButton" name="contentSecond_textColor4">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4699,7 +4715,7 @@ QToolBox::tab:selected {
                            </property>
                            <layout class="QHBoxLayout" name="horizontalLayout_75">
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_39">
+                             <widget class="QPushButton" name="contentThird_textColor1">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4718,7 +4734,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor5_24">
+                             <widget class="QPushButton" name="contentThird_textColor2">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4737,7 +4753,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor4_40">
+                             <widget class="QPushButton" name="contentThird_textColor3">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4756,7 +4772,7 @@ QToolBox::tab:selected {
                              </widget>
                             </item>
                             <item>
-                             <widget class="QPushButton" name="headerBgColor3_25">
+                             <widget class="QPushButton" name="contentThird_textColor4">
                               <property name="minimumSize">
                                <size>
                                 <width>24</width>
@@ -4788,8 +4804,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>252</width>
-                      <height>600</height>
+                      <width>100</width>
+                      <height>30</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -5787,7 +5803,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_139">
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor1_4">
+                           <widget class="QPushButton" name="footerFirst_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5806,7 +5822,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor2_4">
+                           <widget class="QPushButton" name="footerFirst_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5825,7 +5841,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor3_4">
+                           <widget class="QPushButton" name="footerFirst_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5844,7 +5860,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor4_4">
+                           <widget class="QPushButton" name="footerFirst_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5957,7 +5973,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_142">
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor1_4">
+                           <widget class="QPushButton" name="footerSecond_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5976,7 +5992,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor2_4">
+                           <widget class="QPushButton" name="footerSecond_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -5995,7 +6011,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor3_4">
+                           <widget class="QPushButton" name="footerSecond_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -6014,7 +6030,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor4_4">
+                           <widget class="QPushButton" name="footerSecond_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -6127,7 +6143,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_145">
                           <item>
-                           <widget class="QPushButton" name="headerBgColor4_59">
+                           <widget class="QPushButton" name="footerThird_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -6146,7 +6162,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor5_34">
+                           <widget class="QPushButton" name="footerThird_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -6165,7 +6181,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor4_60">
+                           <widget class="QPushButton" name="footerThird_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -6184,7 +6200,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor3_35">
+                           <widget class="QPushButton" name="footerThird_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7213,7 +7229,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_164">
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor1_5">
+                           <widget class="QPushButton" name="controllerFirst_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7232,7 +7248,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor2_5">
+                           <widget class="QPushButton" name="controllerFirst_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7251,7 +7267,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor3_5">
+                           <widget class="QPushButton" name="controllerFirst_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7270,7 +7286,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentBorderColor4_5">
+                           <widget class="QPushButton" name="controllerFirst_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7383,7 +7399,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_167">
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor1_5">
+                           <widget class="QPushButton" name="controllerSecond_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7402,7 +7418,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor2_5">
+                           <widget class="QPushButton" name="controllerSecond_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7421,7 +7437,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor3_5">
+                           <widget class="QPushButton" name="controllerSecond_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7440,7 +7456,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="contentHoverColor4_5">
+                           <widget class="QPushButton" name="controllerSecond_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7553,7 +7569,7 @@ QToolBox::tab:selected {
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_170">
                           <item>
-                           <widget class="QPushButton" name="headerBgColor4_67">
+                           <widget class="QPushButton" name="controllerThird_textColor1">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7572,7 +7588,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor5_38">
+                           <widget class="QPushButton" name="controllerThird_textColor2">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7591,7 +7607,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor4_68">
+                           <widget class="QPushButton" name="controllerThird_textColor3">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7610,7 +7626,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerBgColor3_39">
+                           <widget class="QPushButton" name="controllerThird_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -7690,8 +7706,8 @@ QToolBox::tab:selected {
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>270</width>
-                         <height>726</height>
+                         <width>206</width>
+                         <height>201</height>
                         </rect>
                        </property>
                        <property name="styleSheet">

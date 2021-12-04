@@ -26,11 +26,13 @@ color_names = {
 	}
 
 class Theming(QWidget):
+	_init = True
 	def __init__(self, parent=None):
 		super(self.__class__, self).__init__(parent)
 		self.ui = parent
 		self.theme_settings = Settings('theme')
 		self.selectColors()
+		
 		for button in self.ui.findChildren(QAbstractButton):
 			if "MainColor" in button.objectName():
 				button.setCursor(QCursor(Qt.PointingHandCursor))
@@ -43,6 +45,13 @@ class Theming(QWidget):
 				button.setCursor(QCursor(Qt.PointingHandCursor))
 				button.setCheckable(True)
 				button.clicked.connect(self.changeColor)
+
+		List = ("First_textColor", "Second_textColor", "Third_textColor")
+		for button in self.ui.findChildren(QAbstractButton):
+			if any(comp in button.objectName() for comp in List):
+				button.setCursor(QCursor(Qt.PointingHandCursor))
+				button.setCheckable(True)
+				button.clicked.connect(self.changeTextColor)
 				
 	def selectColors(self):
 		T = 0
@@ -60,6 +69,11 @@ class Theming(QWidget):
 						
 						T += 100
 						D += 100
+		
+		QTimer.singleShot(D, self.setInitFalse)
+
+	def setInitFalse(self):
+		self._init = False
 
 	def selectSubColors(self, comp):
 		T = 0
@@ -86,6 +100,7 @@ class Theming(QWidget):
 	#	print(item.objectName())
 
 	def getColorPalette(self):
+
 		button = self.sender()
 		name = button.objectName()
 		parentFrame = button.parent().parent()
@@ -124,10 +139,26 @@ class Theming(QWidget):
 				except:
 					pass	
 				i += 1
+		# on changing main background -> click first subcolor
+		#####################################################
+		if not self._init:
+			for tg, value in buttons.items():
+				T=100
+				sub_btn = eval(f"self.ui.{self.typos(name)}{tg}Color1")
+				#for sub_btn in (self.ui.headerHoverColor1, self.ui.headerBorderColor1):
+				QTimer.singleShot(T, partial(self.toggleSelected, sub_btn))
+				QTimer.singleShot(T, sub_btn.clicked.emit)
+				T += 100
+		# write theme-settings
+		# ###################################################		
 		self.theme_settings.items['theme'][self.typos(name)]['background'] = color
 		self.theme_settings.items['theme'][self.typos(name)]['background_alternate'] = colorList[2]
 		self.theme_settings.serialize()
+		
+		# reload stylesheet
+		#####################################################
 		self.reloadStyle()
+		
 
 	def changeColor(self):
 		button = self.sender()
@@ -142,6 +173,35 @@ class Theming(QWidget):
 		
 		self.theme_settings.serialize()
 		self.reloadStyle()
+
+	def changeTextColor(self):
+		button = self.sender()
+		name = button.objectName()
+		parentFrame = button.parent()
+		for btn in parentFrame.findChildren(QAbstractButton):
+			_name = btn.objectName()
+			if btn.isChecked() and _name != name:
+				btn.toggle()
+		color = button.palette().color(QPalette.Background).name()
+		self.theme_settings.items['theme'][self.typos(name)][self.component(name)] = color
+		
+		self.theme_settings.serialize()
+		self.reloadStyle()
+
+	def clickSubSelected(self, button, T):
+		QTimer.singleShot(T, button.clicked.emit)
+
+	def toggleSelected(self, button):
+		name = button.objectName()
+		parentFrame = button.parent()
+		
+		for btn in parentFrame.findChildren(QAbstractButton):
+			if btn.isChecked():
+				btn.toggle()
+		button.toggle()
+		
+
+		
 
 	def component(self, name):
 		strings = re.sub( r"([A-Z])", r" \1", name).split()
@@ -167,7 +227,6 @@ class Theming(QWidget):
 		
 		typos = re.sub('MainColor.*', '', button.objectName())
 		
-		print("{}: darker {}, middle {}, color {}, lighter {}".format(typos, darker, middle, color, lighter))
 		if "icon" in button.objectName():
 			print(color_names[color])
 			self.theme_settings.items['colors']['icon_bg'] = color_names[color]

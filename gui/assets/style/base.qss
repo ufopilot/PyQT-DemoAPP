@@ -20,7 +20,8 @@
 
 #mainHeader{
 	background:  var(header[background]);
-	color: var(header[second_text])
+	color: var(header[second_text]);
+	border-bottom: 2px solid var(header[border]);
 }
 
 #mainHeader QLabel{
@@ -106,6 +107,7 @@ QLabel#appLogo{
 #controllerPanel6{
  	background: var(controller[background]);
     border-right: 1px solid var(controller[border]);
+	border-top: none;
 	
 }
 
