@@ -665,35 +665,36 @@ class Ui_MainWindow(object):
 "#iconBgColor8{ background: white; }\n"
 "#iconBgColor9{ background: purple; }\n"
 "#iconBgColor10{ background: red; }\n"
-"\n"
-"#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:  #3ca2d9;}\n"
-"#contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:  #6610f2;}\n"
-"#contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:  #6f42c1;}\n"
-"#contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:  #e83e8c;}\n"
-"#contentMainColor5, #headerMainColor5, #footerMainColor5, #controllerMainColor5{ background:  #dc3545;}\n"
-"#contentMainColo"
-                        "r6, #headerMainColor6, #footerMainColor6, #controllerMainColor6{ background:  #fd7e14;}\n"
-"#contentMainColor7, #headerMainColor7, #footerMainColor7, #controllerMainColor7{ background:  #ffc107;}\n"
-"#contentMainColor8, #headerMainColor8, #footerMainColor8, #controllerMainColor8{ background:  #28a745;}\n"
-"#contentMainColor9, #headerMainColor9, #footerMainColor9, #controllerMainColor9{ background:  #20c997;}\n"
+"/*\n"
+"#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:     #3ca2d9;}\n"
+"#contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:     #6610f2;}\n"
+"#contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:     #6f42c1;}\n"
+"#contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:     #e83e8c;}\n"
+"#contentMainColor5, #headerMainColor5, #footerMainColor5, #controllerMainColor5{ background:     #dc3545;}\n"
+""
+                        "#contentMainColor6, #headerMainColor6, #footerMainColor6, #controllerMainColor6{ background:     #fd7e14;}\n"
+"#contentMainColor7, #headerMainColor7, #footerMainColor7, #controllerMainColor7{ background:     #ffc107;}\n"
+"#contentMainColor8, #headerMainColor8, #footerMainColor8, #controllerMainColor8{ background:     #28a745;}\n"
+"#contentMainColor9, #headerMainColor9, #footerMainColor9, #controllerMainColor9{ background:     #20c997;}\n"
 "#contentMainColor10, #headerMainColor10, #footerMainColor10, #controllerMainColor10{ background: #17a2b8;}\n"
 "#contentMainColor11, #headerMainColor11, #footerMainColor11, #controllerMainColor11{ background: #ffffff;}\n"
 "#contentMainColor12, #headerMainColor12, #footerMainColor12, #controllerMainColor12{ background: #6c757d;}\n"
 "#contentMainColor13, #headerMainColor13, #footerMainColor13, #controllerMainColor13{ background: #343a40;}\n"
 "#contentMainColor14, #headerMainColor14, #footerMainColor14, #controllerMainColor14{ background: #5d5e67;}\n"
-"#contentMainColor15, #headerMainColor15, #footerMainCo"
-                        "lor15, #controllerMainColor15{ background: #0b0f13;}\n"
+"#contentMainColor15, #head"
+                        "erMainColor15, #footerMainColor15, #controllerMainColor15{ background: #0b0f13;}\n"
 "#contentMainColor16, #headerMainColor16, #footerMainColor16, #controllerMainColor16{ background: #1b202c;}\n"
 "#contentMainColor17, #headerMainColor17, #footerMainColor17, #controllerMainColor17{ background: #13161f;}\n"
 "#contentMainColor18, #headerMainColor18, #footerMainColor18, #controllerMainColor18{ background: #343a40;}\n"
 "#contentMainColor19, #headerMainColor19, #footerMainColor19, #controllerMainColor19{ background: #121212;}\n"
 "#contentMainColor20, #headerMainColor20, #footerMainColor20, #controllerMainColor20{ background: #313648;}\n"
 "#contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #eceef2;}\n"
-"\n"
+"*/\n"
+"/*\n"
 "#contentFirst_textColor1, #headerFirst_textColor1, #footerFirst_textColor1, #controllerFirst_textColor1{ background:  	#ffffff;}\n"
-"#contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;}\n"
-"#contentFirst_textColor3, #head"
-                        "erFirst_textColor3, #footerFirst_textColor3, #controllerFirst_textColor3{ background:  	#111111;}\n"
+"#contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;"
+                        "}\n"
+"#contentFirst_textColor3, #headerFirst_textColor3, #footerFirst_textColor3, #controllerFirst_textColor3{ background:  	#111111;}\n"
 "#contentFirst_textColor4, #headerFirst_textColor4, #footerFirst_textColor4, #controllerFirst_textColor4{ background:  	#333333;}\n"
 "\n"
 "#contentSecond_textColor1, #headerSecond_textColor1, #footerSecond_textColor1, #controllerSecond_textColor1{ background:  #ffffff;}\n"
@@ -702,11 +703,11 @@ class Ui_MainWindow(object):
 "#contentSecond_textColor4, #headerSecond_textColor4, #footerSecond_textColor4, #controllerSecond_textColor4{ background:  #333333;}\n"
 "\n"
 "#contentThird_textColor1, #headerThird_textColor1, #footerThird_textColor1, #controllerThird_textColor1{ background:  #ffffff;}\n"
-"#contentThird_textColor2, #headerThird_textColor2, #footerThird_textColor2, #controllerThird_textColor2{"
-                        " background:  #dddddd;}\n"
+"#contentThird_textColor2, #headerThird_textColor2, #footerThird_tex"
+                        "tColor2, #controllerThird_textColor2{ background:  #dddddd;}\n"
 "#contentThird_textColor3, #headerThird_textColor3, #footerThird_textColor3, #controllerThird_textColor3{ background:  #111111;}\n"
 "#contentThird_textColor4, #headerThird_textColor4, #footerThird_textColor4, #controllerThird_textColor4{ background:  #333333;}\n"
-"\n"
+"*/\n"
 "/*\n"
 "--blue: #007bff;\n"
 "--indigo: #6610f2;\n"
@@ -742,8 +743,8 @@ class Ui_MainWindow(object):
 "\n"
 "QToolBox::tab {\n"
 "    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"                                stop"
-                        ": 0 #13161f, stop: 0.4 #161924,\n"
+""
+                        "                                stop: 0 #13161f, stop: 0.4 #161924,\n"
 "                                stop: 0.5 #171c26, stop: 1.0 #1b202c);\n"
 "    border-radius: 5px;\n"
 "    color: darkgray;\n"
@@ -1158,12 +1159,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_89.addWidget(self.headerFirst_textColor3)
 
-        self.headerFirst_textColor3_2 = QPushButton(self.panelsBackground_54)
-        self.headerFirst_textColor3_2.setObjectName(u"headerFirst_textColor3_2")
-        self.headerFirst_textColor3_2.setMinimumSize(QSize(24, 24))
-        self.headerFirst_textColor3_2.setMaximumSize(QSize(24, 24))
+        self.headerFirst_textColor4 = QPushButton(self.panelsBackground_54)
+        self.headerFirst_textColor4.setObjectName(u"headerFirst_textColor4")
+        self.headerFirst_textColor4.setMinimumSize(QSize(24, 24))
+        self.headerFirst_textColor4.setMaximumSize(QSize(24, 24))
 
-        self.horizontalLayout_89.addWidget(self.headerFirst_textColor3_2)
+        self.horizontalLayout_89.addWidget(self.headerFirst_textColor4)
 
 
         self.horizontalLayout_87.addWidget(self.panelsBackground_54)
@@ -1983,7 +1984,7 @@ class Ui_MainWindow(object):
         self.toolBox.addItem(self.page_2, u"Content")
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.page_3.setGeometry(QRect(0, 0, 100, 30))
+        self.page_3.setGeometry(QRect(0, 0, 252, 600))
         self.widget_9 = QWidget(self.page_3)
         self.widget_9.setObjectName(u"widget_9")
         self.widget_9.setGeometry(QRect(10, 10, 241, 591))
@@ -3083,7 +3084,7 @@ class Ui_MainWindow(object):
         self.scrollArea2.setWidgetResizable(True)
         self.scrollAreaWidgetContents2 = QWidget()
         self.scrollAreaWidgetContents2.setObjectName(u"scrollAreaWidgetContents2")
-        self.scrollAreaWidgetContents2.setGeometry(QRect(0, 0, 206, 201))
+        self.scrollAreaWidgetContents2.setGeometry(QRect(0, 0, 270, 726))
         self.scrollAreaWidgetContents2.setStyleSheet(u"")
         self.verticalLayout_20 = QVBoxLayout(self.scrollAreaWidgetContents2)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
@@ -3268,28 +3269,37 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setSpacing(0)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.footerframe1 = QFrame(self.mainFooter)
-        self.footerframe1.setObjectName(u"footerframe1")
-        self.footerframe1.setFrameShape(QFrame.StyledPanel)
-        self.footerframe1.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_11 = QHBoxLayout(self.footerframe1)
+        self.footerLabel = QFrame(self.mainFooter)
+        self.footerLabel.setObjectName(u"footerLabel")
+        self.footerLabel.setFrameShape(QFrame.StyledPanel)
+        self.footerLabel.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.footerLabel)
         self.horizontalLayout_11.setSpacing(0)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
         self.horizontalLayout_11.setContentsMargins(12, 0, 0, 0)
-        self.autor = QLabel(self.footerframe1)
+        self.autor = QLabel(self.footerLabel)
         self.autor.setObjectName(u"autor")
 
         self.horizontalLayout_11.addWidget(self.autor)
 
 
-        self.horizontalLayout_7.addWidget(self.footerframe1)
+        self.horizontalLayout_7.addWidget(self.footerLabel)
 
-        self.footerframe2 = QFrame(self.mainFooter)
-        self.footerframe2.setObjectName(u"footerframe2")
-        self.footerframe2.setFrameShape(QFrame.StyledPanel)
-        self.footerframe2.setFrameShadow(QFrame.Raised)
+        self.loadingFrame = QFrame(self.mainFooter)
+        self.loadingFrame.setObjectName(u"loadingFrame")
+        self.loadingFrame.setFrameShape(QFrame.StyledPanel)
+        self.loadingFrame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.loadingFrame)
+        self.horizontalLayout_12.setSpacing(0)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.loadingLabel = QLabel(self.loadingFrame)
+        self.loadingLabel.setObjectName(u"loadingLabel")
 
-        self.horizontalLayout_7.addWidget(self.footerframe2)
+        self.horizontalLayout_12.addWidget(self.loadingLabel)
+
+
+        self.horizontalLayout_7.addWidget(self.loadingFrame)
 
         self.footerActions = QFrame(self.mainFooter)
         self.footerActions.setObjectName(u"footerActions")
@@ -3379,7 +3389,7 @@ class Ui_MainWindow(object):
         self.panelSettings3.setDefault(False)
         self.panelSettings5.setDefault(False)
         self.themingsTabs.setCurrentIndex(0)
-        self.toolBox.setCurrentIndex(3)
+        self.toolBox.setCurrentIndex(0)
         self.panelSettings4.setDefault(False)
 
 
@@ -3445,7 +3455,7 @@ class Ui_MainWindow(object):
         self.headerFirst_textColor1.setText("")
         self.headerFirst_textColor2.setText("")
         self.headerFirst_textColor3.setText("")
-        self.headerFirst_textColor3_2.setText("")
+        self.headerFirst_textColor4.setText("")
         self.label_51.setText(QCoreApplication.translate("MainWindow", u"Text2", None))
         self.headerSecond_textColor1.setText("")
         self.headerSecond_textColor2.setText("")
@@ -3632,6 +3642,7 @@ class Ui_MainWindow(object):
         self.panelSettings4.setText("")
         self.headerPanel4.setText(QCoreApplication.translate("MainWindow", u"Theming & Customizing", None))
         self.autor.setText(QCoreApplication.translate("MainWindow", u"autor", None))
+        self.loadingLabel.setText(QCoreApplication.translate("MainWindow", u"Loading ...", None))
         self.pushButton.setText("")
         self.pushButton_2.setText("")
         self.pushButton_3.setText("")

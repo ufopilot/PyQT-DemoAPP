@@ -1,5 +1,7 @@
 import time
 from threading import Timer
+
+from PyQt5.QtCore import QThreadPool
 from qt_core import *
 from gui.content import *
 
@@ -31,7 +33,8 @@ class Theming(QWidget):
 		super(self.__class__, self).__init__(parent)
 		self.ui = parent
 		self.theme_settings = Settings('theme')
-		self.selectColors()
+		#self.selectColors()
+		QTimer.singleShot(1000, self.selectColors)
 		
 		for button in self.ui.findChildren(QAbstractButton):
 			if "MainColor" in button.objectName():
@@ -52,16 +55,25 @@ class Theming(QWidget):
 				button.setCursor(QCursor(Qt.PointingHandCursor))
 				button.setCheckable(True)
 				button.clicked.connect(self.changeTextColor)
-				
+
 	def selectColors(self):
 		T = 0
 		D=1000
+		backgroundColorList = self.theme_settings.items['colors']['background']
 		for comp in ("header", "footer", "controller", "content"):	
 			compString = comp+"MainColor"
 			color = self.theme_settings.items['theme'][comp]['background']
 			
 			for button in self.ui.findChildren(QAbstractButton):
 				if compString in button.objectName():
+					# load background colors
+					#####################################################
+					regex = r"[A-z]*(\d*)"
+					subst = "\\1"
+					nr = re.sub(regex, subst, button.objectName(), 0, re.MULTILINE)
+					button.setStyleSheet(f"background: {backgroundColorList[int(nr)-1]}")
+					# get selected background
+					#####################################################
 					if color == button.palette().color(QPalette.Background).name():	
 						QTimer.singleShot(T, button.clicked.emit)
 						QTimer.singleShot(T, button.toggle)
@@ -69,8 +81,19 @@ class Theming(QWidget):
 						
 						T += 100
 						D += 100
+				# load text colors
+				#####################################################
+				textColorList = self.theme_settings.items['colors']['text']
+				for substr in ("First_text", "Second_text", "Third_text"):
+					i = 1
+					for textColor in textColorList:
+						btn = eval(f"self.ui.{comp}{substr}Color{i}")
+						btn.setStyleSheet(f"background: {textColor}") 
+						i += 1
 		
 		QTimer.singleShot(D, self.setInitFalse)
+		# clear loadings infos
+		self.ui.loadingLabel.setText("")
 
 	def setInitFalse(self):
 		self._init = False
@@ -85,19 +108,11 @@ class Theming(QWidget):
 		for subcomp in subcomps:
 			color = self.theme_settings.items['theme'][comp][subcomp.lower()]
 			for i in range(1,5):
-				#item = comp+subcomp+"Color"+str(i)
-				#btn = eval(self.ui.comp+subcomp+"Color"+str(i))
 				btn = self.ui.findChild(QPushButton, f"{comp}{subcomp}Color{i}")
 				if color == btn.palette().color(QPalette.Background).name():
 					QTimer.singleShot(T, btn.clicked.emit)
 					QTimer.singleShot(T, btn.toggle)
 			T += 100		
-
-	#def setSelected(self, item):
-		#QTimer.singleShot(3000, lambda: item.toggle())
-		#self.getColorPaletteinit = True, button = item)
-		#QTimer.singleShot(5000, item.clicked.emit)
-	#	print(item.objectName())
 
 	def getColorPalette(self):
 
@@ -127,7 +142,6 @@ class Theming(QWidget):
 			for tg, value in buttons.items():
 				try:
 					buttons[tg].append(eval(f"self.ui.{self.typos(name)}{tg}Color{x}"))
-					#print(f"self.ui.{self.typos(name)}{tg}Color{x}")
 				except:
 					pass
 		
@@ -139,6 +153,16 @@ class Theming(QWidget):
 				except:
 					pass	
 				i += 1
+		## load text colors
+		######################################################
+		#textColorList = self.theme_settings.items['colors']['text']
+		#for substr in ("First_text", "Second_text", "Third_text"):
+		#	i = 1
+		#	for textColor in textColorList:
+		#		btn = eval(f"self.ui.{self.typos(name)}{substr}Color{i}")
+		#		btn.setStyleSheet(f"background: {textColor}") 
+		#		i += 1
+
 		# on changing main background -> click first subcolor
 		#####################################################
 		if not self._init:
@@ -228,7 +252,6 @@ class Theming(QWidget):
 		typos = re.sub('MainColor.*', '', button.objectName())
 		
 		if "icon" in button.objectName():
-			print(color_names[color])
 			self.theme_settings.items['colors']['icon_bg'] = color_names[color]
 			self.changeIcons()
 		self.theme_settings.serialize()
@@ -239,8 +262,6 @@ class Theming(QWidget):
 		#self.ui.panel1.deleteLater()
 		#self.ui.panel1.repaint()
 		#for button in self.ui.findChildren(QAbstractButton):
-		#	print(button.icon().name())
-			
 			#if "BgColor" in button.objectName():
 			#	button.setCursor(QCursor(Qt.PointingHandCursor))
 			#	button.clicked.connect(self.changeBg)

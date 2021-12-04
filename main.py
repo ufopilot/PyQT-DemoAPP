@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 #https://github.com/sciter-sdk/pysciter#getting-started
 
+from PyQt5.QtGui import QMovie
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 from gui.modules.button_handler.controller_buttons import SetControllerButtons
 from gui.modules.navigation.menu import SetMenu as SetLeftMenu
 from gui.modules.resizer.sidegrip import SideGrip
+
 from gui.modules.style.style import SetStyle
 from gui.modules.panel_settings.panel_settings import PanelSettings
 from gui.modules.theming.theming import Theming
@@ -13,12 +15,14 @@ from gui.modules.title_bar.titlebar import TitleBar
 
 from gui.widgets.label_vertical.label_vertical import LabelVertical
 
+from random import randint
 from qt_core import *
-
+import time
 
 if platform.system() == "Windows":
 	Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/main.ui"))
-
+else:
+	Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/main.ui"))
 
 
 class MainWidget(Base_Class, Gen_Class):
@@ -29,13 +33,20 @@ class MainWidget(Base_Class, Gen_Class):
 		##########################################################################################
 		super(self.__class__, self).__init__(parent)
 		self.setupUi(self)
+		
+		
 		# LOAD SETTINGS
 		# ///////////////////////////////////////////////////////////////
 		settings = Settings("ui")
 		self.settings = settings.items
 		menu_settings = Settings("menu")
 		self.menu_data = menu_settings.items
-		
+
+		##########################################################################################
+		# show loading infos
+		##########################################################################################
+		# footer
+
 		##########################################################################################
 		# Set Settings
 		##########################################################################################
@@ -94,7 +105,7 @@ class MainWidget(Base_Class, Gen_Class):
 		# Theming
 		#####################################################################################
 		Theming(self)
-
+			
 	def mousePressEvent(self, event):
 		if event.buttons() == Qt.RightButton:
 			self.pressing = False
@@ -194,7 +205,6 @@ if __name__ == '__main__':
 	app = QApplication(sys.argv)
 	window = MainWidget()
 	window.show()
-
 	#window.showMaximized()
 	sys.exit(app.exec_())
 

@@ -8,3 +8,7 @@ select text color on theming
 
 add some actions in customizing and footer
 
+
+0
+
+I solved this by adding an exception to the anti-virus monitoring software (F-Secure). It removed the wait of several minutes before running.

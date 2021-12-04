@@ -137,8 +137,7 @@
         <property name="styleSheet">
          <string notr="true">*{
 	font-size: 50px;
-	color: #fff;
-	
+
 }</string>
         </property>
         <property name="text">

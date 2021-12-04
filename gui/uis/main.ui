@@ -1483,16 +1483,16 @@ QPushButton:checked{
 #iconBgColor8{ background: white; }
 #iconBgColor9{ background: purple; }
 #iconBgColor10{ background: red; }
-
-#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:  #3ca2d9;}
-#contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:  #6610f2;}
-#contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:  #6f42c1;}
-#contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:  #e83e8c;}
-#contentMainColor5, #headerMainColor5, #footerMainColor5, #controllerMainColor5{ background:  #dc3545;}
-#contentMainColor6, #headerMainColor6, #footerMainColor6, #controllerMainColor6{ background:  #fd7e14;}
-#contentMainColor7, #headerMainColor7, #footerMainColor7, #controllerMainColor7{ background:  #ffc107;}
-#contentMainColor8, #headerMainColor8, #footerMainColor8, #controllerMainColor8{ background:  #28a745;}
-#contentMainColor9, #headerMainColor9, #footerMainColor9, #controllerMainColor9{ background:  #20c997;}
+/*
+#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:     #3ca2d9;}
+#contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:     #6610f2;}
+#contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:     #6f42c1;}
+#contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:     #e83e8c;}
+#contentMainColor5, #headerMainColor5, #footerMainColor5, #controllerMainColor5{ background:     #dc3545;}
+#contentMainColor6, #headerMainColor6, #footerMainColor6, #controllerMainColor6{ background:     #fd7e14;}
+#contentMainColor7, #headerMainColor7, #footerMainColor7, #controllerMainColor7{ background:     #ffc107;}
+#contentMainColor8, #headerMainColor8, #footerMainColor8, #controllerMainColor8{ background:     #28a745;}
+#contentMainColor9, #headerMainColor9, #footerMainColor9, #controllerMainColor9{ background:     #20c997;}
 #contentMainColor10, #headerMainColor10, #footerMainColor10, #controllerMainColor10{ background: #17a2b8;}
 #contentMainColor11, #headerMainColor11, #footerMainColor11, #controllerMainColor11{ background: #ffffff;}
 #contentMainColor12, #headerMainColor12, #footerMainColor12, #controllerMainColor12{ background: #6c757d;}
@@ -1505,7 +1505,8 @@ QPushButton:checked{
 #contentMainColor19, #headerMainColor19, #footerMainColor19, #controllerMainColor19{ background: #121212;}
 #contentMainColor20, #headerMainColor20, #footerMainColor20, #controllerMainColor20{ background: #313648;}
 #contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #eceef2;}
-
+*/
+/*
 #contentFirst_textColor1, #headerFirst_textColor1, #footerFirst_textColor1, #controllerFirst_textColor1{ background:  	#ffffff;}
 #contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;}
 #contentFirst_textColor3, #headerFirst_textColor3, #footerFirst_textColor3, #controllerFirst_textColor3{ background:  	#111111;}
@@ -1520,7 +1521,7 @@ QPushButton:checked{
 #contentThird_textColor2, #headerThird_textColor2, #footerThird_textColor2, #controllerThird_textColor2{ background:  #dddddd;}
 #contentThird_textColor3, #headerThird_textColor3, #footerThird_textColor3, #controllerThird_textColor3{ background:  #111111;}
 #contentThird_textColor4, #headerThird_textColor4, #footerThird_textColor4, #controllerThird_textColor4{ background:  #333333;}
-
+*/
 /*
 --blue: #007bff;
 --indigo: #6610f2;
@@ -1582,7 +1583,7 @@ QToolBox::tab:selected {
                  <item>
                   <widget class="QToolBox" name="toolBox">
                    <property name="currentIndex">
-                    <number>3</number>
+                    <number>0</number>
                    </property>
                    <widget class="QWidget" name="page">
                     <property name="geometry">
@@ -2645,7 +2646,7 @@ QToolBox::tab:selected {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="headerFirst_textColor3_2">
+                           <widget class="QPushButton" name="headerFirst_textColor4">
                             <property name="minimumSize">
                              <size>
                               <width>24</width>
@@ -4804,8 +4805,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>100</width>
-                      <height>30</height>
+                      <width>252</width>
+                      <height>600</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -7706,8 +7707,8 @@ QToolBox::tab:selected {
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>206</width>
-                         <height>201</height>
+                         <width>270</width>
+                         <height>726</height>
                         </rect>
                        </property>
                        <property name="styleSheet">
@@ -8082,7 +8083,7 @@ QToolBox::tab:selected {
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="footerframe1">
+           <widget class="QFrame" name="footerLabel">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -8116,13 +8117,37 @@ QToolBox::tab:selected {
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="footerframe2">
+           <widget class="QFrame" name="loadingFrame">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="loadingLabel">
+               <property name="text">
+                <string>Loading ...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
           <item alignment="Qt::AlignRight">

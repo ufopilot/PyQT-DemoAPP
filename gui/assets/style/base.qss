@@ -70,17 +70,24 @@ QLabel#appLogo{
 
 #mainFooter{
 	background:  var(footer[background]);
+	color: var(footer[second_text]);
 }
 
-#footerActions QPushButton{ 
+#footerActions QPushButton,
+#mainFooter QPushButton{ 
 	border: none;
 	background: var(footer[background]);
+	color: var(footer[first_text]);
 }
 
 #footerActions QPushButton:hover{
     background: var(footer[hover]);
+	color: var(footer[first_text]);
 }
 
+#mainFooter QLabel{
+	color: var(footer[second_text]);
+}
 
 /*******************************************/
 /* WINDOWACTIONS TOPICONS                  */
