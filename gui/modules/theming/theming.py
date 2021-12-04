@@ -113,9 +113,9 @@ class Theming(QWidget):
 		qcolor = QColor(color)
 
 		colorList.append(color)
-		colorList.append(qcolor.darker(300).name())
-		colorList.append(qcolor.darker(150).name())
-		colorList.append(qcolor.lighter(50).name())
+		colorList.append(qcolor.darker(110).name())
+		colorList.append(qcolor.darker(120).name())
+		colorList.append(qcolor.darker(130).name())
 		
 		i = 0
 		if self.typos(name) == "content":
@@ -152,7 +152,7 @@ class Theming(QWidget):
 		# write theme-settings
 		# ###################################################		
 		self.theme_settings.items['theme'][self.typos(name)]['background'] = color
-		self.theme_settings.items['theme'][self.typos(name)]['background_alternate'] = colorList[2]
+		self.theme_settings.items['theme'][self.typos(name)]['background_alternate'] = colorList[1]
 		self.theme_settings.serialize()
 		
 		# reload stylesheet

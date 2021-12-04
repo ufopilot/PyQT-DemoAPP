@@ -1484,7 +1484,7 @@ QPushButton:checked{
 #iconBgColor9{ background: purple; }
 #iconBgColor10{ background: red; }
 
-#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:  #007bff;}
+#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:  #3ca2d9;}
 #contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:  #6610f2;}
 #contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:  #6f42c1;}
 #contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:  #e83e8c;}
@@ -1504,7 +1504,7 @@ QPushButton:checked{
 #contentMainColor18, #headerMainColor18, #footerMainColor18, #controllerMainColor18{ background: #343a40;}
 #contentMainColor19, #headerMainColor19, #footerMainColor19, #controllerMainColor19{ background: #121212;}
 #contentMainColor20, #headerMainColor20, #footerMainColor20, #controllerMainColor20{ background: #313648;}
-#contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #cccccc;}
+#contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #eceef2;}
 
 #contentFirst_textColor1, #headerFirst_textColor1, #footerFirst_textColor1, #controllerFirst_textColor1{ background:  	#ffffff;}
 #contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;}

@@ -1,0 +1,10 @@
+put all settings in settings.json (menu, theme)
+
+change menu settings (remove football)
+
+add more sites (tabs, tables, ....)
+
+select text color on theming
+
+add some actions in customizing and footer
+

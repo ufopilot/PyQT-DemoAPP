@@ -106,9 +106,21 @@ QLabel#appLogo{
 #controllerPanel5, 
 #controllerPanel6{
  	background: var(controller[background]);
-    border-right: 1px solid var(controller[border]);
+    /*border-left: 1px solid var(controller[border]);*/
 	border-top: none;
 	
+}
+#controllerPanel1, 
+#controllerPanel2, 
+#controllerPanel3,
+#controllerPanel4, 
+#controllerPanel5, 
+#controllerPanel6{
+    border-left: 1px solid var(controller[border]);	
+}
+
+#controllerPanel5{
+    border-top: 1px solid var(controller[border]);	
 }
 
 #controllerPanel1 QPushButton, 
@@ -149,9 +161,11 @@ LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
     border-left: 1px solid var(controller[border]);
 }
 
+/*
 #controllerPanel3, #controllerPanel4, #controllerPanel5, #controllerPanel6{
     border-right: 1px solid var(controller[border]);
 }
+*/
 
 #panel6{
     border-right: 1px solid var(controller[border]);
