@@ -1,13 +1,13 @@
 {
     "theme": {
         "header": {
-            "background": "#3ca2d9",
-            "hover": "#3ca2d9",
-            "first_text": "#111111",
-            "second_text": "#ffffff",
+            "background": "#5d5e67",
+            "hover": "#5d5e67",
+            "first_text": "#ffffff",
+            "second_text": "#111111",
             "third_text": "#ffffff",
-            "background_alternate": "#3793c5",
-            "border": "#3ca2d9"
+            "background_alternate": "#55555e",
+            "border": "#5d5e67"
         },
         "footer": {
             "background": "#5d5e67",
@@ -19,15 +19,15 @@
             "border": "#5d5e67"
         },
         "content": {
-            "background": "#343a40",
-            "background_alternate": "#2f353a",
-            "header": "#343a40",
-            "footer": "#343a40",
+            "background": "#313648",
+            "background_alternate": "#2d3141",
+            "header": "#2d3141",
+            "footer": "#292d3c",
             "first_text": "#dddddd",
             "second_text": "#dddddd",
             "third_text": "#dddddd",
-            "border": "#343a40",
-            "hover": "#343a40"
+            "border": "#262a37",
+            "hover": "#292d3c"
         },
         "controller": {
             "background": "#6c757d",
@@ -36,9 +36,9 @@
             "footer": "#888",
             "first_text": "#ffffff",
             "second_text": "#111111",
-            "third_text": "#111111",
-            "border": "#5a6168",
-            "hover": "#5a6168"
+            "third_text": "#dddddd",
+            "border": "#6c757d",
+            "hover": "#6c757d"
         }
     },
     "colors": {
@@ -88,6 +88,6 @@
             "#ff00ff": "magenta",
             "#800080": "purple"
         },
-        "icon_bg": "gray"
+        "icon_bg": "white"
     }
 }

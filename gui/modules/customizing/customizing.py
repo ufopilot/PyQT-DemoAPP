@@ -21,12 +21,24 @@ class Customizing(QWidget):
 		for panel in ("panel1", "panel2", "panel4", "panel5"):
 			toggle = self.settings.items[panel]['toggle']
 			show_onstart = self.settings.items[panel]['show_onstart']
-			print(panel, toggle, show_onstart)
+			if panel == "panel1":
+				self.ui.customizePanel1Showonstart.setChecked(show_onstart)
+				self.ui.customizePanel1Toggling.setChecked(toggle)
+			if panel == "panel2":
+				self.ui.customizePanel2Showonstart.setChecked(show_onstart)
+				self.ui.customizePanel2Toggling.setChecked(toggle)
+			if panel == "panel3":
+				self.ui.customizePanel3Showonstart.setChecked(show_onstart)
+				self.ui.customizePanel3Toggling.setChecked(toggle)
+			if panel == "panel5":
+				self.ui.customizePanel5Showonstart.setChecked(show_onstart)
+				self.ui.customizePanel5Toggling.setChecked(toggle)
 
 	def state_changed(self, int):
 		checkbox = self.sender()
-		print(checkbox.objectName())
-		if checkbox.isChecked():
-			print("CHECKED!")
-		else:
-			print("UNCHECKED!")
+		strings = re.sub( r"([A-Z])", r" \1", checkbox.objectName()).split()
+		if strings[2] == "Toggling":
+			self.settings.items[strings[1].lower()]['toggle'] = checkbox.isChecked()
+		if strings[2] == "Showonstart":
+			self.settings.items[strings[1].lower()]['show_onstart'] = checkbox.isChecked()
+		self.settings.serialize()

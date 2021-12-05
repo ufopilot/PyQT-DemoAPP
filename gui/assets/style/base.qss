@@ -7,7 +7,7 @@
 * CONTENT
 *******************************************/
 #mainFrame{
-	border: 1px solid #000;
+	border: 1px solid var(content[border]);
 	background:  var(content[background]);
 }
 
@@ -151,14 +151,14 @@ QLabel#appLogo{
 
 LabelHorizontal, LabelVertical, #controllerPanel5 QLabel{
 	font-weight: bold;
-	color: #d7c245;
+	color: var(controller[first_text]);
 	font-size: 16px;
 	padding-left: 20px;
 }
 
 #panel1, #panel2, #panel3, #panel5, #panel6{
  	background: var(content[background]);
-	color: #fff;
+	color: var(content[first_text]);
 }
 
 #controllerPanel5{
@@ -246,9 +246,9 @@ QTreeView::Item{
 }
 
 QHeaderView::section, QHeaderWidget::section {
-    color: #37c886;
+    color: var(content[first_text]);
 	font-weight: bold;
-    background: var(content[background]);
+    background: var(content[header]);
 	padding: 2px;	
 	border: none;
 	border-bottom: 1px solid var(content[border]);
@@ -314,7 +314,7 @@ QTabBar::tab {
 QTabBar::tab:selected {
 	background: var(content[hover]);
 	margin-bottom: -1px;
-	color: #dce1ec;
+	color: var(content[second_text]);
 	border-bottom: 2px solid var(content[border]);
 }
 
@@ -324,46 +324,6 @@ QTabWidget::pane {
 	background: transparent;
 	border-top: 1px solid var(content[border]);
 }
-/*******************************************/
-/* NAVIGATION MENU                         */
-/*******************************************/
-#contentMenu QTreeWidget{
-	font-weight: bold;
-}
-
-#contentMenu QTreeWidget::Item{
-    height:30px;
-	font-weight: bold;
-	border-bottom:0px solid;
-	/*padding-top: 5px;*/
-	padding-left: 10px;
-	margin-right: 10px;
-}
-
-#contentMenu QTreeWidget::Item:selected{
-	color: #fff;	
-
-}
-
-#contentMenu QTreeWidget::item:hover {
-    background: var(content[hover]);
-}
-
-#contentMenu QTreeWidget::branch::vertical{
-	background: var(content[background]);
-}
-
-#contentMenu QTreeWidget::Item:!has-children:selected{
-	border-left:3px solid #37c886;
-	color: #8a95aa;
-}
-
-
-#contentMenu QTreeWidget::branch  {
-    border-image: none;
-    image: none;
-	background: var(content[background]);
-    }
 
 /*******************************************/
 /* SCROLLAREA                            */
@@ -385,8 +345,8 @@ QScrollArea, #scrollArea2, #scrollArea1, #scrollArea2 QFrame, #scrollArea1 QFram
 /*******************************************/
 QTableView, QTableWidget{
 	alternate-background-color: var(content[background_alternate]);
-    border: 1px solid #222;
-    color: #dce1ec;
+    border: 1px solid var(content[border]);
+    color: var(content[first_text]);
 	background:  var(content[background]);
 }
 
@@ -397,7 +357,7 @@ QTableCornerButton::section{
     color: #8a95aa;
 }
 
-#pageHeader QLabel{
+#pageHeader QLabel, #settingsHeader QLabel, #contentMenu QLabel{
 	border-bottom: 1px solid var(content[border]);
 	/*color: #37c886;*/
 	font-weight: bold;
@@ -409,10 +369,86 @@ QTableCornerButton::section{
 }
 
 /*******************************************/
-/* PROGRESS                            */
+/* NAVIGATION MENU                         */
 /*******************************************/
-#panel3 QProgressBar{
-	background: #000;
-	color: #fff;
+#contentMenu QTreeWidget{
+	font-weight: bold;
 }
 
+#contentMenu QTreeWidget::Item{
+    height:30px;
+	font-weight: bold;
+	border-bottom:0px solid;
+	/*padding-top: 5px;*/
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+#contentMenu QTreeWidget::Item:selected{
+	color: var(content[third_text]);	
+
+}
+
+#contentMenu QTreeWidget::item:hover {
+    background: var(content[hover]);
+}
+
+#contentMenu QTreeWidget::branch::vertical{
+	background: var(content[background]);
+}
+
+#contentMenu QTreeWidget::Item:!has-children:selected{
+	border-left:5px solid var(content[border]);
+	color: var(content[third_text]);
+}
+
+
+#contentMenu QTreeWidget::branch  {
+    border-image: none;
+    image: none;
+	background: var(content[background]);
+    }
+
+/*******************************************/
+/* LISTVIEW                            */
+/*******************************************/
+
+QTreeView, 
+QListView {
+	show-decoration-selected: 1;
+}
+QTreeView::item:selected, 
+QListView::item:selected {
+	  background: var(content[hover]);
+	  color: var(content[third_text]);
+	  border: 0px solid var(content[background])
+}
+QTreeView::item:selected:!active, 
+QListView::item:selected:!active {
+	  background: transparent;
+	  border: 0px solid;
+}
+QTreeView::item:selected:active,
+QListView::item:selected:active {
+	 background: transparent;
+	 border: 0px solid;
+}
+/*******************************************/
+/* PROGRESS                            */
+/*******************************************/
+QProgressBar{
+	background: var(content[background_alternate]);
+	color: var(content[third_text]);
+}
+
+QProgressBar{
+    border: 2px solid var(footer[border]);
+    border-radius: 5px;
+    text-align: center
+}
+
+QProgressBar::chunk {
+    background-color: var(footer[background]);
+    width: 10px;
+    margin: 1px;
+}

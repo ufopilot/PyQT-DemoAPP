@@ -74,7 +74,7 @@ class MainWidget(Base_Class, Gen_Class):
 		# MAIN-UI BTNS
 		##########################################################################################
 		#self.reloadStylesheet.clicked.connect(lambda: SetStyle(self).setTheme(self.settings['theme_name']))
-		#self.reloadApp.clicked.connect(self.restart)
+		self.reloadApp.clicked.connect(self.restart)
 		#SetControllerButtons(self)
 		self.controllerButtons = SetControllerButtons(self)
 		self.controllerButtons.handle_ui_btns()

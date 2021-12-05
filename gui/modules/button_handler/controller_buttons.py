@@ -2,7 +2,7 @@ from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 from gui.modules.panel_settings.panel_settings import PanelSettings
 from qt_core import *
-
+import webbrowser
 
 class SetControllerButtons(QWidget):
 	_panels_closed = []
@@ -24,13 +24,19 @@ class SetControllerButtons(QWidget):
 			button.setCursor(QCursor(Qt.PointingHandCursor))
 			#if isinstance(button, QPushButton):
 			#	button.setFlat(True)
+			
 			if button.objectName().startswith("togglePanel"):
 				button.clicked.connect(self.toggle_panel)
 				button.setToolTip("Toggle Panel")
 			if button.objectName().startswith("panelSettings"):
 				button.setToolTip("Settings")
 				button.clicked.connect(self.panel_settings)
-		
+			if button.objectName() == "goToGitHub":
+				button.clicked.connect(self.openGithub)
+				
+	def openGithub(self):
+		webbrowser.open("https://github.com/ufopilot/PyQT-DemoAPP/")
+
 	def panel_settings(self):
 		button = self.sender()
 		panel_name = button.objectName().lower().replace('settings', '')

@@ -1,13 +1,13 @@
 {
     "app_name": "QT-APP",
     "description": "DemoApp",
-    "version" : "Version: 1.0.0",
-    "autor" : "By UFOPILOT",
-    "year" : 2021,
+    "version": "Version: 1.0.0",
+    "autor": "By UFOPILOT",
+    "year": 2021,
     "theme_name": "dark",
     "custom_title_bar": true,
     "icon": {
-        "png":"gui/resources/imgs/appicon.png",
+        "png": "gui/resources/imgs/appicon.png",
         "ico": "gui/resources/imgs/appicon.ico"
     },
     "startup_size": [
@@ -18,62 +18,62 @@
         1400,
         800
     ],
-    "font" : {
-        "family" : "Segoe UI",
-        "title_size" : 10,
-        "text_size" : 9
+    "font": {
+        "family": "Segoe UI",
+        "title_size": 10,
+        "text_size": 9
     },
-    "panel1" : {
-        "minimum" : 30,
-        "maximum" : 300, 
+    "panel1": {
+        "minimum": 30,
+        "maximum": 300,
         "toggle": true,
-        "content_margins" : 3,
+        "content_margins": 3,
         "direction": "rtl",
         "show_onstart": true
     },
-    "panel2" : {
-        "minimum" : 30,
-        "maximum" : 300, 
+    "panel2": {
+        "minimum": 30,
+        "maximum": 300,
         "toggle": true,
-        "content_margins" : 3,
+        "content_margins": 3,
         "direction": "rtl",
         "show_onstart": false
     },
-    "panel3" : {
-        "minimum" : 30,
-        "maximum" : 432, 
+    "panel3": {
+        "minimum": 30,
+        "maximum": 432,
         "toggle": false,
-        "content_margins" : 3,
+        "content_margins": 3,
         "direction": "rtl"
     },
-    "panel4" : {
-        "minimum" : 30,
-        "maximum" : 300, 
+    "panel4": {
+        "minimum": 30,
+        "maximum": 300,
         "toggle": true,
-        "content_margins" : 3,
+        "content_margins": 3,
         "direction": "ltr",
         "show_onstart": false
     },
-    "panel5" : {
-        "minimum" : 30,
-        "maximum" : 200, 
+    "panel5": {
+        "minimum": 30,
+        "maximum": 200,
         "toggle": true,
-        "content_margins" : 3,
+        "content_margins": 3,
         "direction": "ttb",
-        "show_onstart": true
+        "show_onstart": false
     },
-    "menu_panel" : {
-        "minimum" : 0,
-        "maximum" : 240, 
+    "menu_panel": {
+        "minimum": 0,
+        "maximum": 240,
         "toggle": true,
-        "content_margins" : 3
+        "content_margins": 3
     },
-    "settings_panel" : {
-        "minimum" : 0,
-        "maximum" : 240,
+    "settings_panel": {
+        "minimum": 0,
+        "maximum": 240,
         "toggle": true,
-        "content_margins" : 3
+        "content_margins": 3
     },
-    "time_animation" : 300,
+    "time_animation": 300,
     "tabs_position": "top"
 }

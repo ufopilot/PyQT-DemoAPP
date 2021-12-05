@@ -115,6 +115,7 @@ class PanelSettings(QWidget):
 		#self.frame.setStyleSheet("background-color: #13161f; color: #fff;")
 	# setupUi
 	def setGuiStyle(self, theme):
+		return
 		template_stylesheet = ""
 		with open(UIFunctions().resource_path(f'./gui/assets/style/dialog.qss')) as f:
 				base_stylesheet = f.read()  
