@@ -36,6 +36,7 @@ MANIFEST
 helper.sh
 old
 .vscode
+.qt_for_python
 
 # Installer logs
 pip-log.txt
@@ -55,7 +56,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 test/
-
+.qt_for_python/
 # Translations
 *.mo
 *.pot
@@ -114,6 +115,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode
+.qt_for_python
 
 # Spyder project settings
 .spyderproject
