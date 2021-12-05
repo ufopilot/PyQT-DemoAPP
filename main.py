@@ -46,6 +46,8 @@ class MainWidget(Base_Class, Gen_Class):
 		# show loading infos
 		##########################################################################################
 		# footer
+		#self.loadingProgressBar
+		self.loadingProgressBar.setValue(0)
 
 		##########################################################################################
 		# Set Settings

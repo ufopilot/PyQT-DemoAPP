@@ -18,9 +18,9 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QHeaderView, QLabel, QLayout, QMainWindow,
-    QPushButton, QScrollArea, QSizePolicy, QTabWidget,
-    QToolBox, QTreeWidget, QTreeWidgetItem, QVBoxLayout,
-    QWidget)
+    QProgressBar, QPushButton, QScrollArea, QSizePolicy,
+    QTabWidget, QToolBox, QTreeWidget, QTreeWidgetItem,
+    QVBoxLayout, QWidget)
 
 from gui.widgets.animated_check.animated_check import AnimatedCheck
 from gui.widgets.label_horizontal.label_horizontal import LabelHorizontal
@@ -3290,13 +3290,17 @@ class Ui_MainWindow(object):
         self.loadingFrame.setFrameShape(QFrame.StyledPanel)
         self.loadingFrame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_12 = QHBoxLayout(self.loadingFrame)
-        self.horizontalLayout_12.setSpacing(0)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
         self.loadingLabel = QLabel(self.loadingFrame)
         self.loadingLabel.setObjectName(u"loadingLabel")
 
         self.horizontalLayout_12.addWidget(self.loadingLabel)
+
+        self.loadingProgressBar = QProgressBar(self.loadingFrame)
+        self.loadingProgressBar.setObjectName(u"loadingProgressBar")
+        self.loadingProgressBar.setValue(24)
+
+        self.horizontalLayout_12.addWidget(self.loadingProgressBar)
 
 
         self.horizontalLayout_7.addWidget(self.loadingFrame)

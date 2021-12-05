@@ -34,6 +34,8 @@ class Theming(QWidget):
 		self.ui = parent
 		self.theme_settings = Settings('theme')
 		#self.selectColors()
+		self.ui.loadingProgressBar.setValue(0)
+
 		QTimer.singleShot(1000, self.selectColors)
 		
 		for button in self.ui.findChildren(QAbstractButton):
@@ -59,8 +61,10 @@ class Theming(QWidget):
 	def selectColors(self):
 		T = 0
 		D=1000
+		counter=0
 		backgroundColorList = self.theme_settings.items['colors']['background']
 		for comp in ("header", "footer", "controller", "content"):	
+			
 			compString = comp+"MainColor"
 			color = self.theme_settings.items['theme'][comp]['background']
 			
@@ -81,19 +85,35 @@ class Theming(QWidget):
 						
 						T += 100
 						D += 100
-				# load text colors
-				#####################################################
-				textColorList = self.theme_settings.items['colors']['text']
-				for substr in ("First_text", "Second_text", "Third_text"):
-					i = 1
-					for textColor in textColorList:
-						btn = eval(f"self.ui.{comp}{substr}Color{i}")
-						btn.setStyleSheet(f"background: {textColor}") 
-						i += 1
+						counter +=1
+						self.ui.loadingProgressBar.setValue(counter*2)
+						
+
+			# load text colors
+			#####################################################
+			textColorList = self.theme_settings.items['colors']['text']
+			for substr in ("First_text", "Second_text", "Third_text"):
+				i = 1
+				
+				for textColor in textColorList:
+					btn = eval(f"self.ui.{comp}{substr}Color{i}")
+					btn.setStyleSheet(f"background: {textColor}") 
+					i += 1
+					counter +=1	
+					self.ui.loadingProgressBar.setValue(counter*2)
+					
+					
+					
+						
 		
+				#self.ui.loadingProgressBar.setValue(counter/10)
+
+				#counter +=1
 		QTimer.singleShot(D, self.setInitFalse)
 		# clear loadings infos
 		self.ui.loadingLabel.setText("")
+		self.ui.loadingProgressBar.hide()
+
 
 	def setInitFalse(self):
 		self._init = False
