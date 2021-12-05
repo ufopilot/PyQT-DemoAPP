@@ -1,11 +1,16 @@
 {
     "theme": {
+        "font": {
+            "family": "Segoe UI",
+            "title_size": 16,
+            "text_size": 14
+        },
         "header": {
             "background": "#5d5e67",
             "hover": "#5d5e67",
             "first_text": "#ffffff",
             "second_text": "#111111",
-            "third_text": "#ffffff",
+            "third_text": "#dddddd",
             "background_alternate": "#55555e",
             "border": "#5d5e67"
         },
@@ -37,7 +42,7 @@
             "first_text": "#ffffff",
             "second_text": "#111111",
             "third_text": "#dddddd",
-            "border": "#6c757d",
+            "border": "#5a6168",
             "hover": "#6c757d"
         }
     },

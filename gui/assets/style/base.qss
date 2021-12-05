@@ -1,6 +1,7 @@
 * { 
 	color: var(content[first_text]); 
-	font-size: 14px;
+	font-size: var(font[text_size])px;
+	font-family: var(font[family]);
 }
 
 /*******************************************
@@ -359,12 +360,12 @@ QTableCornerButton::section{
 
 #pageHeader QLabel, #settingsHeader QLabel, #contentMenu QLabel{
 	border-bottom: 1px solid var(content[border]);
-	/*color: #37c886;*/
 	font-weight: bold;
     background: var(content[header]);
 	padding-right: 30px;	
 	font-style: italic;
 	color: var(content[first_text]);
+	font-size: var(font[title_size])px;
 	
 }
 
