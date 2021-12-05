@@ -43,10 +43,8 @@ class MainWidget(Base_Class, Gen_Class):
 		self.menu_data = menu_settings.items
 
 		##########################################################################################
-		# show loading infos
+		# show loading Progress
 		##########################################################################################
-		# footer
-		#self.loadingProgressBar
 		self.loadingProgressBar.setValue(0)
 
 		##########################################################################################
