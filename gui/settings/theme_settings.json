@@ -6,33 +6,33 @@
             "text_size": 14
         },
         "header": {
-            "background": "#5d5e67",
-            "hover": "#5d5e67",
+            "background": "#313648",
+            "hover": "#292d3c",
             "first_text": "#ffffff",
-            "second_text": "#111111",
-            "third_text": "#dddddd",
-            "background_alternate": "#55555e",
-            "border": "#5d5e67"
+            "second_text": "#dddddd",
+            "third_text": "#ffffff",
+            "background_alternate": "#2d3141",
+            "border": "#313648"
         },
         "footer": {
-            "background": "#5d5e67",
-            "hover": "#4d4e56",
+            "background": "#313648",
+            "hover": "#292d3c",
             "first_text": "#dddddd",
             "second_text": "#dddddd",
             "third_text": "#dddddd",
-            "background_alternate": "#55555e",
-            "border": "#5d5e67"
+            "background_alternate": "#2d3141",
+            "border": "#313648"
         },
         "content": {
-            "background": "#313648",
-            "background_alternate": "#2d3141",
-            "header": "#2d3141",
-            "footer": "#292d3c",
-            "first_text": "#dddddd",
-            "second_text": "#dddddd",
+            "background": "#5d5e67",
+            "background_alternate": "#55555e",
+            "header": "#48484f",
+            "footer": "#5d5e67",
+            "first_text": "#ffffff",
+            "second_text": "#ffffff",
             "third_text": "#dddddd",
-            "border": "#262a37",
-            "hover": "#292d3c"
+            "border": "#55555e",
+            "hover": "#55555e"
         },
         "controller": {
             "background": "#6c757d",
@@ -40,10 +40,10 @@
             "header": "#666",
             "footer": "#888",
             "first_text": "#ffffff",
-            "second_text": "#111111",
-            "third_text": "#dddddd",
-            "border": "#5a6168",
-            "hover": "#6c757d"
+            "second_text": "#ffffff",
+            "third_text": "#ffffff",
+            "border": "#535a60",
+            "hover": "#5a6168"
         }
     },
     "colors": {

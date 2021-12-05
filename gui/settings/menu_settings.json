@@ -11,8 +11,8 @@
         "children":[{
             "name":"Modern",
             "icon": {
-                "expanded": "chevron-down.svg",
-                "collapsed": "chevron-right.svg"
+                "expanded": "folder-minus.svg",
+                "collapsed": "folder-plus.svg"
             },
             "children":[{
                 "name":"Modern3",
@@ -32,17 +32,27 @@
         }]
     },
     {   
-        "name": "Streams",
+        "name": "Tabs",
         "icon": "folder.svg",
         "children":[{
-            "name":"Football",
-            "icon": "globe.svg",
-            "widget":"FootballWidget"
+            "name":"Top",
+            "icon": "circle.svg",
+            "widget":"TabsNorth"
         },
         {
-            "name":"Netflix",
+            "name":"Right",
             "icon": "circle.svg",
-            "widget":"TemplatePage"
+            "widget":"TabsEast"
+        },
+        {
+            "name":"Bottom",
+            "icon": "circle.svg",
+            "widget":"TabsSouth"
+        },
+        {
+            "name":"Left",
+            "icon": "circle.svg",
+            "widget":"TabsWest"
         }]
     },
     {   
@@ -52,6 +62,29 @@
             "name":"FileSystem View",
             "icon": "file.svg",
             "widget":"FileSystemView"
+        },{
+            "name":"QTableView",
+            "icon": "file.svg",
+            "widget":"SampleQTableView"
+        },
+        {
+            "name":"QTableWidget",
+            "icon": "file.svg",
+            "widget":"SampelQTableWidget"
+        }]
+    },
+    {   
+        "name": "Trees",
+        "icon": "database.svg",
+        "children":[{
+            "name":"QTreeView",
+            "icon": "file.svg",
+            "widget":"SampleQTreeView"
+        },
+        {
+            "name":"QTreeWidget",
+            "icon": "file.svg",
+            "widget":"SampelQTreeWidget"
         }]
     }
 ]

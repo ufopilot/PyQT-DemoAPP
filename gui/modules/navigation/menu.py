@@ -27,23 +27,26 @@ class SetMenu(QWidget):
 		sizePolicy.setVerticalStretch(0)
 		sizePolicy.setHeightForWidth(self.ui.menuTree.sizePolicy().hasHeightForWidth())
 		self.ui.menuTree.setSizePolicy(sizePolicy)
-		self.ui.menuTree.setHeaderLabels(['Navigation', 'target'])
+		self.ui.menuTree.setHeaderLabels(['Navigation', 'icon'])
 		self.ui.menuTree.setHeaderHidden(True);
 		self.ui.menuTree.setAnimated(True)
-		self.ui.menuTree.setColumnHidden(1, True)
+		self.ui.menuTree.setColumnHidden(2, True)
 		
-		#self.tree.setColumnWidth(0,400)
+		self.ui.menuTree.setColumnWidth(0,200)
+		self.ui.menuTree.setColumnWidth(1,5)
 		#self.ui.menuTree.header().setDefaultSectionSize(0)
 	  	#self.tree.expandAll()
+		self.ui.menuTree.setCursor(Qt.PointingHandCursor)
 		self.build_menu(data=self.menu_data, parent=self.ui.menuTree)
 		self.ui.menuTree.itemClicked.connect(self.onItemClicked)
 
 	@Slot(QTreeWidgetItem, int)	
 	def onItemClicked(self, item, col):
-		if item.text(1) != None and item.text(1) != "":	
+		if item.text(2) != None and item.text(2) != "":	
 			# open menu link in content panel
 			# call target class
-			targetPageClass = item.text(1)
+			targetPageClass = item.text(2)
+			print(targetPageClass)
 			
 			# test if widgetClass exists 
 			try:
@@ -51,13 +54,6 @@ class SetMenu(QWidget):
 			except NameError:
 				print(targetPageClass, "is not defined")
 				return
-			# change remove widget to hide und show
-			#while self.contentLayout.count():
-			#	child = self.contentLayout.takeAt(0)
-			#	if child.widget():
-	  		#		child.widget().deleteLater()
-
-			#self.contentLayout.takeAt(0).widget().hide()
 			
 			if self._lastcontent != None:
 				self.ui.panel3.findChild(QWidget, self._lastcontent).hide()
@@ -79,30 +75,34 @@ class SetMenu(QWidget):
 		else:
 			# collapse/expand
 			if item.isExpanded():
-				if item.text(2) != "":
-					item.setIcon(0, QIcon(UIFunctions().set_svg_icon(item.text(2))))
-				self.ui.menuTree.collapseItem(item)
-			else:
-				#self.ui.menuTree.collapseAll()
+				item.setIcon(1, QIcon(UIFunctions().set_svg_icon("chevron-right.svg")))
 				if item.text(3) != "":
 					item.setIcon(0, QIcon(UIFunctions().set_svg_icon(item.text(3))))
+				self.ui.menuTree.collapseItem(item)
+			else:
+				item.setIcon(1, QIcon(UIFunctions().set_svg_icon("chevron-down.svg")))
+				#self.ui.menuTree.collapseAll()
+				if item.text(4) != "":
+					item.setIcon(0, QIcon(UIFunctions().set_svg_icon(item.text(4))))
 				self.ui.menuTree.expandItem(item)
 				
 	def build_menu(self, data=None, parent=None):
 		for menu_item in data:
 			tree_item = QTreeWidgetItem(parent)
 			tree_item.setText(0, menu_item['name'])
+		
 			if type(menu_item['icon']) == dict:
 				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon']['collapsed'])))
-				tree_item.setText(2, menu_item['icon']['collapsed'])
-				tree_item.setText(3, menu_item['icon']['expanded'])
+				tree_item.setText(3, menu_item['icon']['collapsed'])
+				tree_item.setText(4, menu_item['icon']['expanded'])
 			else:
 				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon'])))
 
 			if "children" in menu_item:
+				tree_item.setIcon(1, QIcon(UIFunctions().set_svg_icon("chevron-right.svg")))
 				self.build_menu(data=menu_item['children'], parent=tree_item)
 			else:
-				tree_item.setText(1, menu_item['widget'])
+				tree_item.setText(2, menu_item['widget'])
 				if "start" in menu_item:
 					self.onItemClicked(tree_item, 0)
 

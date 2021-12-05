@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 #https://github.com/sciter-sdk/pysciter#getting-started
 
-from PyQt5.QtGui import QMovie
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 from gui.modules.button_handler.controller_buttons import SetControllerButtons
@@ -16,9 +15,7 @@ from gui.modules.title_bar.titlebar import TitleBar
 
 from gui.widgets.label_vertical.label_vertical import LabelVertical
 
-from random import randint
 from qt_core import *
-import time
 
 if platform.system() == "Windows":
 	Gen_Class, Base_Class = loadUiType(UIFunctions().resource_path("./gui/uis/main.ui"))

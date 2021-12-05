@@ -11,11 +11,11 @@ if platform.system() == "Windows":
 	#	QMetaObject, QObject, QPoint, QRect, QEvent, Signal, Property, QSequentialAnimationGroup,
 	#	QSize, QTime, QUrl, Qt, QPropertyAnimation, QEasingCurve, QAbstractAnimation, QParallelAnimationGroup, QPropertyAnimation)
 	#	from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-	#		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics,
+	#		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics, QMovie,
 	#		QImage, QKeySequence, QLinearGradient, QPainter, QPen, QPaintEvent,
 	#		QPalette, QPixmap, QRadialGradient, QTransform, QStandardItem)
 	#	from PySide6.QtWidgets import (QApplication, QMainWindow, QMenuBar, QSizePolicy, QGridLayout, QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
-	#		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen,
+	#		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen, QTabWidget,
 	#    	QVBoxLayout, QFrame, QHBoxLayout, QCheckBox, QTreeWidgetItem, QHeaderView, QAbstractItemView, QTreeWidget, QFileSystemModel, QTreeView)
 	#	from PySide6.QtUiTools import loadUiType
 	#	print("Windows pyside6")
@@ -26,11 +26,11 @@ if platform.system() == "Windows":
 	#			QMetaObject, QObject, QPoint, QRect, QEvent, Signal, Property, QSequentialAnimationGroup, QTimer,
 	#			QSize, QTime, QUrl, Qt, QPropertyAnimation, QEasingCurve, QAbstractAnimation, QParallelAnimationGroup, QPropertyAnimation)
 	#		from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-	#			QFont, QFontDatabase, QGradient, QIcon, QFontMetrics,
+	#			QFont, QFontDatabase, QGradient, QIcon, QFontMetrics, QMovie, 
 	#			QImage, QKeySequence, QLinearGradient, QPainter, QPen, QPaintEvent,
 	#			QPalette, QPixmap, QRadialGradient, QTransform, QStandardItem)
 	#		from PySide2.QtWidgets import (QApplication, QMainWindow, QMenuBar, QSizePolicy, QGridLayout, QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
-	#			QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen,
+	#			QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen, QTabWidget,
 	#	    	QVBoxLayout, QFrame, QHBoxLayout, QCheckBox, QTreeWidgetItem, QHeaderView, QAbstractItemView, QTreeWidget, QFileSystemModel, QTreeView)
 	#		from PySide2.QtUiTools import loadUiType
 	#		print("Windows pyside2")
@@ -40,11 +40,11 @@ if platform.system() == "Windows":
 		QMetaObject, QObject, QPoint, QRect, QEvent, pyqtSignal as Signal, pyqtProperty as Property, QSequentialAnimationGroup,
 		QSize, QTime, QUrl, Qt, QPropertyAnimation, QEasingCurve, QAbstractAnimation, QParallelAnimationGroup, QPropertyAnimation)
 	from PyQt5.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics,
+		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics, QMovie,
 		QImage, QKeySequence, QLinearGradient, QPainter, QPen, QPaintEvent,
 		QPalette, QPixmap, QRadialGradient, QTransform, QStandardItem)
 	from PyQt5.QtWidgets import (QApplication, QMainWindow, QMenuBar, QSizePolicy, QGridLayout, QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
-		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen,
+		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen, QTabWidget,
 		QVBoxLayout, QFrame, QHBoxLayout, QCheckBox, QTreeWidgetItem, QHeaderView, QAbstractItemView, QTreeWidget, QFileSystemModel, QTreeView)
 	from PyQt5.uic import loadUiType
 	print("Windows pyqt5")
@@ -53,11 +53,11 @@ else:
 		QMetaObject, QObject, QPoint, QRect, QEvent, pyqtSignal as Signal, pyqtProperty as Property, QSequentialAnimationGroup,
 		QSize, QTime, QUrl, Qt, QPropertyAnimation, QEasingCurve, QAbstractAnimation, QParallelAnimationGroup, QPropertyAnimation)
 	from PyQt5.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics,
+		QFont, QFontDatabase, QGradient, QIcon, QFontMetrics, QMovie,
 		QImage, QKeySequence, QLinearGradient, QPainter, QPen, QPaintEvent,
 		QPalette, QPixmap, QRadialGradient, QTransform, QStandardItem)
 	from PyQt5.QtWidgets import (QApplication, QMainWindow, QMenuBar, QSizePolicy, QGridLayout, QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
-		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen,
+		QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen, QTabWidget,
 		QVBoxLayout, QFrame, QHBoxLayout, QCheckBox, QTreeWidgetItem, QHeaderView, QAbstractItemView, QTreeWidget, QFileSystemModel, QTreeView)
 	from PyQt5.uic import loadUiType
 	print("Linux pyqt5")
