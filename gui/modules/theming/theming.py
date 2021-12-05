@@ -1,31 +1,9 @@
-import time
-from threading import Timer
-
-from PyQt5.QtCore import QThreadPool
 from qt_core import *
 from gui.content import *
 
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 import re
-
-color_names = {
-	'#000000': 'black',
-	'#ffffff': 'white',
-	'#808080': 'gray',
-	'#b0b0b0': 'light gray',
-	'#ff0000': 'red',
-	'#800000': 'red',
-	'#00ff00': 'green',
-	'#008000': 'dark green',
-	'#0000ff': 'blue',
-	'#000080': 'dark blue',
-	'#ffff00': 'yellow',
-	'#808000': 'olive',
-	'#00ffff': 'cyan',
-	'#ff00ff': 'magenta',
-	'#800080': 'purple'
-	}
 
 class Theming(QWidget):
 	_init = True
@@ -102,18 +80,12 @@ class Theming(QWidget):
 					counter +=1	
 					self.ui.loadingProgressBar.setValue(counter*2)
 					
-					
-					
-						
-		
-				#self.ui.loadingProgressBar.setValue(counter/10)
-
-				#counter +=1
 		QTimer.singleShot(D, self.setInitFalse)
 		# clear loadings infos
 		self.ui.loadingLabel.setText("")
 		self.ui.loadingProgressBar.hide()
-
+		QTimer.singleShot(100, self.ui.controllerButtons.EnableToggleButtons)
+		#self.ui.controllerButtons.EnableToggleButtons()
 
 	def setInitFalse(self):
 		self._init = False
@@ -243,10 +215,7 @@ class Theming(QWidget):
 			if btn.isChecked():
 				btn.toggle()
 		button.toggle()
-		
-
-		
-
+	
 	def component(self, name):
 		strings = re.sub( r"([A-Z])", r" \1", name).split()
 		return  strings[1].lower()
@@ -272,13 +241,15 @@ class Theming(QWidget):
 		typos = re.sub('MainColor.*', '', button.objectName())
 		
 		if "icon" in button.objectName():
-			self.theme_settings.items['colors']['icon_bg'] = color_names[color]
+			self.theme_settings.items['colors']['icon_bg'] = self.theme_settings.items['icon_colors'][color]
 			self.changeIcons()
 		self.theme_settings.serialize()
 		self.reloadStyle()
 	
 	def changeIcons(self):
 		print("In Arbeit")
+		#self.theme_settings.items['colors']['icon_bg'] = self.theme_settings.items['icon_colors'][color]
+		#self.changeIcons()
 		#self.ui.panel1.deleteLater()
 		#self.ui.panel1.repaint()
 		#for button in self.ui.findChildren(QAbstractButton):

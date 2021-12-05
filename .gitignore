@@ -115,8 +115,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-.vscode
-.qt_for_python
+.vscode/
+.qt_for_python/
 
 # Spyder project settings
 .spyderproject

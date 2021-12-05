@@ -1,17 +1,17 @@
 {
     "theme": {
         "header": {
-            "background": "#6610f2",
-            "hover": "#6610f2",
-            "first_text": "#ffffff",
-            "second_text": "#dddddd",
+            "background": "#3ca2d9",
+            "hover": "#3ca2d9",
+            "first_text": "#111111",
+            "second_text": "#ffffff",
             "third_text": "#ffffff",
-            "background_alternate": "#5d0fdc",
-            "border": "#6610f2"
+            "background_alternate": "#3793c5",
+            "border": "#3ca2d9"
         },
         "footer": {
             "background": "#5d5e67",
-            "hover": "#5d5e67",
+            "hover": "#4d4e56",
             "first_text": "#dddddd",
             "second_text": "#dddddd",
             "third_text": "#dddddd",
@@ -19,26 +19,26 @@
             "border": "#5d5e67"
         },
         "content": {
-            "background": "#13161f",
-            "background_alternate": "#11141c",
-            "header": "#13161f",
-            "footer": "#13161f",
-            "first_text": "#ffffff",
-            "second_text": "#ffffff",
-            "third_text": "#111111",
-            "border": "#13161f",
-            "hover": "#13161f"
+            "background": "#343a40",
+            "background_alternate": "#2f353a",
+            "header": "#343a40",
+            "footer": "#343a40",
+            "first_text": "#dddddd",
+            "second_text": "#dddddd",
+            "third_text": "#dddddd",
+            "border": "#343a40",
+            "hover": "#343a40"
         },
         "controller": {
-            "background": "#313648",
-            "background_alternate": "#2d3141",
+            "background": "#6c757d",
+            "background_alternate": "#626a72",
             "header": "#666",
             "footer": "#888",
             "first_text": "#ffffff",
             "second_text": "#111111",
             "third_text": "#111111",
-            "border": "#292d3c",
-            "hover": "#313648"
+            "border": "#5a6168",
+            "hover": "#5a6168"
         }
     },
     "colors": {
@@ -88,22 +88,6 @@
             "#ff00ff": "magenta",
             "#800080": "purple"
         },
-        "icon_bg": "white"
-    },
-    "_colors": {
-        "main_bg": "#1b202c",
-        "header_bg": "#0b0f13",
-        "footer_bg": "#0b0f13",
-        "controller_bg": "#13161f",
-        "scrollbar_bg": "#1e2229",
-        "scrollbar_handle_bg": "#303647",
-        "scrollbar_hover_bg": "#37c886",
-        "table_header_bg": "#1b1e26",
-        "page_header_bg": "#1b1e26",
-        "table_alternate": "#191e29",
-        "lineedit_bg": "#2c313c",
-        "tab_pane_bg": "#391e29",
-        "icon_bg": "",
-        "text1": "#fff"
+        "icon_bg": "gray"
     }
 }

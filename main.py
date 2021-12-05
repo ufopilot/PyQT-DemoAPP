@@ -11,6 +11,7 @@ from gui.modules.resizer.sidegrip import SideGrip
 from gui.modules.style.style import SetStyle
 from gui.modules.panel_settings.panel_settings import PanelSettings
 from gui.modules.theming.theming import Theming
+from gui.modules.customizing.customizing import Customizing
 from gui.modules.title_bar.titlebar import TitleBar
 
 from gui.widgets.label_vertical.label_vertical import LabelVertical
@@ -74,7 +75,11 @@ class MainWidget(Base_Class, Gen_Class):
 		##########################################################################################
 		#self.reloadStylesheet.clicked.connect(lambda: SetStyle(self).setTheme(self.settings['theme_name']))
 		#self.reloadApp.clicked.connect(self.restart)
-		SetControllerButtons(self)
+		#SetControllerButtons(self)
+		self.controllerButtons = SetControllerButtons(self)
+		self.controllerButtons.handle_ui_btns()
+		self.controllerButtons.toggle_all()
+		self.controllerButtons.disableToggleButtons()
 		####################################################################################
 		# SET STYLE AND THEME
 		####################################################################################
@@ -105,6 +110,10 @@ class MainWidget(Base_Class, Gen_Class):
 		# Theming
 		#####################################################################################
 		Theming(self)
+		#####################################################################################
+		# Customizing
+		#####################################################################################
+		Customizing(self)
 			
 	def mousePressEvent(self, event):
 		if event.buttons() == Qt.RightButton:
@@ -186,14 +195,7 @@ class MainWidget(Base_Class, Gen_Class):
 	def resizeEvent(self, event):
 		QMainWindow.resizeEvent(self, event)
 		self.updateGrips()
-		
-	#def paintEvent(self, event=None):
-	#	painter = QPainter(self)
-	#	painter.setOpacity(0.4)
-	#	painter.setBrush(Qt.white)
-	#	painter.setPen(QPen(Qt.white))   
-	#	painter.drawRect(self.rect())
-
+	
 	@staticmethod
 	def restart():
 		os.execl(sys.executable, sys.executable, *sys.argv)

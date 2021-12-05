@@ -28,14 +28,16 @@
         "maximum" : 300, 
         "toggle": true,
         "content_margins" : 3,
-        "direction": "rtl"
+        "direction": "rtl",
+        "show_onstart": true
     },
     "panel2" : {
         "minimum" : 30,
         "maximum" : 300, 
         "toggle": true,
         "content_margins" : 3,
-        "direction": "rtl"
+        "direction": "rtl",
+        "show_onstart": false
     },
     "panel3" : {
         "minimum" : 30,
@@ -49,14 +51,16 @@
         "maximum" : 300, 
         "toggle": true,
         "content_margins" : 3,
-        "direction": "ltr"
+        "direction": "ltr",
+        "show_onstart": false
     },
     "panel5" : {
         "minimum" : 30,
         "maximum" : 200, 
         "toggle": true,
         "content_margins" : 3,
-        "direction": "ttb"
+        "direction": "ttb",
+        "show_onstart": true
     },
     "menu_panel" : {
         "minimum" : 0,

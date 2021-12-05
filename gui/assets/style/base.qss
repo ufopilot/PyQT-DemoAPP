@@ -262,9 +262,9 @@ QHeaderView::section, QHeaderWidget::section {
 /* TOOLTIP                            */
 /*******************************************/
 QToolTip { 
-	background-color: var(content[header]); 
-	color: #fff; 
-	border: 1px solid #37c886; 
+	background-color: var(content[background]); 
+	color: var(content[first_text]); 
+	border: 1px solid var(content[border]); 
 	border-radius: 3px;
 }
 

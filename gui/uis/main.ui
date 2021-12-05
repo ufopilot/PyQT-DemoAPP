@@ -1462,98 +1462,6 @@ QPushButton:checked{
 	border: 4px solid cyan;
 }
 
-#headerBgColor1,#footerBgColor1,#controllerBgColor1,#panelBgColor1{background: #0b0f13;}
-#headerBgColor2,#footerBgColor2,#controllerBgColor2,#panelBgColor2{background: #1b202c;}
-#headerBgColor3,#footerBgColor3,#controllerBgColor3,#panelBgColor3{background: #13161f;}
-#headerBgColor4,#footerBgColor4,#controllerBgColor4,#panelBgColor4{background: #343a40;}
-#headerBgColor5,#footerBgColor5,#controllerBgColor5,#panelBgColor5{background: #6c757d;}
-#headerBgColor6,#footerBgColor6,#controllerBgColor6,#panelBgColor6{background: #007bff;}
-#headerBgColor7,#footerBgColor7,#controllerBgColor7,#panelBgColor7{background: #20c997;}
-#headerBgColor8,#footerBgColor8,#controllerBgColor8,#panelBgColor8{background: #ff8f00;}
-#headerBgColor9,#footerBgColor9,#controllerBgColor9,#panelBgColor9{background: #f8f9fa;}
-#headerBgColor10,#footerBgColor10,#controllerBgColor10,#panelBgColor10{background: #6f42c1;}
-
-#iconBgColor1{ background: aqua; }
-#iconBgColor2{ background: black; }
-#iconBgColor3{ background: blue; }
-#iconBgColor4{ background: yellow; }
-#iconBgColor5{ background: gray; }
-#iconBgColor6{ background: green; }
-#iconBgColor7{ background: magenta; }
-#iconBgColor8{ background: white; }
-#iconBgColor9{ background: purple; }
-#iconBgColor10{ background: red; }
-/*
-#contentMainColor1, #headerMainColor1, #footerMainColor1, #controllerMainColor1{ background:     #3ca2d9;}
-#contentMainColor2, #headerMainColor2, #footerMainColor2, #controllerMainColor2{ background:     #6610f2;}
-#contentMainColor3, #headerMainColor3, #footerMainColor3, #controllerMainColor3{ background:     #6f42c1;}
-#contentMainColor4, #headerMainColor4, #footerMainColor4, #controllerMainColor4{ background:     #e83e8c;}
-#contentMainColor5, #headerMainColor5, #footerMainColor5, #controllerMainColor5{ background:     #dc3545;}
-#contentMainColor6, #headerMainColor6, #footerMainColor6, #controllerMainColor6{ background:     #fd7e14;}
-#contentMainColor7, #headerMainColor7, #footerMainColor7, #controllerMainColor7{ background:     #ffc107;}
-#contentMainColor8, #headerMainColor8, #footerMainColor8, #controllerMainColor8{ background:     #28a745;}
-#contentMainColor9, #headerMainColor9, #footerMainColor9, #controllerMainColor9{ background:     #20c997;}
-#contentMainColor10, #headerMainColor10, #footerMainColor10, #controllerMainColor10{ background: #17a2b8;}
-#contentMainColor11, #headerMainColor11, #footerMainColor11, #controllerMainColor11{ background: #ffffff;}
-#contentMainColor12, #headerMainColor12, #footerMainColor12, #controllerMainColor12{ background: #6c757d;}
-#contentMainColor13, #headerMainColor13, #footerMainColor13, #controllerMainColor13{ background: #343a40;}
-#contentMainColor14, #headerMainColor14, #footerMainColor14, #controllerMainColor14{ background: #5d5e67;}
-#contentMainColor15, #headerMainColor15, #footerMainColor15, #controllerMainColor15{ background: #0b0f13;}
-#contentMainColor16, #headerMainColor16, #footerMainColor16, #controllerMainColor16{ background: #1b202c;}
-#contentMainColor17, #headerMainColor17, #footerMainColor17, #controllerMainColor17{ background: #13161f;}
-#contentMainColor18, #headerMainColor18, #footerMainColor18, #controllerMainColor18{ background: #343a40;}
-#contentMainColor19, #headerMainColor19, #footerMainColor19, #controllerMainColor19{ background: #121212;}
-#contentMainColor20, #headerMainColor20, #footerMainColor20, #controllerMainColor20{ background: #313648;}
-#contentMainColor21, #headerMainColor21, #footerMainColor21, #controllerMainColor21{ background: #eceef2;}
-*/
-/*
-#contentFirst_textColor1, #headerFirst_textColor1, #footerFirst_textColor1, #controllerFirst_textColor1{ background:  	#ffffff;}
-#contentFirst_textColor2, #headerFirst_textColor2, #footerFirst_textColor2, #controllerFirst_textColor2{ background:  	#dddddd;}
-#contentFirst_textColor3, #headerFirst_textColor3, #footerFirst_textColor3, #controllerFirst_textColor3{ background:  	#111111;}
-#contentFirst_textColor4, #headerFirst_textColor4, #footerFirst_textColor4, #controllerFirst_textColor4{ background:  	#333333;}
-
-#contentSecond_textColor1, #headerSecond_textColor1, #footerSecond_textColor1, #controllerSecond_textColor1{ background:  #ffffff;}
-#contentSecond_textColor2, #headerSecond_textColor2, #footerSecond_textColor2, #controllerSecond_textColor2{ background:  #dddddd;}
-#contentSecond_textColor3, #headerSecond_textColor3, #footerSecond_textColor3, #controllerSecond_textColor3{ background:  #111111;}
-#contentSecond_textColor4, #headerSecond_textColor4, #footerSecond_textColor4, #controllerSecond_textColor4{ background:  #333333;}
-
-#contentThird_textColor1, #headerThird_textColor1, #footerThird_textColor1, #controllerThird_textColor1{ background:  #ffffff;}
-#contentThird_textColor2, #headerThird_textColor2, #footerThird_textColor2, #controllerThird_textColor2{ background:  #dddddd;}
-#contentThird_textColor3, #headerThird_textColor3, #footerThird_textColor3, #controllerThird_textColor3{ background:  #111111;}
-#contentThird_textColor4, #headerThird_textColor4, #footerThird_textColor4, #controllerThird_textColor4{ background:  #333333;}
-*/
-/*
---blue: #007bff;
---indigo: #6610f2;
---purple: #6f42c1;
---pink: #e83e8c;
---red: #dc3545;
---orange: #fd7e14;
---yellow: #ffc107;
---green: #28a745;
---teal: #20c997;
---cyan: #17a2b8;
---white: #ffffff;
---gray: #6c757d;
---gray-dark: #343a40;
---light: #f8f9fa;
-
---primary: #007bff;
---secondary: #6c757d;
---success: #28a745;
---info: #17a2b8;
---warning: #ffc107;
---danger: #dc3545;
---light: #f8f9fa;
---dark: #343a40;
-*/
-
-
-/*
-#11131b #13161f #161924
-panel
-#171c26 #1b202c #1f2533
-*/
 
 QToolBox::tab {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
@@ -1567,13 +1475,26 @@ QToolBox::tab:selected {
     font: italic;
     color: #37c886;
 }
+
+/*
+#iconBgColor1{ background: aqua; }
+#iconBgColor2{ background: black; }
+#iconBgColor3{ background: blue; }
+#iconBgColor4{ background: yellow; }
+#iconBgColor5{ background: gray; }
+#iconBgColor6{ background: green; }
+#iconBgColor7{ background: magenta; }
+#iconBgColor8{ background: white; }
+#iconBgColor9{ background: purple; }
+#iconBgColor10{ background: red; }
+*/
 </string>
                </property>
                <property name="tabShape">
                 <enum>QTabWidget::Rounded</enum>
                </property>
                <property name="currentIndex">
-                <number>0</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="appTheming">
                 <attribute name="title">
@@ -3016,8 +2937,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>252</width>
-                      <height>600</height>
+                      <width>100</width>
+                      <height>30</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -4805,8 +4726,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>252</width>
-                      <height>600</height>
+                      <width>100</width>
+                      <height>30</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -6231,8 +6152,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>252</width>
-                      <height>600</height>
+                      <width>100</width>
+                      <height>30</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -7715,9 +7636,9 @@ QToolBox::tab:selected {
                         <string notr="true"/>
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_20">
-                        <item>
+                        <item alignment="Qt::AlignTop">
                          <widget class="QWidget" name="widget_8" native="true">
-                          <layout class="QVBoxLayout" name="verticalLayout_32">
+                          <layout class="QVBoxLayout" name="verticalLayout_6">
                            <property name="spacing">
                             <number>0</number>
                            </property>
@@ -7745,124 +7666,337 @@ QToolBox::tab:selected {
                               <enum>QFrame::Raised</enum>
                              </property>
                              <layout class="QGridLayout" name="gridLayout_7">
-                              <item row="0" column="0">
-                               <widget class="QLabel" name="label_15">
-                                <property name="maximumSize">
-                                 <size>
-                                  <width>16777215</width>
-                                  <height>40</height>
-                                 </size>
-                                </property>
-                                <property name="text">
-                                 <string>GENERAL SETTINGS</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="1" column="0">
-                               <widget class="QLabel" name="label_27">
-                                <property name="text">
-                                 <string>Notifications</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="1" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_24">
-                                <property name="text">
-                                 <string>CheckBox</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="2" column="0">
-                               <widget class="QLabel" name="label_28">
-                                <property name="text">
-                                 <string>Show your emails</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="2" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_25">
-                                <property name="text">
-                                 <string>CheckBox</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="3" column="0">
-                               <widget class="QLabel" name="label_29">
-                                <property name="text">
-                                 <string>Show recent activity</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="3" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_26">
-                                <property name="text">
-                                 <string>CheckBox</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="4" column="0">
-                               <widget class="QLabel" name="label_30">
-                                <property name="text">
-                                 <string>Show Task statistics</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="4" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_27">
-                                <property name="text">
-                                 <string>CheckBox</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="5" column="0">
-                               <widget class="QLabel" name="label_16">
-                                <property name="maximumSize">
-                                 <size>
-                                  <width>16777215</width>
-                                  <height>40</height>
-                                 </size>
-                                </property>
-                                <property name="text">
-                                 <string>SYSTEM SETTINGS</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="6" column="0">
-                               <widget class="QLabel" name="label_31">
-                                <property name="text">
-                                 <string>System Logs</string>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="6" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_29">
-                                <property name="text">
-                                 <string>CheckBox</string>
-                                </property>
-                               </widget>
-                              </item>
                               <item row="7" column="0">
-                               <widget class="QLabel" name="label_32">
+                               <widget class="QLabel" name="label_39">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
                                 <property name="text">
-                                 <string>Error Reporting</string>
+                                 <string>Enable Toggle</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="11" column="0">
+                               <widget class="QLabel" name="label_47">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Show on Start</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelShowonstart_4">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
                                 </property>
                                </widget>
                               </item>
                               <item row="7" column="1">
-                               <widget class="AnimatedCheck" name="checkBox_30">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelToggling_6">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
                                 <property name="text">
                                  <string>CheckBox</string>
                                 </property>
                                </widget>
                               </item>
                               <item row="8" column="0">
-                               <widget class="QLabel" name="label_33">
+                               <widget class="QLabel" name="label_38">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
                                 <property name="text">
-                                 <string>Applications Logs</string>
+                                 <string>Show on Start</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QLabel" name="label_37">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Enable Toggle</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelShowonstart_5">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <widget class="QLabel" name="label_36">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Show on Start</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="10" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelToggling_7">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="10" column="0">
+                               <widget class="QLabel" name="label_53">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Enable Toggle</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelToggling_5">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="5" column="0">
+                               <widget class="QLabel" name="label_34">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Show on Start</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelShowonstart_6">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="11" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelShowonstart_7">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="3" column="0" colspan="2">
+                               <widget class="QLabel" name="label_20">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>16777215</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>MENU PANEL</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="4" column="0">
+                               <widget class="QLabel" name="label_35">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>Enable Toggle</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="0" colspan="2">
+                               <widget class="QLabel" name="label_23">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>16777215</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>MENU PANEL</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="9" column="0" colspan="2">
+                               <widget class="QLabel" name="label_25">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>16777215</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>MENU PANEL</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="6" column="0" colspan="2">
+                               <widget class="QLabel" name="label_24">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>16777215</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>MENU PANEL</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="AnimatedCheck" name="customizeMenuPanelToggling_4">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>30</height>
+                                 </size>
+                                </property>
+                                <property name="text">
+                                 <string>CheckBox</string>
                                 </property>
                                </widget>
                               </item>
                              </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_12">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QPushButton" name="reloadApp">
+                             <property name="text">
+                              <string>Realod App</string>
+                             </property>
                             </widget>
                            </item>
                           </layout>
@@ -8125,6 +8259,21 @@ QToolBox::tab:selected {
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>20</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
              <item>
               <widget class="QLabel" name="loadingLabel">
                <property name="text">
@@ -8134,6 +8283,12 @@ QToolBox::tab:selected {
              </item>
              <item>
               <widget class="QProgressBar" name="loadingProgressBar">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>12</height>
+                </size>
+               </property>
                <property name="value">
                 <number>24</number>
                </property>

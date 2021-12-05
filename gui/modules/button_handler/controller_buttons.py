@@ -14,10 +14,7 @@ class SetControllerButtons(QWidget):
 		self.settings = settings.items
 		theme_settings = Settings('theme')
 		self.theme_settings = theme_settings.items
-		self.handle_ui_btns()
-		self.toggle_all()
 		
-	
 	def handle_ui_btns(self):
 		self.ui.closeOtherPanels.clicked.connect(self.close_all_panels)
 		self.ui.closeOtherPanels.setToolTip("Close all other Panels")
@@ -36,14 +33,21 @@ class SetControllerButtons(QWidget):
 		
 	def panel_settings(self):
 		button = self.sender()
-		print(button.objectName())
 		panel_name = button.objectName().lower().replace('settings', '')
-		print(panel_name)
 		self.dialog = PanelSettings()
 		self.dialog.setWindowFlag(Qt.FramelessWindowHint)
 		self.dialog.show()
 
-
+	def disableToggleButtons(self):
+		togglebuttons = (self.ui.closeOtherPanels, self.ui.togglePanel1, self.ui.togglePanel2, self.ui.togglePanel4, self.ui.togglePanel5)
+		for i, button in enumerate(togglebuttons):
+			button.setEnabled(False)
+	
+	def EnableToggleButtons(self):
+		togglebuttons = (self.ui.closeOtherPanels, self.ui.togglePanel1, self.ui.togglePanel2, self.ui.togglePanel4, self.ui.togglePanel5)
+		for i, button in enumerate(togglebuttons):
+			button.setEnabled(True)
+	
 	def close_all_panels(self):
 		togglebuttons = (self.ui.togglePanel1, self.ui.togglePanel2, self.ui.togglePanel4, self.ui.togglePanel5)
 		for i, button in enumerate(togglebuttons):
@@ -56,9 +60,8 @@ class SetControllerButtons(QWidget):
 		self.ui.buttonGroup = QButtonGroup(self)
 		for button in self.ui.findChildren(QAbstractButton):
 			if button.objectName().startswith("togglePanel"):
-				if button.objectName() != "togglePanel1" and button.objectName() != "togglePanel5": # temporär
-					#button.clicked.emit
-					#QTimer.singleShot(100, self.toggle_panel(button, 0))
+				panel_name = button.objectName().replace("toggle", "").lower()
+				if not self.settings[panel_name]['show_onstart']:
 					self.toggle_panel(button, 0)
 	
 	def toggle_panel(self, button=False, timeAnimation=-1):
