@@ -34,9 +34,8 @@ MANIFEST
 *.manifest
 *.spec
 helper.sh
-todo.txt
 old
-.vscode/
+.vscode
 
 # Installer logs
 pip-log.txt
