@@ -4,6 +4,7 @@ from gui.content import *
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
 import re
+from webcolors import hex_to_name
 
 class Theming(QWidget):
 	_init = True
@@ -21,6 +22,12 @@ class Theming(QWidget):
 				button.setCursor(QCursor(Qt.PointingHandCursor))
 				button.setCheckable(True)
 				button.clicked.connect(self.getColorPalette)
+		
+		for button in self.ui.findChildren(QAbstractButton):
+			if "iconColor" in button.objectName():
+				button.setCursor(QCursor(Qt.PointingHandCursor))
+				button.setCheckable(True)
+				button.clicked.connect(self.changeIconsColor)
 		
 		List = ("HeaderColor", "FooterColor", "BorderColor", "HoverColor")
 		for button in self.ui.findChildren(QAbstractButton):
@@ -53,6 +60,7 @@ class Theming(QWidget):
 					regex = r"[A-z]*(\d*)"
 					subst = "\\1"
 					nr = re.sub(regex, subst, button.objectName(), 0, re.MULTILINE)
+					#print(compString, button.objectName())#, backgroundColorList[int(nr)-1])
 					button.setStyleSheet(f"background: {backgroundColorList[int(nr)-1]}")
 					# get selected background
 					#####################################################
@@ -79,7 +87,18 @@ class Theming(QWidget):
 					i += 1
 					counter +=1	
 					self.ui.loadingProgressBar.setValue(counter*2)
-					
+			
+		# Load icons colors
+		# ##################################################	
+		nr = 1
+		for key, value in self.theme_settings.items['colors']['icon_colors'].items():
+			try:
+				icon_btn = eval(f"self.ui.iconColor{nr}")
+				nr += 1
+			
+				icon_btn.setStyleSheet(f"background: {key}")
+			except:
+				pass
 		QTimer.singleShot(D, self.setInitFalse)
 		# clear loadings infos
 		self.ui.loadingLabel.setText("")
@@ -224,38 +243,41 @@ class Theming(QWidget):
 		strings = re.sub( r"([A-Z])", r" \1", name).split()
 		return strings[0].lower()
 		
-	def changeBg(self):
-		
-		button = self.sender()
-		parentFrame = button.parent().parent()
-		for btn in parentFrame.findChildren(QAbstractButton):
-			if btn.isChecked() and btn.objectName() != button.objectName():
-				btn.toggle()
-
-		color = button.palette().color(QPalette.Background).name()
-		qcolor = QColor(color)
-		middle = qcolor.darker(300).name()
-		darker = qcolor.darker(150).name()
-		lighter = qcolor.lighter(50).name()
-		
-		typos = re.sub('MainColor.*', '', button.objectName())
-		
-		if "icon" in button.objectName():
-			self.theme_settings.items['colors']['icon_bg'] = self.theme_settings.items['icon_colors'][color]
-			self.changeIcons()
-		self.theme_settings.serialize()
-		self.reloadStyle()
+	#def changeBg(self):
+	#	
+	#	button = self.sender()
+	#	parentFrame = button.parent().parent()
+	#	for btn in parentFrame.findChildren(QAbstractButton):
+	#		if btn.isChecked() and btn.objectName() != button.objectName():
+	#			btn.toggle()
+#
+	#	color = button.palette().color(QPalette.Background).name()
+	#	qcolor = QColor(color)
+	#	middle = qcolor.darker(300).name()
+	#	darker = qcolor.darker(150).name()
+	#	lighter = qcolor.lighter(50).name()
+	#	
+	#	typos = re.sub('MainColor.*', '', button.objectName())
+	#	
+	#	if "icon" in button.objectName():
+	#		self.theme_settings.items['colors']['default_icon_color'] = self.theme_settings.items['icon_colors'][color]
+	#		self.changeIcons()
+	#	self.theme_settings.serialize()
+	#	self.reloadStyle()
 	
-	def changeIcons(self):
-		print("In Arbeit")
-		#self.theme_settings.items['colors']['icon_bg'] = self.theme_settings.items['icon_colors'][color]
-		#self.changeIcons()
-		#self.ui.panel1.deleteLater()
-		#self.ui.panel1.repaint()
-		#for button in self.ui.findChildren(QAbstractButton):
-			#if "BgColor" in button.objectName():
-			#	button.setCursor(QCursor(Qt.PointingHandCursor))
-			#	button.clicked.connect(self.changeBg)
+	def changeIconsColor(self):
+		button = self.sender()
+		name = button.objectName()
+		parentFrame = button.parent()
+		for btn in parentFrame.findChildren(QAbstractButton):
+			_name = btn.objectName()
+			if btn.isChecked() and _name != name:
+				btn.toggle()
+		color = button.palette().color(QPalette.Background).name()
+		color_name = hex_to_name(color)
+		#print(color_name, color)
+		self.theme_settings.items['colors']['default_icon_color'] = color_name
+		self.theme_settings.serialize()
 
 	def reloadStyle(self):
 		stylesheet = UIFunctions().getAppTheme(self.theme_settings.items)

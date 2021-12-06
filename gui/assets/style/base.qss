@@ -318,7 +318,7 @@ QTabBar::tab:selected {
 	background: var(content[hover]);
 	margin-bottom: -1px;
 	color: var(content[second_text]);
-	border-bottom: 2px solid var(content[border]);
+	border-bottom: 2px solid var(content[header]); 
 }
 
 QTabBar::tab:!selected:hover {

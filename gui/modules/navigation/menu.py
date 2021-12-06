@@ -13,6 +13,8 @@ class SetMenu(QWidget):
 		self.ui = parent
 		settings = Settings('ui')
 		self.settings = settings.items
+		settings = Settings("theme")
+		self.theme_settings = settings.items
 		menu_settings = Settings('menu')
 		self.menu_data = menu_settings.items
 		self.setupMenu()
@@ -92,14 +94,14 @@ class SetMenu(QWidget):
 			tree_item.setText(0, menu_item['name'])
 		
 			if type(menu_item['icon']) == dict:
-				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon']['collapsed'])))
+				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon']['collapsed'], self.theme_settings['colors']['default_icon_color'])))
 				tree_item.setText(3, menu_item['icon']['collapsed'])
 				tree_item.setText(4, menu_item['icon']['expanded'])
 			else:
-				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon'])))
+				tree_item.setIcon(0, QIcon(UIFunctions().set_svg_icon(menu_item['icon'], self.theme_settings['colors']['default_icon_color'])))
 
 			if "children" in menu_item:
-				tree_item.setIcon(1, QIcon(UIFunctions().set_svg_icon("chevron-right.svg")))
+				tree_item.setIcon(1, QIcon(UIFunctions().set_svg_icon("chevron-right.svg", self.theme_settings['colors']['default_icon_color'])))
 				self.build_menu(data=menu_item['children'], parent=tree_item)
 			else:
 				tree_item.setText(2, menu_item['widget'])

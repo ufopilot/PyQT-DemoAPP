@@ -60,7 +60,7 @@
         "toggle": true,
         "content_margins": 3,
         "direction": "ttb",
-        "show_onstart": false
+        "show_onstart": true
     },
     "menu_panel": {
         "minimum": 0,

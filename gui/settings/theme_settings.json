@@ -10,7 +10,7 @@
             "hover": "#292d3c",
             "first_text": "#ffffff",
             "second_text": "#dddddd",
-            "third_text": "#dddddd",
+            "third_text": "#ffffff",
             "background_alternate": "#2d3141",
             "border": "#262a37"
         },
@@ -77,22 +77,21 @@
             "#eceef2"
         ],
         "icon_colors": {
-            "#000000": "black",
-            "#ffffff": "white",
-            "#808080": "gray",
-            "#b0b0b0": "light gray",
-            "#ff0000": "red",
-            "#800000": "red",
-            "#00ff00": "green",
-            "#008000": "dark green",
-            "#0000ff": "blue",
-            "#000080": "dark blue",
-            "#ffff00": "yellow",
-            "#808000": "olive",
-            "#00ffff": "cyan",
-            "#ff00ff": "magenta",
-            "#800080": "purple"
+            "aqua": "#00ffff",
+            "black": "#000000",
+            "blue": "#0000ff",
+            "cyan": "#00ffff",
+            "grey": "#808080",
+            "green": "#008000",
+            "magenta": "#ff00ff",
+            "orange": "#ffa500",
+            "purple": "#800080",
+            "red": "#ff0000",
+            "teal": "#008080",
+            "violet": "#ee82ee",
+            "white": "#ffffff",
+            "yellow": "#ffff00"
         },
-        "icon_bg": "white"
+        "default_icon_color": "cyan"
     }
 }
