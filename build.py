@@ -1,10 +1,21 @@
 import json, os
 import subprocess
 import locale
+import shutil
+
 
 locale.setlocale(locale.LC_ALL,'en-US')
 
-with open("gui/settings/app_settings.json", "r", encoding='utf-8') as reader:
+#copy settings folder to dist
+#shutil.copytree('gui/settings', 'dist/', dirs_exist_ok=True)
+if not os.path.exists("dist/settings"):
+    os.mkdir("dist/settings")
+    
+for __file in ("ui_settings.json", "theme_settings.json"):
+    print(f"copy {__file}")
+    shutil.copy(f"gui/settings\\{__file}", f"dist/settings/{__file}")
+
+with open("gui/settings/ui_settings.json", "r", encoding='utf-8') as reader:
     settings = json.loads(reader.read())
 
 app_name = settings['app_name']
@@ -40,16 +51,9 @@ while True:
         for output in process.stdout.readlines():
             print(output.strip())
         break
-exit()
-os.system("C:\\Users\aldor\AppData\Local\Programs\Python\Python39\Scripts\pyinstaller.exe \
-             --onefile --windowed \
-              --icon '{icon}' \
-              --name '${app_name}' \
-              --hidden-import 'requests' \
-              --hidden-import 'bs4' \
-              --hidden-import 'pyperclip' \
-              --hidden-import 'cloudscraper' \
-              --hidden-import 'webbrowser' \
-              --add-data 'resources_rc.py;.' \
-              --add-data 'qt_core.py;.' \
-              --add-data 'gui;gui/' main.py ")
+
+# test app
+print("starting App ....")
+
+os.chdir('dist')
+os.system(f"{app_name}.exe")

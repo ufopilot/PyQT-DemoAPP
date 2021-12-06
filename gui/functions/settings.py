@@ -1,4 +1,4 @@
-import json
+import json, sys, os
 from gui.functions.ui_functions import UIFunctions
 
 
@@ -7,23 +7,34 @@ from gui.functions.ui_functions import UIFunctions
 class Settings(object):
 	def __init__(self, type=None):
 		super(Settings, self).__init__()
-		self.json_file = f"gui/settings/{type}_settings.json"
-		self.settings_path = UIFunctions().resource_path(self.json_file)
-		# DICTIONARY WITH SETTINGS
-		# Just to have objects references
+		
+		if type == "menu":
+			self.json_file = f"gui/settings/{type}_settings.json"
+			self.settings_path = UIFunctions().resource_path(self.json_file)
+		else:
+			if getattr(sys, 'frozen', False):
+				# we are running in a |PyInstaller| bundle
+				base_path = sys._MEIPASS
+				extDataDir = os.getcwd()
+				print(base_path)
+				print(extDataDir)
+				self.json_file = f"settings/{type}_settings.json"
+			else:
+				# we are running in a normal Python environment
+				base_path = os.getcwd()
+				extDataDir = os.getcwd()
+				self.json_file = f"gui/settings/{type}_settings.json"
+		
+			self.settings_path = os.path.join(extDataDir, self.json_file)
+		
 		self.items = {}
-
-		# DESERIALIZE
 		self.deserialize()
-	# SERIALIZE JSON
-	# ///////////////////////////////////////////////////////////////
+	
 	def serialize(self):
 		# WRITE JSON FILE
 		with open(self.settings_path, "w", encoding='utf-8') as write:
 			json.dump(self.items, write, indent=4)
 
-	# DESERIALIZE JSON
-	# ///////////////////////////////////////////////////////////////
 	def deserialize(self):
 		# READ JSON FILE
 		with open(self.settings_path, "r", encoding='utf-8') as reader:

@@ -289,24 +289,8 @@
     <file>gui/resources/icons/white/zoom-out.svg</file>
   </qresource>
   <qresource prefix="images">
-    <file>gui/resources/imgs/230x0w.png</file>
-    <file>gui/resources/imgs/icon.ico</file>
-    <file>gui/resources/imgs/kisspng-clojurescript-logo-leiningen-5ae861a17020f3.4303280715251787854593.png</file>
     <file>gui/resources/imgs/kisspng-python-programming-basics-for-absolute-beginners-michigan-python-user-group-5-jul-2-18-5bfef9220f00d6.4973377615434365780615.png</file>
     <file>gui/resources/imgs/loading.gif</file>
-    <file>gui/resources/imgs/logo.png</file>
-    <file>gui/resources/imgs/samori.png</file>
-    <file>gui/resources/imgs/230x0w.png</file>
-    <file>gui/resources/imgs/icon.ico</file>
-    <file>gui/resources/imgs/kisspng-clojurescript-logo-leiningen-5ae861a17020f3.4303280715251787854593.png</file>
-    <file>gui/resources/imgs/loading.gif</file>
-    <file>gui/resources/imgs/logo.png</file>
-    <file>gui/resources/imgs/samori.png</file>
-    <file>gui/resources/imgs/230x0w.png</file>
-    <file>gui/resources/imgs/icon.ico</file>
-    <file>gui/resources/imgs/loading.gif</file>
-    <file>gui/resources/imgs/logo.png</file>
-    <file>gui/resources/imgs/samori.png</file>
   </qresource>
   <qresource prefix="vscode-icons-dark">
     <file>gui/resources/vscode-icons/icons/dark/account.svg</file>

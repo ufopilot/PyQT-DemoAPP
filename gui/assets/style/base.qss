@@ -304,7 +304,9 @@ QTabBar::tab {
 	background: var(content[header]);
 	border: 1px solid var(content[border]);
 	padding: 5px 20px;
+	/*
 	font-weight: bold;
+	*/
 	/*min-width: 100px;*/
   }
 
@@ -319,12 +321,22 @@ QTabBar::tab:selected {
 	border-bottom: 2px solid var(content[border]);
 }
 
+QTabBar::tab:!selected:hover {
+	background: var(content[hover]);
+}
+
 QTabWidget::pane {
 	/*border: 1px solid var(content[background]);*/
 	top:0px;
 	background: transparent;
 	border: 1px solid var(content[border]);
 }
+
+QTabBar::tab:right,
+QTabBar::tab:left {
+	padding: 20px 5px;
+}
+
 
 /*******************************************/
 /* SCROLLAREA                            */
@@ -461,3 +473,8 @@ QProgressBar::chunk {
     width: 10px;
     margin: 1px;
 }
+
+#mainFooter QProgressBar::chunk {
+    background-color: red;
+}
+

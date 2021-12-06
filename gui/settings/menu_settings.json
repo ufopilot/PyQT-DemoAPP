@@ -32,6 +32,25 @@
         }]
     },
     {   
+        "name": "Cards",
+        "icon": "credit-card.svg",
+        "children":[{
+            "name":"Cards",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        },
+        {
+            "name":"Cards Advanced",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        },
+        {
+            "name":"Cards Extented",
+            "icon": "circle.svg",
+            "widget":"TemplatePage"
+        }]
+    },
+    {   
         "name": "Tabs",
         "icon": "folder.svg",
         "children":[{

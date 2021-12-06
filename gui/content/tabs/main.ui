@@ -130,7 +130,7 @@
         </property>
         <widget class="QWidget" name="tab_5">
          <attribute name="title">
-          <string>Tab 1</string>
+          <string>The first tab</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">

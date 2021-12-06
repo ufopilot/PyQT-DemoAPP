@@ -10,9 +10,9 @@
             "hover": "#292d3c",
             "first_text": "#ffffff",
             "second_text": "#dddddd",
-            "third_text": "#ffffff",
+            "third_text": "#dddddd",
             "background_alternate": "#2d3141",
-            "border": "#313648"
+            "border": "#262a37"
         },
         "footer": {
             "background": "#313648",

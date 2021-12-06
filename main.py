@@ -8,7 +8,7 @@ from gui.modules.navigation.menu import SetMenu as SetLeftMenu
 from gui.modules.resizer.sidegrip import SideGrip
 
 from gui.modules.style.style import SetStyle
-from gui.modules.panel_settings.panel_settings import PanelSettings
+#from gui.modules.panel_settings.panel_settings import PanelSettings
 from gui.modules.theming.theming import Theming
 from gui.modules.customizing.customizing import Customizing
 from gui.modules.title_bar.titlebar import TitleBar

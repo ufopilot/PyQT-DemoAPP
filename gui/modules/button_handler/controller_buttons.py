@@ -1,6 +1,6 @@
 from gui.functions.settings import Settings
 from gui.functions.ui_functions import UIFunctions
-from gui.modules.panel_settings.panel_settings import PanelSettings
+#from gui.modules.panel_settings.panel_settings import PanelSettings
 from qt_core import *
 import webbrowser
 
@@ -40,9 +40,9 @@ class SetControllerButtons(QWidget):
 	def panel_settings(self):
 		button = self.sender()
 		panel_name = button.objectName().lower().replace('settings', '')
-		self.dialog = PanelSettings()
-		self.dialog.setWindowFlag(Qt.FramelessWindowHint)
-		self.dialog.show()
+		#self.dialog = PanelSettings()
+		#self.dialog.setWindowFlag(Qt.FramelessWindowHint)
+		#self.dialog.show()
 
 	def disableToggleButtons(self):
 		togglebuttons = (self.ui.closeOtherPanels, self.ui.togglePanel1, self.ui.togglePanel2, self.ui.togglePanel4, self.ui.togglePanel5)
