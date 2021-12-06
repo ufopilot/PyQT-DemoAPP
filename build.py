@@ -9,7 +9,7 @@ locale.setlocale(locale.LC_ALL,'en-US')
 #copy settings folder to dist
 #shutil.copytree('gui/settings', 'dist/', dirs_exist_ok=True)
 if not os.path.exists("dist/settings"):
-    os.mkdir("dist/settings")
+    os.makedirs("dist/settings")
     
 for __file in ("ui_settings.json", "theme_settings.json"):
     print(f"copy {__file}")
