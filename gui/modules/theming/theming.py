@@ -260,7 +260,7 @@ class Theming(QWidget):
 	#	typos = re.sub('MainColor.*', '', button.objectName())
 	#	
 	#	if "icon" in button.objectName():
-	#		self.theme_settings.items['colors']['default_icon_color'] = self.theme_settings.items['icon_colors'][color]
+	#		self.theme_settings.items['colors']['content_icon_color'] = self.theme_settings.items['icon_colors'][color]
 	#		self.changeIcons()
 	#	self.theme_settings.serialize()
 	#	self.reloadStyle()
@@ -276,7 +276,7 @@ class Theming(QWidget):
 		color = button.palette().color(QPalette.Background).name()
 		color_name = hex_to_name(color)
 		#print(color_name, color)
-		self.theme_settings.items['colors']['default_icon_color'] = color_name
+		self.theme_settings.items['colors']['content_icon_color'] = color_name
 		self.theme_settings.serialize()
 
 	def reloadStyle(self):

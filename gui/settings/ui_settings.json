@@ -12,11 +12,11 @@
     },
     "startup_size": [
         1400,
-        800
+        850
     ],
     "minimum_size": [
         1400,
-        800
+        850
     ],
     "font": {
         "family": "Segoe UI",
@@ -29,7 +29,8 @@
         "toggle": true,
         "content_margins": 3,
         "direction": "rtl",
-        "show_onstart": true
+        "show_onstart": true,
+        "title": "Navigation Menu"
     },
     "panel2": {
         "minimum": 30,
@@ -37,14 +38,16 @@
         "toggle": true,
         "content_margins": 3,
         "direction": "rtl",
-        "show_onstart": false
+        "show_onstart": false,
+        "title": "Settings"
     },
     "panel3": {
         "minimum": 30,
         "maximum": 432,
         "toggle": false,
         "content_margins": 3,
-        "direction": "rtl"
+        "direction": "rtl",
+        "title": "Content"
     },
     "panel4": {
         "minimum": 30,
@@ -52,7 +55,8 @@
         "toggle": true,
         "content_margins": 3,
         "direction": "ltr",
-        "show_onstart": false
+        "show_onstart": false,
+        "title": "Theming & Customizing"
     },
     "panel5": {
         "minimum": 30,
@@ -60,20 +64,8 @@
         "toggle": true,
         "content_margins": 3,
         "direction": "ttb",
-        "show_onstart": true
+        "show_onstart": true,
+        "title": "What ever!"
     },
-    "menu_panel": {
-        "minimum": 0,
-        "maximum": 240,
-        "toggle": true,
-        "content_margins": 3
-    },
-    "settings_panel": {
-        "minimum": 0,
-        "maximum": 240,
-        "toggle": true,
-        "content_margins": 3
-    },
-    "time_animation": 300,
-    "tabs_position": "top"
+    "time_animation": 300
 }

@@ -12,26 +12,42 @@ class TitleBar(QWidget):
 		self.ui = parent
 		settings = Settings('ui')
 		self.settings = settings.items
+		settings = Settings('theme')
+		self.theme_settings = settings.items
+		self.icon = QIcon()
+
 		if not self.settings['custom_title_bar']:
 			self.windowicons.hide()
+		else:
+			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-maximize.svg", self.theme_settings['colors']['header_icon_color'])))
+			self.ui.maximizewindow.setIcon(self.icon)
+			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-close.svg", self.theme_settings['colors']['header_icon_color'])))
+			self.ui.closewindow.setIcon(self.icon)
+			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-minimize.svg", self.theme_settings['colors']['header_icon_color'])))
+			self.ui.minimizewindow.setIcon(self.icon)
 			
-		self.ui.restorewindow.hide()
 		
-		self.ui.restorewindow.clicked.connect(self.ui.maximizewindow.show)
-		self.ui.restorewindow.clicked.connect(self.ui.restorewindow.hide)
-		self.ui.restorewindow.clicked.connect(self.ui.window().showNormal)
-		
-		self.ui.maximizewindow.clicked.connect(self.ui.maximizewindow.hide)   
-		self.ui.maximizewindow.clicked.connect(self.ui.restorewindow.show)
-		self.ui.maximizewindow.clicked.connect(self.ui.window().showMaximized)
-		
+		self.ui.maximizewindow.clicked.connect(self.icon_maximize_restore)		
 		self.ui.minimizewindow.clicked.connect(self.ui.window().showMinimized)
 		self.ui.closewindow.clicked.connect(self.ui.window().close)
-		self.ui.appDescription.mouseDoubleClickEvent = self.maximize_restore
+		self.ui.appDescription.mouseDoubleClickEvent = self.dbclick_maximize_restore
 
-	def maximize_restore(self, event=None):
+	def icon_maximize_restore(self):
+		self.ui.window().showMaximized
+		button = self.sender()
+		
+		print(button.objectName(), self.ui.window().isMaximized())
+		if self.ui.window().isMaximized():
+			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-maximize.svg", self.theme_settings['colors']['header_icon_color'])))
+			button.setIcon(self.icon)
+			self.ui.window().showNormal()
+		else:
+			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-restore.svg", self.theme_settings['colors']['header_icon_color'])))
+			button.setIcon(self.icon)
+			self.ui.window().showMaximized()
+			
+
+	def dbclick_maximize_restore(self, event=None):
 		if self.settings['custom_title_bar']:
-			if self.ui.window().isMaximized():
-				QTimer.singleShot(0, self.ui.restorewindow.clicked.emit)
-			else:
-				QTimer.singleShot(0, self.ui.maximizewindow.clicked.emit)
+			QTimer.singleShot(0, self.ui.maximizewindow.clicked.emit)
+			

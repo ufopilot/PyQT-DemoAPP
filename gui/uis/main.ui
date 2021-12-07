@@ -142,7 +142,7 @@
              <string notr="true"/>
             </property>
             <property name="text">
-             <string> DemoApp</string>
+             <string/>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -152,7 +152,7 @@
           <item>
            <widget class="QLabel" name="appDescription">
             <property name="text">
-             <string>App Skeleton: responsive | configurable | extendable</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -197,30 +197,6 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_minimize.svg</normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_minimize.svg</iconset>
-               </property>
-               <property name="flat">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="restorewindow">
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_restore.svg</normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_restore.svg</iconset>
-               </property>
                <property name="flat">
                 <bool>true</bool>
                </property>
@@ -237,10 +213,6 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_maximize.svg</normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_maximize.svg</iconset>
-               </property>
                <property name="flat">
                 <bool>true</bool>
                </property>
@@ -256,10 +228,6 @@
                </property>
                <property name="text">
                 <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_close.svg</normaloff>:/white-icons-smaller/gui/resources/icons/white/icon_close.svg</iconset>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -428,7 +396,7 @@
                          </size>
                         </property>
                         <property name="text">
-                         <string>Navigation</string>
+                         <string/>
                         </property>
                         <property name="textFormat">
                          <enum>Qt::AutoText</enum>
@@ -569,7 +537,7 @@
                    <item alignment="Qt::AlignBottom">
                     <widget class="LabelVertical" name="headerPanel1">
                      <property name="text">
-                      <string>Navigation</string>
+                      <string/>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
@@ -720,7 +688,7 @@
                             </size>
                            </property>
                            <property name="text">
-                            <string>Settings</string>
+                            <string/>
                            </property>
                            <property name="textFormat">
                             <enum>Qt::AutoText</enum>
@@ -846,7 +814,7 @@
                    <item alignment="Qt::AlignBottom">
                     <widget class="LabelVertical" name="headerPanel2">
                      <property name="text">
-                      <string>Settings</string>
+                      <string/>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
@@ -1018,7 +986,7 @@
                    <item alignment="Qt::AlignBottom">
                     <widget class="LabelVertical" name="headerPanel3">
                      <property name="text">
-                      <string>Content</string>
+                      <string/>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
@@ -1107,7 +1075,7 @@
                 <item>
                  <widget class="LabelHorizontal" name="headerPanel5">
                   <property name="text">
-                   <string>Messages</string>
+                   <string/>
                   </property>
                   <property name="margin">
                    <number>0</number>
@@ -1419,7 +1387,7 @@ QToolBox::tab:selected {
                  <item>
                   <widget class="QToolBox" name="toolBox">
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>2</number>
                    </property>
                    <widget class="QWidget" name="page">
                     <property name="geometry">
@@ -2845,6 +2813,103 @@ QToolBox::tab:selected {
                        </item>
                       </layout>
                      </widget>
+                     <widget class="QFrame" name="frame_42">
+                      <property name="geometry">
+                       <rect>
+                        <x>-10</x>
+                        <y>410</y>
+                        <width>241</width>
+                        <height>108</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>108</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777213</width>
+                        <height>74</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_8">
+                       <property name="leftMargin">
+                        <number>13</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="1">
+                        <widget class="AnimatedCheck" name="headerDarkIcons">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>CheckBox</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_60">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Dark Icons</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_61">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Light Icons</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="AnimatedCheck" name="headerLightIcons">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>CheckBox</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
                     </widget>
                    </widget>
                    <widget class="QWidget" name="page_2">
@@ -2852,8 +2917,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>100</width>
-                      <height>30</height>
+                      <width>252</width>
+                      <height>573</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -4641,8 +4706,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>100</width>
-                      <height>30</height>
+                      <width>252</width>
+                      <height>573</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -6060,6 +6125,103 @@ QToolBox::tab:selected {
                        </item>
                       </layout>
                      </widget>
+                     <widget class="QFrame" name="frame_43">
+                      <property name="geometry">
+                       <rect>
+                        <x>-10</x>
+                        <y>410</y>
+                        <width>241</width>
+                        <height>108</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>108</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777213</width>
+                        <height>74</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_9">
+                       <property name="leftMargin">
+                        <number>13</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="1">
+                        <widget class="AnimatedCheck" name="footerDarkIcons">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>CheckBox</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_62">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Dark Icons</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_63">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Light Icons</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="AnimatedCheck" name="footerLightIcons">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>CheckBox</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
                     </widget>
                    </widget>
                    <widget class="QWidget" name="page_4">
@@ -6067,8 +6229,8 @@ QToolBox::tab:selected {
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>100</width>
-                      <height>30</height>
+                      <width>252</width>
+                      <height>573</height>
                      </rect>
                     </property>
                     <attribute name="label">
@@ -7498,7 +7660,7 @@ QToolBox::tab:selected {
                      </rect>
                     </property>
                     <attribute name="label">
-                     <string>Icons</string>
+                     <string>Content Icons</string>
                     </attribute>
                     <widget class="QLabel" name="label_26">
                      <property name="geometry">
@@ -7919,8 +8081,8 @@ QToolBox::tab:selected {
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>176</width>
-                         <height>525</height>
+                         <width>270</width>
+                         <height>726</height>
                         </rect>
                        </property>
                        <property name="styleSheet">
@@ -8408,7 +8570,7 @@ QToolBox::tab:selected {
              <item alignment="Qt::AlignBottom">
               <widget class="LabelVertical" name="headerPanel4">
                <property name="text">
-                <string>Theming &amp; Customizing</string>
+                <string/>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -8481,7 +8643,7 @@ QToolBox::tab:selected {
              <item>
               <widget class="QLabel" name="autor">
                <property name="text">
-                <string>autor</string>
+                <string/>
                </property>
               </widget>
              </item>

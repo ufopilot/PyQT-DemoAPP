@@ -6,13 +6,13 @@
             "text_size": 14
         },
         "header": {
-            "background": "#313648",
-            "hover": "#292d3c",
+            "background": "#13161f",
+            "hover": "#10121a",
             "first_text": "#ffffff",
-            "second_text": "#dddddd",
+            "second_text": "#ffffff",
             "third_text": "#ffffff",
-            "background_alternate": "#2d3141",
-            "border": "#262a37"
+            "background_alternate": "#11141c",
+            "border": "#13161f"
         },
         "footer": {
             "background": "#313648",
@@ -92,6 +92,8 @@
             "white": "#ffffff",
             "yellow": "#ffff00"
         },
-        "default_icon_color": "cyan"
+        "content_icon_color": "cyan",
+        "header_icon_color": "light",
+        "footer_icon_color": "light"
     }
 }

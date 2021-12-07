@@ -10,6 +10,7 @@
 #mainFrame{
 	border: 1px solid var(content[border]);
 	background:  var(content[background]);
+	border-radius: 5px;
 }
 
 /* HEADER                                  */

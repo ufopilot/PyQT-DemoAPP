@@ -14,6 +14,15 @@ class SetControllerButtons(QWidget):
 		self.settings = settings.items
 		theme_settings = Settings('theme')
 		self.theme_settings = theme_settings.items
+
+		self.ui.headerPanel1.setText(self.settings['panel1']['title'])
+		self.ui.headerPanel2.setText(self.settings['panel2']['title'])
+		self.ui.headerPanel3.setText(self.settings['panel3']['title'])
+		self.ui.headerPanel4.setText(self.settings['panel4']['title'])
+		self.ui.headerPanel5.setText(self.settings['panel5']['title'])
+
+		self.ui.menuTitle.setText(self.settings['panel1']['title'])
+		self.ui.settingsTitle.setText(self.settings['panel2']['title'])
 		
 	def handle_ui_btns(self):
 		self.ui.closeOtherPanels.clicked.connect(self.close_all_panels)
@@ -35,14 +44,14 @@ class SetControllerButtons(QWidget):
 				button.clicked.connect(self.openGithub)
 				button.setToolTip('Open Project in GitHub')
 		icon = QIcon()
-		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-left.svg", self.theme_settings['colors']['default_icon_color'])))
+		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-left.svg", self.theme_settings['colors']['content_icon_color'])))
 		self.ui.togglePanel1.setIcon(icon)
 		self.ui.togglePanel2.setIcon(icon)
-		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-right.svg", self.theme_settings['colors']['default_icon_color'])))
+		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-right.svg", self.theme_settings['colors']['content_icon_color'])))
 		self.ui.togglePanel4.setIcon(icon)
-		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-down.svg", self.theme_settings['colors']['default_icon_color'])))	
+		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chevron-down.svg", self.theme_settings['colors']['content_icon_color'])))	
 		self.ui.togglePanel5.setIcon(icon)
-		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("crop.svg", self.theme_settings['colors']['default_icon_color'])))	
+		icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("crop.svg", self.theme_settings['colors']['content_icon_color'])))	
 		self.ui.closeOtherPanels.setIcon(icon)
 
 	def openGithub(self):
@@ -133,13 +142,13 @@ class SetControllerButtons(QWidget):
 				endValue = maximum
 				panel_title_style = ""
 				#panel_title.setStyleSheet("")
-				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_close, self.theme_settings['colors']['default_icon_color'])))
+				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_close, self.theme_settings['colors']['content_icon_color'])))
 			else:
 				self._panels_closed.append(panel_name)
 				endValue = minimum
 				panel_title_style = "color: #333"	
 				#panel_title.setStyleSheet("color: #333")
-				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_expand, self.theme_settings['colors']['default_icon_color'])))
+				icon.addPixmap(QPixmap(UIFunctions().set_svg_icon(icon_svg_expand, self.theme_settings['colors']['content_icon_color'])))
 			button.setIcon(icon)
 			
 			self.animation = QPropertyAnimation(panel, bytes(size_option, encoding='utf-8'))
