@@ -16,32 +16,31 @@ class Theming(QWidget):
 		self.ui.loadingProgressBar.setValue(0)
 
 		QTimer.singleShot(1000, self.selectColors)
-		
+		List1 = ("HeaderColor", "FooterColor", "BorderColor", "HoverColor")
+		List2 = ("First_textColor", "Second_textColor", "Third_textColor")
+		List3 = ("headerDarkIcons", "headerLightIcons", "footerDarkIcons", "footerLightIcons")
 		for button in self.ui.findChildren(QAbstractButton):
-			if "MainColor" in button.objectName():
-				button.setCursor(QCursor(Qt.PointingHandCursor))
+			button_name = button.objectName()
+			button.setCursor(QCursor(Qt.PointingHandCursor))
+
+			if "MainColor" in button_name:
 				button.setCheckable(True)
 				button.clicked.connect(self.getColorPalette)
 		
-		for button in self.ui.findChildren(QAbstractButton):
-			if "iconColor" in button.objectName():
-				button.setCursor(QCursor(Qt.PointingHandCursor))
+			if "iconColor" in button_name:
 				button.setCheckable(True)
 				button.clicked.connect(self.changeIconsColor)
-		
-		List = ("HeaderColor", "FooterColor", "BorderColor", "HoverColor")
-		for button in self.ui.findChildren(QAbstractButton):
-			if any(comp in button.objectName() for comp in List):
-				button.setCursor(QCursor(Qt.PointingHandCursor))
+			
+			if any(key in button_name for key in List1):
 				button.setCheckable(True)
 				button.clicked.connect(self.changeColor)
 
-		List = ("First_textColor", "Second_textColor", "Third_textColor")
-		for button in self.ui.findChildren(QAbstractButton):
-			if any(comp in button.objectName() for comp in List):
-				button.setCursor(QCursor(Qt.PointingHandCursor))
+			if any(key in button_name for key in List2):
 				button.setCheckable(True)
 				button.clicked.connect(self.changeTextColor)
+			
+			if any(key in button_name for key in List3):
+				button.stateChanged.connect(self.changeBarIconsColor)
 
 	def selectColors(self):
 		T = 0
@@ -99,6 +98,15 @@ class Theming(QWidget):
 				icon_btn.setStyleSheet(f"background: {key}")
 			except:
 				pass
+		
+		# Load BarIcons colors
+		# ##################################################	
+		# header
+		for key in ("header", "footer"): 
+			color = self.theme_settings.items['colors'][key+'_icon_color'].capitalize() 
+			checkbox = eval(f"self.ui.{key}{color}Icons")
+			checkbox.setChecked(True)
+
 		QTimer.singleShot(D, self.setInitFalse)
 		# clear loadings infos
 		self.ui.loadingLabel.setText("")
@@ -235,36 +243,6 @@ class Theming(QWidget):
 				btn.toggle()
 		button.toggle()
 	
-	def component(self, name):
-		strings = re.sub( r"([A-Z])", r" \1", name).split()
-		return  strings[1].lower()
-		
-	def typos(self, name):
-		strings = re.sub( r"([A-Z])", r" \1", name).split()
-		return strings[0].lower()
-		
-	#def changeBg(self):
-	#	
-	#	button = self.sender()
-	#	parentFrame = button.parent().parent()
-	#	for btn in parentFrame.findChildren(QAbstractButton):
-	#		if btn.isChecked() and btn.objectName() != button.objectName():
-	#			btn.toggle()
-#
-	#	color = button.palette().color(QPalette.Background).name()
-	#	qcolor = QColor(color)
-	#	middle = qcolor.darker(300).name()
-	#	darker = qcolor.darker(150).name()
-	#	lighter = qcolor.lighter(50).name()
-	#	
-	#	typos = re.sub('MainColor.*', '', button.objectName())
-	#	
-	#	if "icon" in button.objectName():
-	#		self.theme_settings.items['colors']['content_icon_color'] = self.theme_settings.items['icon_colors'][color]
-	#		self.changeIcons()
-	#	self.theme_settings.serialize()
-	#	self.reloadStyle()
-	
 	def changeIconsColor(self):
 		button = self.sender()
 		name = button.objectName()
@@ -278,11 +256,45 @@ class Theming(QWidget):
 		#print(color_name, color)
 		self.theme_settings.items['colors']['content_icon_color'] = color_name
 		self.theme_settings.serialize()
+	
+	def changeBarIconsColor(self):
+		checkbox = self.sender()
+		name = checkbox.objectName()
+		if "Dark" in name:
+			op_name = name.replace("Dark", "Light")
+			this_color = "dark"
+			other_color = "light"
+		else:
+			op_name = name.replace("Light", "Dark")
+			this_color = "light"
+			other_color = "dark"
+
+		op_checkbox = eval(f"self.ui.{op_name}")
+
+		if checkbox.isChecked():
+			op_checkbox.setChecked(False)
+			color = this_color
+
+		if not checkbox.isChecked():
+			op_checkbox.setChecked(True)
+			color = other_color
+
+		typos = self.typos(name).lower()
+		self.theme_settings.items['colors'][typos+'_icon_color'] = color 
+		self.theme_settings.serialize()
 
 	def reloadStyle(self):
 		stylesheet = UIFunctions().getAppTheme(self.theme_settings.items)
 		self.ui.centralwidget.setStyleSheet(stylesheet)
+	
+	def component(self, name):
+		strings = re.sub( r"([A-Z])", r" \1", name).split()
+		return  strings[1].lower()
 		
+	def typos(self, name):
+		strings = re.sub( r"([A-Z])", r" \1", name).split()
+		return strings[0].lower()
+	
 		
 		
 		

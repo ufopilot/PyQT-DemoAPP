@@ -42,7 +42,8 @@
         "toggle": false,
         "content_margins": 3,
         "direction": "rtl",
-        "title": "Content"
+        "title": "Content",
+        "show_onstart": false
     },
     "panel4": {
         "minimum": 30,

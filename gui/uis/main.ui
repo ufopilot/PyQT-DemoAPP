@@ -1387,7 +1387,7 @@ QToolBox::tab:selected {
                  <item>
                   <widget class="QToolBox" name="toolBox">
                    <property name="currentIndex">
-                    <number>2</number>
+                    <number>0</number>
                    </property>
                    <widget class="QWidget" name="page">
                     <property name="geometry">
@@ -2878,7 +2878,7 @@ QToolBox::tab:selected {
                           </size>
                          </property>
                          <property name="text">
-                          <string>Dark Icons</string>
+                          <string>Light Icons</string>
                          </property>
                         </widget>
                        </item>
@@ -2891,7 +2891,7 @@ QToolBox::tab:selected {
                           </size>
                          </property>
                          <property name="text">
-                          <string>Light Icons</string>
+                          <string>Dark Icons</string>
                          </property>
                         </widget>
                        </item>
@@ -6190,7 +6190,7 @@ QToolBox::tab:selected {
                           </size>
                          </property>
                          <property name="text">
-                          <string>Dark Icons</string>
+                          <string>Light Icons</string>
                          </property>
                         </widget>
                        </item>
@@ -6203,7 +6203,7 @@ QToolBox::tab:selected {
                           </size>
                          </property>
                          <property name="text">
-                          <string>Light Icons</string>
+                          <string>Dark Icons</string>
                          </property>
                         </widget>
                        </item>
