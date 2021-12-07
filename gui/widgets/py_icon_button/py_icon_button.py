@@ -1,31 +1,18 @@
-# ///////////////////////////////////////////////////////////////
-#
-# BY: WANDERSON M.PIMENTA
-# PROJECT MADE WITH: Qt Designer and PySide6
-# V: 1.0.0
-#
-# This project can be used freely for all uses, as long as they maintain the
-# respective credits only in the Python scripts, any information in the visual
-# interface (GUI) can be modified without any implication.
-#
-# There are limitations on Qt licenses if you want to use your products
-# commercially, I recommend reading them on the official website:
-# https://doc.qt.io/qtforpython/licenses.html
-#
-# ///////////////////////////////////////////////////////////////
-
 # IMPORT QT CORE
 # ///////////////////////////////////////////////////////////////
+from gui.functions.ui_functions import UIFunctions
 from qt_core import *
 
 # PY TITLE BUTTON
 # ///////////////////////////////////////////////////////////////
 class PyIconButton(QPushButton):
-    def __init__(
-        self,
-        icon_path = None,
-        parent = None,
-        app_parent = None,
+    def __init__(self, *args):
+        
+        #super().__init__()
+        QPushButton.__init__(self, *args)
+        icon_path = icon_path = UIFunctions().set_svg_icon("chevron-left.svg"),
+        #parent = None,
+        #app_parent = None,
         tooltip_text = "",
         btn_id = None,
         width = 30,
@@ -43,9 +30,7 @@ class PyIconButton(QPushButton):
         context_color = "#568af2",
         top_margin = 40,
         is_active = False
-    ):
-        super().__init__()
-        
+  
         # SET DEFAULT PARAMETERS
         self.setFixedSize(width, height)
         self.setCursor(Qt.PointingHandCursor)
@@ -97,6 +82,7 @@ class PyIconButton(QPushButton):
     # ///////////////////////////////////////////////////////////////
     def paintEvent(self, event):
         # PAINTER
+        print("paint")
         paint = QPainter()
         paint.begin(self)
         paint.setRenderHint(QPainter.RenderHint.Antialiasing)

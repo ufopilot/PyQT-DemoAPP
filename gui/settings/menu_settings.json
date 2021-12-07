@@ -28,7 +28,7 @@
         {
             "name":"Modern",
             "icon": "circle.svg",
-            "widget":"TemplatePage"
+            "widget":"Dashboard"
         }]
     },
     {   

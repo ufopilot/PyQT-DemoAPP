@@ -21,7 +21,8 @@ from qt_core import *
 class PyCircularProgress(QWidget):
     def __init__(
         self,
-        value = 0,
+        parent=None,
+        value = 1,
         progress_width = 10,
         is_rounded = True,
         max_value = 100,
@@ -34,7 +35,8 @@ class PyCircularProgress(QWidget):
         enable_bg = True,
         bg_color = "#44475a"
     ):
-        QWidget.__init__(self)
+        super().__init__(parent)
+        #QWidget.__init__(self)
 
         # CUSTOM PROPERTIES
         self.value = value
