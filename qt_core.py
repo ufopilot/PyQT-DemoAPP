@@ -21,7 +21,6 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QMenuBar, QSizePolicy, Q
 	QStatusBar, QWidget, QLabel, QButtonGroup, QAbstractButton, QPushButton, QGraphicsDropShadowEffect, QSizeGrip, QGroupBox, QSplashScreen, QTabWidget,
 	QVBoxLayout, QFrame, QHBoxLayout, QCheckBox, QTreeWidgetItem, QHeaderView, QAbstractItemView, QTreeWidget, QFileSystemModel, QTreeView)
 from PyQt5.uic import loadUiType
-#print("Linux pyqt5")
 
 
 
