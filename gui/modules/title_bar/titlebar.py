@@ -35,8 +35,6 @@ class TitleBar(QWidget):
 	def icon_maximize_restore(self):
 		self.ui.window().showMaximized
 		button = self.sender()
-		
-		print(button.objectName(), self.ui.window().isMaximized())
 		if self.ui.window().isMaximized():
 			self.icon.addPixmap(QPixmap(UIFunctions().set_svg_icon("chrome-maximize.svg", self.theme_settings['colors']['header_icon_color'])))
 			button.setIcon(self.icon)

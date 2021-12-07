@@ -48,7 +48,7 @@ class MainWidget(Base_Class, Gen_Class):
 		##########################################################################################
 		# Set Settings
 		##########################################################################################
-		self.resize(self.settings['startup_size'][0], self.settings['startup_size'][1])
+		self.resize(self.settings['initial_size'][0], self.settings['initial_size'][1])
 		self.setMinimumSize(QSize(self.settings['minimum_size'][0], self.settings['minimum_size'][1]))
 		self.appTitle.setText(self.settings['app_name'])
 		self.appDescription.setText(self.settings['description'])

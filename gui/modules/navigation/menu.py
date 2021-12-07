@@ -48,8 +48,6 @@ class SetMenu(QWidget):
 			# open menu link in content panel
 			# call target class
 			targetPageClass = item.text(2)
-			print(targetPageClass)
-			
 			# test if widgetClass exists 
 			try:
 				var = eval(targetPageClass)()

@@ -1,6 +1,6 @@
 {
-    "app_name": "QT-APP",
-    "description": "DemoApp",
+    "app_name": "UFOADMIN",
+    "description": "Python-QT Application Theme",
     "version": "Version: 1.0.0",
     "autor": "By UFOPILOT",
     "year": 2021,
@@ -10,19 +10,14 @@
         "png": "gui/resources/imgs/appicon.png",
         "ico": "gui/resources/imgs/appicon.ico"
     },
-    "startup_size": [
-        1400,
+    "initial_size": [
+        1600,
         850
     ],
     "minimum_size": [
         1400,
         850
     ],
-    "font": {
-        "family": "Segoe UI",
-        "title_size": 10,
-        "text_size": 9
-    },
     "panel1": {
         "minimum": 30,
         "maximum": 300,
