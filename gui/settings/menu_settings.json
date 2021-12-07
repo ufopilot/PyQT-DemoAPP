@@ -26,7 +26,7 @@
             }]
         },
         {
-            "name":"Modern2",
+            "name":"Modern",
             "icon": "circle.svg",
             "widget":"TemplatePage"
         }]
